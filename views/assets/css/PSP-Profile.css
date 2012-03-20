@@ -1,0 +1,267 @@
+a.Lblue {
+	color: #3399cc;
+}
+a.DLblue {
+	color: #094f95;
+}
+a.gray {
+	color: #333333;
+}
+h1.class-smaller {
+	font-size: .75em;
+	line-height: 1.5em;
+}
+/*********** Header 3com ************/
+#Header-cont {
+	float: left;
+	height: 50px;
+	width: 660px;
+	padding-top: 20px;
+}
+#Header-cont #headtxt-cont {
+	float: left;
+	width: 660px;
+	height: 48px;
+}
+#Header-cont #headtxt-cont #headerText {
+	float: left;
+	position: relative;
+	left: 0px;
+	bottom: 3px;
+	padding-left: 2px;
+	font-family: Comfortaa, Arial, Helvetica, sans-serif;
+	font-size: 4em;
+	color: #3399cc;
+	line-height: .9;
+	font-weight: 100;
+}
+#Header-cont #headtxt-cont #headerMid {
+	float: left;
+	position: relative;
+	top: 12px;
+	left: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.4em;
+	color: #3399cc;
+	line-height: 1;
+	height: 19px;
+}
+#Header-cont #headtxt-cont #headerMid .ArrowBox {
+	float: left;
+	height: 15px;
+	top: 15px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+#Header-cont #headtxt-cont #headerMid .textBox {
+	float: left;
+	height: 15px;
+	top: 15px;
+	padding-top: 2px;
+	padding-left: 10px;
+}
+/*************** Body PSP-P  ***********/
+#PSPP-body-cont {
+	float: left;
+	width: 660px;
+	padding-bottom: 10px;
+}
+/*** header ***/
+#PSPP-head-cont {
+	float: left;
+	width: 660px;
+	height: 32px;
+}
+#PSPP-head-cont #PSPP-head-Lkcont {
+	float: left;
+	witdh: 660px;
+	height: 30px;
+}
+#PSPP-head-cont #PSPP-head-Lkcont .PSPP-Hlk-cont {
+	float: left;
+	padding-right: 5px;
+	width: 81px;
+	height:30px;
+}
+#PSPP-head-cont #PSPP-head-Lkcont .PSPP-Hlk-cont .PSPP-HlK-box {
+	float: left;
+	width: 81px;
+	height: 30px;
+	font-family: Comfortaa, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+/*	color: #3399cc;*/
+}
+#PSPP-head-cont #PSPP-head-Lkcont .PSPP-Hlk-cont .PSPP-HlK-box .PSPP-HlK-text {
+	padding-top: 5px;
+	text-align: center;
+}
+#PSPP-head-cont #PSPP-head-Lkcont .PSPP-Hlk-cont .PSPP-HlK-box .PSPP-HlK-text-alt {
+	padding-top: 6px;
+	text-align: center;
+	font-size: 14px;
+}
+#PSPP-head-cont .PSPP-BBar {
+	background-color: #3399cc;
+	float: left;
+	height: 2px;
+	width: 660px;
+}
+a.pspplnk:link {
+	height: 30px;
+	width: 82px;
+	text-decoration: none;
+        color: #39c;
+	display: block;
+	background-image: url(../img/system/PSP-Button.png);
+	background-repeat: no-repeat;
+	background-position: 0 0px;
+}
+a.pspplnk:active {
+	background-position: 0 -30px;
+        color:#FFF !important; 
+}
+a.pspplnk:hover {
+	background-position: 0 -30px;
+        color:#FFF !important; 
+}
+/****** Profile Basic Info ***********/
+#PSPP-PBI-cont {
+	float: left;
+	padding-top: 20px;
+	border-bottom: dotted 2px #3399cc;
+	padding-bottom: 15px;
+}
+#PSPP-PBI-cont #PSPP-PBI-img {
+	float: left;
+	width: 300px;
+	height: 250px;
+}
+#PSPP-PBI-cont #PSPP-PBI-rightcontainer {
+	float: left;
+	padding-left: 20px;
+	width: 340px;
+}
+#PSPP-PBI-cont #PSPP-PBI-rightcontainer #PSPP-PBI-companyname {
+	float: left;
+	color: #3399cc;
+	width: 340px;
+	font-size: 2em;
+	font-weight: bold;
+	padding-bottom: 5px;
+	line-height: 1.2em;
+	overflow: hidden;
+}
+#PSPP-PBI-cont #PSPP-PBI-rightcontainer #PSPP-PBI-info-cont {
+	float: left;
+	width: 240px;
+}
+#PSPP-PBI-cont #PSPP-PBI-rightcontainer #PSPP-PBI-info-cont #PSPP-PBI-address {
+	float: left;
+	width: 235px;
+	font-size: 1.3em;
+	line-height: 1.2em;
+}
+#PSPP-PBI-cont #PSPP-PBI-rightcontainer #PSPP-PBI-info-cont #PSPP-PBI-Tel-cont {
+	float: left;
+	width: 235px;
+	font-size: 1.3em;
+}
+#PSPP-PBI-cont #PSPP-PBI-rightcontainer #PSPP-PBI-info-cont #PSPP-PBI-Tel-cont #PSPP-PBI-tel-text {
+	float: left;
+	width: 60px;
+}
+#PSPP-PBI-cont #PSPP-PBI-rightcontainer #PSPP-PBI-info-cont #PSPP-PBI-Tel-cont #PSPP-PBI-telnum-cont {
+	float: left;
+}
+#PSPP-PBI-cont #PSPP-PBI-rightcontainer #PSPP-PBI-info-cont #PSPP-PBI-webbie {
+	float: left;
+	width: 220px;
+	padding-top: 5px;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+#PSPP-PBI-cont #PSPP-PBI-rightcontainer #PSPP-PBI-info-cont #PSPP-PBI-email {
+	float: left;
+	width: 220px;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+#PSPP-PBI-cont #PSPP-PBI-rightcontainer #PSPP-PBI-info-cont #PSPP-PBI-Social {
+	float: left;
+	width: 257px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+#PSPP-PBI-cont #PSPP-PBI-rightcontainer #PSPP-PBI-info-cont #PSPP-PBI-buy-deal-cont {
+	width: 100px;
+	height: 41px;
+	float: left;
+	padding-top: 15px;
+}
+#PSPP-PBI-cont #PSPP-PBI-rightcontainer #PSPP-PBI-info-cont #PSPP-PBI-buy-deal-cont #PSPP-PBI-buy {
+	float: left;
+	width: 41px;
+	height: 41px;
+}
+#PSPP-PBI-cont #PSPP-PBI-rightcontainer #PSPP-PBI-info-cont #PSPP-PBI-buy-deal-cont #PSPP-PBI-DoD {
+	float: right;
+	width: 41px;
+	height: 41px;
+}
+#PSPP-PBI-cont #PSPP-PBI-Logo-cont {
+	float: right;
+	width: 100px;
+	height: 70px;
+}
+/***** body text *****/
+#PSPP-PBI-BodyText {
+	float: left;
+	padding-top: 15px;
+	width: 660px;
+        top: 0px;
+	font-size: 1.5em;
+	line-height: 1.6em;
+}
+/*#PSPP-PBI-BodyText p{
+	color: #000;
+	font-size: 1.4em;
+	line-height: 1.6em;
+}*/
+/***** Location *****/
+#PSPP-Loc-Container {
+	float: left;
+	width: 660px;
+	padding-top: 10px;
+}
+#PSPP-Loc-Container #PSPP-Loc-header-cont {
+	float: left;
+	width: 660px;
+	height: 25px;
+	font-family:Comfortaa, Arial, Helvetica, sans-serif;
+	padding-bottom: 10px;
+	font-size: 2.5em;
+	line-height: .9em;
+	color: #3399cc;
+}
+#PSPP-Loc-Container #PSPP-Loc-header-cont #PSPP-Lhead {
+	float: left;
+	width: 660px;
+}
+#PSPP-Loc-Container #PSPP-Loc-header-cont #PSPP-HBar {
+	float: left;
+	width: 660px;
+	border-bottom: dotted 2px #3399cc;
+}
+#PSPP-Loc-Container #PSPP-MAP-container {
+	float: left;
+	padding-top: 3px;
+	width: 660px;
+}
+
+/*--jan rei added--*/
+
+a#active {
+	background-position: 0 -30px;
+        color:#FFF !important; 
+}

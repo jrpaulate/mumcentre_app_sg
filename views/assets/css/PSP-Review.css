@@ -1,0 +1,373 @@
+a.Lblue {
+	color: #3399cc;
+}
+a.DLblue {
+	color: #094f95;
+}
+a.gray {
+	color: #333333;
+}
+h1.class-smaller {
+	font-size: .75em;
+	line-height: 1.5em;
+}
+/*********** Header 3com ************/
+#Header-cont {
+	float: left;
+	height: 50px;
+	width: 660px;
+	padding-top: 20px;
+}
+#Header-cont #headtxt-cont {
+	float: left;
+	width: 660px;
+	height: 48px;
+}
+#Header-cont #headtxt-cont #headerText {
+	float: left;
+	position: relative;
+	left: 0px;
+	bottom: 3px;
+	padding-left: 2px;
+	font-family: Comfortaa, Arial, Helvetica, sans-serif;
+	font-size: 4em;
+	color: #3399cc;
+	line-height: .9;
+	font-weight: 100;
+}
+#Header-cont #headtxt-cont #headerMid {
+	float: left;
+	position: relative;
+	top: 12px;
+	left: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.4em;
+	color: #3399cc;
+	line-height: 1;
+	height: 19px;
+}
+#Header-cont #headtxt-cont #headerMid .ArrowBox {
+	float: left;
+	height: 15px;
+	top: 15px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+#Header-cont #headtxt-cont #headerMid .textBox {
+	float: left;
+	height: 15px;
+	top: 15px;
+	padding-top: 2px;
+	padding-left: 10px;
+}
+/*************** Body PSP-P  ***********/
+#PSPP-body-cont {
+	float: left;
+	width: 660px;
+	padding-bottom: 10px;
+}
+/*** header ***/
+#PSPP-head-cont {
+	float: left;
+	width: 660px;
+	height: 32px;
+}
+#PSPP-head-cont #PSPP-head-Lkcont {
+	float: left;
+	witdh: 660px;
+	height: 30px;
+}
+#PSPP-head-cont #PSPP-head-Lkcont .PSPP-Hlk-cont {
+	float: left;
+	padding-right: 5px;
+	width: 81px;
+	height:30px;
+}
+#PSPP-head-cont #PSPP-head-Lkcont .PSPP-Hlk-cont .PSPP-HlK-box {
+	float: left;
+	width: 81px;
+	height: 30px;
+	font-family: Comfortaa, Arial, Helvetica, sans-serif;
+	font-size: 1.4em;
+	font-weight: bold;
+/*	color: #3399cc;*/
+}
+#PSPP-head-cont #PSPP-head-Lkcont .PSPP-Hlk-cont .PSPP-HlK-box .PSPP-HlK-text {
+	padding-top: 5px;
+	text-align: center;
+}
+#PSPP-head-cont #PSPP-head-Lkcont .PSPP-Hlk-cont .PSPP-HlK-box .PSPP-HlK-text-alt {
+	padding-top: 6px;
+	text-align: center;
+	font-size: .9em;
+}
+#PSPP-head-cont .PSPP-BBar {
+	background-color: #3399cc;
+	float: left;
+	height: 2px;
+	width: 660px;
+}
+a.pspplnk:link {
+	height: 30px;
+	width: 82px;
+	text-decoration: none;
+        color: #39c;
+	display: block;
+	background-image: url(../img/system/PSP-Button.png);
+	background-repeat: no-repeat;
+	background-position: 0 0px;
+}
+a.pspplnk:active {
+	background-position: 0 -30px;
+        color:#FFF !important; 
+}
+a.pspplnk:hover {
+	background-position: 0 -30px;
+        color:#FFF !important; 
+}
+/****** Events Basic Info ***********/
+#PSPE-BI-container {
+	float: left;
+	width: 660px;
+}
+#PSPE-BI-infob-cont {
+	float: left;
+	width: 520px;
+        padding-bottom: 13px;
+}
+#PSPE-BI-container #PSPE-Img{
+	float: left;
+	width: 100px;
+	height: 70px;
+	padding: 20px;
+}
+#PSPE-BI-container #PSPE-BI-infob-cont #PSPE-header{
+	float: left;
+	width: 520px;
+	color: #3399cc;
+	font-size: 1.8em;
+	padding-top: 15px;
+	line-height: 1.4em;
+}
+#PSPE-BI-container #PSPE-BI-infob-cont #PSPE-address {
+	float: left;
+	width: 520px;
+	font-size: 1.3em;
+}
+#PSPE-BI-container #PSPE-BI-infob-cont #PSPE-telp-cont{
+	float: left;
+	width: 520px;
+	font-size: 1.3em;
+}
+#PSPE-BI-container #PSPE-BI-infob-cont #PSPE-telp-cont #PSPE-telp-text{
+	float: left;
+	width: 65px;
+}
+#PSPE-BI-container #PSPE-BI-infob-cont #PSPE-telp-cont #PSPE-telp{
+	float: left;
+	width: 455px;
+}
+#PSPE-BI-container #PSPE-BI-infob-cont #PSPE-webbie{
+	float: left;
+	width: 420px;
+	font-size: 1.3em;
+}
+#PSPE-BI-container #PSPE-BI-infob-cont #PSPE-email{
+	float: left;
+	width: 420px;
+	font-size: 1.3em;
+}
+.PSPE-BI-iconcont {
+	position: relative;
+	float: right;
+	top: -10px;
+	width: 88px;
+}
+.PSPE-BI-icontL {
+	float: left;
+	width: 41px;
+	height: 41px;
+}
+.PSPE-BI-icontR {
+	float: right;
+	width: 41px;
+	height: 41px;
+}
+.PSPE-BBar {
+	background-color: #3399cc;
+	float: left;
+	height: 2px;
+	width: 660px;
+}
+/**** main body ****/
+#PSPE-MBody {
+	float: left;
+	padding-bottom: 10px;
+	width: 660px;
+}
+#PSPE-MBody #PSPE-MBHeader {
+	float: left;
+	border-bottom: dotted 2px #3399cc;
+	width: 660px;
+	padding-top: 10px;
+	font-family: Comfortaa, Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	color: #60296C;
+	line-height: 1.1em;
+	padding-bottom: 10px;
+}
+/*** body ***/
+#PSPE-MBcontainer {
+	float: left;
+	width: 660px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+#PSPE-MBcontainer ul {
+	float: left;
+	width: 660px;
+}
+#PSPE-MBcontainer ul li:nth-child(even) {
+	float: left;
+	width: 638px;
+	height: 185px;
+	border: 1px solid #CCC;
+	margin-bottom: 5px;
+	padding: 10px 15px 10px 5px;
+}
+#PSPE-MBcontainer ul li:nth-child(odd) {
+	background-color: #e3f1fa;
+	float: left;
+	width: 638px;
+	height: 185px;
+	border: 1px solid #CCC;
+	margin-bottom: 5px;
+	padding: 10px 15px 10px 5px;
+}
+#PSPE-MBcontainer ul li .PSPE-Content-img {
+	float: left;
+	width: 100px;
+	height: 70px;
+	padding-top: 8px;
+	padding-right: 15px;
+	padding-left: 5px;
+}
+#PSPE-MBcontainer ul li .PSPE-Content-info-cont {
+	float: left;
+	width: 518px;
+	height: 150px;
+}
+#PSPE-MBcontainer ul li .PSPE-Content-info-cont .PSPE-info-header {
+	float: left;
+	width: 518px;
+	font-size: 1.4em;
+	line-height: 1.8em;
+	height: 28px;
+	overflow: hidden;
+}
+#PSPE-MBcontainer ul li .PSPE-Content-info-cont .PSPE-info-quotation {
+	float: left;
+	font-size: 1.21em;
+	width: 518px;
+	height: 100px;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+#PSPE-MBcontainer ul li .PSPE-Content-info-cont .PSPE-info-link {
+	float: left;
+/*	padding-top: 10px;*/
+	font-size: 1.2em;
+}
+#PSPE-MBcontainer ul li .PSPE-Content-info-cont .PSPE-info-socialicons {
+	float: right;
+	position: relative;
+	top: 10px;
+}
+/************ Complete Details *****************/
+.PSPE-CD-Container {
+	float: left;
+	margin-bottom: 5px;
+	width: 660px;
+}
+.PSPE-CD-Container .PSPE-dot-bar {
+	float: left;
+	width: 660px;
+	border-bottom: dotted 2px #3399cc;
+}
+.PSPE-CD-Container .PSPE-CD-info {
+	float: left;
+	padding-top: 30px;
+	width: 630px;
+	position: relative;
+	top: -20px;
+}
+.PSPE-CD-Container .PSPE-CD-info h2 {
+	color: #3399cc;
+	font-size: 1.5em;
+	font-weight: 100;
+}
+.PSPE-CD-Container .PSPE-CD-info p {
+	font-size: 1.3em;
+        width: 630px;
+        padding-left: 5px;
+}
+.PSPE-CD-Container .PSPE-CD-info .PSPE-CD-Img {
+	float: left;
+	position: relative;
+	top: -24px;
+	width: 300px;
+	height: 250px;
+	padding-right: 15px;
+        padding-left: 5px;
+	padding-bottom: 0px;
+}
+.PSPE-CD-Container .PSPE-CD-topcont {
+	float: right;
+	position: relative;
+	width: 340px;
+	margin-top: 5px;
+	height: 20px;
+        z-index: 1;
+}
+.PSPE-CD-Container .PSPE-CD-topcont .PSPE-CD-socialT {
+	float: left;
+	position: relative;
+	top: 5px;
+}
+.PSPE-CD-Container .PSPE-CD-topcont .PSPE-CD-close {
+	float: right;
+	width: 19px;
+	height: 19px;
+        padding-right: 20px;
+}
+a.closebut:link {
+	height: 19px;
+	width: 19px;
+	display: block;
+	background-image: url(../img/system/PSP-closebut.png);
+	background-repeat: no-repeat;
+	background-position: 0 0px;
+}
+a.closebut:hover {
+	background-position: 0 -19px;
+}
+.PSPE-CD-Container  .PSPE-CD-socialB {
+	float: left;
+	padding: 0px 0px 10px 5px;
+}
+
+/*--jan rei added--*/
+
+a#active {
+	background-position: 0 -30px;
+        color:#FFF !important; 
+}
+
+#PSPE-MBcontainer ul li:nth-child(1) {
+	margin-top: 10px;
+}
+
+#PSPE-MBcontainer ul li:last-child {
+	margin-bottom: 10px;
+}

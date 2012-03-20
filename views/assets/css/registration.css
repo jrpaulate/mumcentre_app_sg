@@ -1,0 +1,972 @@
+/*********** fixer ************/
+#reg-body-cont {
+	width: 980px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	font-family: Comfortaa, Arial, Helvetica, sans-serif;
+	font-size: 1.6em;
+	color: #9F7EA7;
+	font-weight: normal;
+}
+hr1 {
+	font-size: 130%;
+}
+
+hr2 {
+	font-size: 70%;
+}
+hr3 {
+	font-size: 65%;
+	color: #000;
+}
+a.regLF {
+	color: #996699;
+}
+a.reg4cs {
+	color: #3366cc;
+	font-family: Comfortaa, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 70%;
+}
+/*********************************** Registration Page 1 ****************************************/
+/*********** statics ************/
+#reg-header-container {
+	width: 980px;
+	height: 40px;
+	background-image: url(../images/reg-head-bg.png);
+	padding-bottom: 5px;
+	background-repeat: repeat-x;
+}
+#reg-header-head {
+	float: left;
+	width: 207;
+	height: 37;
+}
+#reg-header-page {
+	float: right;
+	height: 36px;
+	padding-right: 20px;
+}
+#reg-cont {
+	background-color: #E3F1FA;
+	width: 978px;
+	border: 1px solid #CCC;
+}
+#reg-cont-body {
+	height: 900px;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+#reg-cont-body3 {
+	height: 930px;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+#reg-cont-body-toptext {
+	float: left;
+	font-size: 110%;
+}
+#reg-cont-body-body {
+	width: 815px;
+	padding-top: 130px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#column1-text {
+	float: left;
+	width: 110px;
+	right: 0px;
+	top: 0px;
+	margin-right: 10px;
+}
+#column2-formtext {
+	float: left;
+	width: 685px;
+	left: 120px;
+	top: 0px;
+}
+#pictureuploadContain {
+	float: right;
+	width: 280px;
+}
+.form-row {
+	float: left;
+	width: 695px;
+	height: 40px;
+	padding-bottom: 20px;
+}
+.form-rowDF {
+	float: left;
+	width: 695px;
+	height: 40px;
+	padding-bottom: 20px;
+	padding-top: 30px;
+}
+.form-row-spacer {
+	float: left;
+	width: 695px;
+	height: 80px;
+	padding-bottom: 20px;
+}
+/*********** Basic Information ************/
+.box-left {
+	float: left;
+	width: 4px;
+	height: 40px;
+	background-image: url(../images/reg-lft-box.png);
+	background-repeat: no-repeat;
+}
+.box-right {
+	float: left;
+	width: 3px;
+	height: 40px;
+	background-image: url(../images/reg-rght-box.png);
+	background-repeat: no-repeat;
+}
+.text-space1L {
+	float: right;
+	height: 35px;
+	width: 100px;
+	padding-top: 5px;
+	padding-bottom: 20px;
+	text-align:right;
+}
+.text-space2L {
+	float: right;
+	height: 40px;
+	width: 105px;
+	margin-top: auto;
+	margin-right: 0px;
+	margin-bottom: auto;
+	margin-left: 0px;
+	line-height:90%;
+	text-align:right;
+	padding-bottom: 20px;
+}
+.text-space1LSp {
+	float: right;
+	height: 35px;
+	margin-top: auto;
+	margin-right: 0px;
+	margin-bottom: auto;
+	margin-left: 0px;
+	line-height:90%;
+	text-align:right;
+	position: relative;
+	top: 40px;
+}
+.text2-space1L {
+	float: left;
+	height: 35px;
+	width: 116px;
+	padding-top: 5px;
+	padding-bottom: 20px;
+	text-align:right;
+}
+.text2-space2L {
+	float: left;
+	height: 40px;
+	width: 116px;
+	margin-top: auto;
+	margin-right: 0px;
+	margin-bottom: auto;
+	margin-left: 0px;
+	line-height:90%;
+	text-align:right;
+	padding-bottom: 20px;
+}
+#basic-gname {
+	float: left;
+	height: 40px;
+	width: 338px;
+}
+#basic-fname {
+	float: right;
+	height: 40px;
+	width: 338px;
+}
+.name {
+	float: left;
+	width: 330px;
+	height: 40px;
+	background-image: url(../images/reg-mid-box.png);
+	background-repeat: repeat-x;
+}
+.name-textinput {
+	width: 330px;
+	height: 40px;
+	background: none;
+	border: none;
+	color: #999;
+	font-size: 80%;
+	margin-top: 0px;
+	margin-left: 8px;
+}
+#basic-bday-day {
+	float: left;
+	height: 40px;
+	width: 75px;
+	padding-right: 5px;
+}
+.bday-d {
+	float: left;
+	width: 68px;
+	height: 40px;
+	background-image: url(../images/reg-mid-box.png);
+	background-repeat: repeat-x;
+}
+.bday-textinput {
+	width: 67px;
+	height: 40px;
+	background: none;
+	border: none;
+	color: #999;
+	font-size: 80%;
+	margin-top: 0px;
+	margin-left: 8px;
+}
+#basic-bday-mo {
+	float: left;
+	height: 40px;
+	width: 100px;
+	position: relative;
+	z-index: 500;
+	padding-right: 5px;
+}
+.bday-mo {
+	float: left;
+	width: 100px;
+	height: 40px;
+	z-index: 10000;
+	color: #999;
+	font-size: 80%;
+	background-image: url(../images/reg-month.png);
+	background-repeat: no-repeat;
+}
+#basic-bday-yr {
+	float: left;
+	height: 40px;
+	width: 98px;
+}
+.bday-yr {
+	float: left;
+	width: 91px;
+	height: 40px;
+	background-image: url(../images/reg-mid-box.png);
+	background-repeat: repeat-x;
+}
+.bday-yr-textinput {
+	width: 91px;
+	height: 40px;
+	background: none;
+	border: none;
+	color: #999;
+	font-size: 80%;
+	margin-top: 0px;
+	margin-left: 8px;
+}
+#basic-gender {
+	float: right;
+	width: 283px;
+	height: 40px;
+}
+#basic-box-gender {
+	float: right;
+	height: 40px;
+	width: 283px;
+}
+.gender {
+	float: left;
+	width: 283px;
+	height: 40px;
+	color: #999;
+	font-size: 80%;
+	background-image: url(../images/reg-gender.png);
+	background-repeat: no-repeat;
+}
+#basic-cloc {
+	float: right;
+	height: 40px;
+	width: 695px;
+}
+.currentL {
+	float: left;
+	width: 688px;
+	height: 40px;
+	background-image: url(../images/reg-mid-box.png);
+	background-repeat: repeat-x;
+}
+.currentL-textinput {
+	width: 680px;
+	height: 40px;
+	background: none;
+	border: none;
+	color: #999;
+	font-size: 80%;
+	margin-top: 0px;
+	margin-left: 8px;
+}
+.basic-ep {
+	float: left;
+	height: 40px;
+	width: 284px;
+}
+.basic-Vep {
+	float: right;
+	height: 40px;
+	width: 284px;
+}
+.text-ep {
+	float: left;
+	width: 277px;
+	height: 40px;
+	background-image: url(../images/reg-mid-box.png);
+	background-repeat: repeat-x;
+}
+.text-ep-textinput {
+	width: 277px;
+	height: 40px;
+	background: none;
+	border: none;
+	color: #999;
+	font-size: 80%;
+	margin-top: 0px;
+	margin-left: 8px;
+}
+#DF-LikeUs {
+	float: left;
+	height: 40px;
+}
+/****************** Upload **********************/
+.upav-contain {
+	float: left;
+	width: 280px;
+	padding-bottom: 5px;
+}
+#upload-contain {
+	width: 170px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#avatar-container {
+	float: left;
+	width: 170px;
+	height: 170px;
+}
+.text3-space1L {
+	float: left;
+	height: 25px;
+	padding-bottom: 5px;
+}
+#text-intruction {
+	float: left;
+	height: 25px;
+	width: 280px;
+	padding-top: 10px;
+	text-align: center;
+}
+#browse-but-cont {
+	height: 22px;
+	width: 210px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#but-conti {
+	width: 134px;
+	height: 22px;
+	padding-top: 10px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#browse-textarea {
+	float: left;
+	width: 180;
+	height: 22px;
+}
+#browse-button {
+	float: left;
+	width: 66px;
+	height: 18px;
+	margin-top: auto;
+	margin-right: 0px;
+	margin-bottom: auto;
+	margin-left: 0px;
+
+}
+/*********************************** Registration Page 2 ****************************************/
+#reg2-cont-body-body {
+	width: 850px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#reg2-column2-formtext {
+	float: left;
+	width: 690px;
+	left: 120px;
+	top: 0px;
+}
+.reg2-text-space1L {
+	float: right;
+	height: 35px;
+	width: 100px;
+	padding-top: 5px;
+	padding-bottom: 20px;
+	text-align:right;
+}
+.reg2-text-space1LSP {
+	float: right;
+	height: 35px;
+	width: 100px;
+	padding-top: 65px;
+	padding-bottom: 20px;
+	text-align:right;
+}
+.reg2-chilren-but {
+	float: left;
+	width: 95px;
+	height: 40px;
+	margin-top: 10px;
+	padding-right: 10px;
+}
+#reg2-yes-no {
+	float: left;
+	height: 40px;
+	width: 91px;
+	position: relative;
+	z-index: 500;
+	padding-right: 5px;
+}
+.reg2-yes-no-image {
+	float: left;
+	height: 40px;
+	width: 91px;
+	color: #999;
+	font-size: 80%;
+	background-image: url(../images/reg-preg.png);
+	background-repeat: no-repeat;
+}
+#reg2-cont-body-toptext {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	font-size: 110%;
+}
+#reg2-cont-body-midtext {
+	left: 0px;
+	top: 320px;
+	font-size: 110%;
+	position: relative;
+	z-index: 0px;
+	background-image: url(../images/reg-mid-bg.png);
+	background-repeat: repeat-x;
+	padding-bottom: 5px;
+}
+.reg2-form-row {
+	float: left;
+	width: 695px;
+	padding-bottom: 20px;
+}
+#reg2-column1-Subscrpt {
+	float: left;
+	width: 310px;
+}
+#reg2-column1-Subscrpt .submana-text-contain {
+	float: left;
+	width: 310px;
+	height: 30px;
+}
+#reg2-column1-Subscrpt .submana-text-containSP {
+	float: left;
+	width: 310px;
+	height: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: underline;
+}
+.reg2-column-radio {
+	float: left;
+	width: 150px;
+}
+.reg2-column-radio-container {
+	float: left;
+	font-size: 80%;
+	width: 150px;
+	height: 25px;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 5px;
+	margin-top: auto;
+	margin-right: 0px;
+	margin-bottom: auto;
+	margin-left: 0px;
+}
+.reg2-column-radioSP-container {
+	float: left;
+	width: 150px;
+	height: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#termscondicontainer {
+	height: 30px;
+	width: 250px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding-top: 40px;
+}
+#termscondicontainer #checkbox-container {
+	float: left;
+}
+#termscondicontainer #textchckbox-container {
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-size: 70%;
+	color: #1F1F1F;
+	padding-left: 5px;
+}
+#but-conti-2 {
+	float: right;
+	width: 134px;
+	height: 22px;
+	padding-top: 10px;
+}
+
+/*********************************** Registration Page 3 ****************************************/
+R3h {
+	color: #003333;
+}
+.reg3-container {
+	float: left;
+	width: 815px;
+	padding-bottom: 20px;
+}
+.reg3-header {
+	float: left;
+	width: 815px;
+	font-family: Comfortaa, Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	font-weight: normal;
+	background-image: url(../images/reg-mid-bg.png);
+	background-repeat: repeat-x;
+	padding-top: 15px;
+	background-position: bottom;
+}
+.reg3-row {
+	float: left;
+	width: 815px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	color: #000;
+}
+.reg3-row-spacer {
+	float: left;
+	width: 815px;
+	height: 30px;
+}
+.reg3-row .reg3columnL {
+	float: left;
+	width: 350px;
+	padding-left: 50px;
+}
+.reg3-row .reg3columnR {
+	float: right;
+	width: 350px;
+	padding-right: 50px;
+}
+.reg3-row .reg3column-row {
+	float: left;
+	width: 350px;
+	padding-bottom: 15px;
+}
+.reg3-row .reg3column-columnL {
+	float: left;
+	width: 80px;
+}
+.reg3-row .reg3column-columnR {
+	float: right;
+	width: 267px;
+}
+.reg3-row .reg3column-column-boxL {
+	float: left;
+	width: 80px;
+	height: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.reg3-row .reg3column-column-boxR {
+	float: left;
+	width: 267px;
+	height: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.reg3-row .reg3column-column-boxR-chatbox {
+	float: left;
+	width: 267px;
+	height: 85px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.textbox-bg {
+	background-image: url(../images/reg-textbox-BG.png);
+	background-repeat: repeat-x;
+	background-position: bottom;	
+}
+.reg3-row .reg3-sendE {
+	float: right;
+	width: 97px;
+	height: 26px;
+}
+.reg3-rowcenter-FBcontainer {
+	width: 301px;
+	height: 48px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.reg3-gmail {
+}
+.reg3-Addresbook {
+	float: left;
+	padding-left: 40px;
+	padding-top: 20px;
+}
+#finreg {
+	width: 154px;
+	height: 27px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*********************************** Registration Page 4 ****************************************/
+#reg4-cont {
+	width: 978px;
+}
+#reg4-cont-cont {
+	width: 908px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.reg4-row-spacer {
+	width: 908px;
+	height: 30px;
+}
+.reg4-row {
+	float: left;
+	width: 860px;
+}
+.reg4-row-columnL {
+	float: left;
+	width: 273px;
+}
+.reg4-row-columnR {
+	float: right;
+	width: 584px;
+}
+.reg4-row-container {
+	float: left;
+	width: 883px;
+	border: 1px solid #cccccc;
+}
+.reg4-row-container-columnL {
+	float: left;
+	width: 238px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #cccccc;
+	background-color: #E3F1FA;
+	height: 900px;
+}
+.reg4-row-container-columnR {
+	float: right;
+	width: 584px;
+	height: 650px;
+}
+#reg4-header {
+	font-family: Comfortaa, Tahoma, Geneva, sans-serif;
+    color: #ffcc33;    
+    font-size: 2em;
+    text-align: center;
+}
+#reg4-colcont-L {
+	width: 270px;
+	height: 45px;
+	padding-top: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#reg4-colcont-R {
+	width: 510px;
+	height: 45px;
+	padding-top: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#reg4-colcont-R-icon {
+	float: left;
+	width:40px;
+	height: 40px;
+}
+#reg4-colcont-R-text {
+	float: left;
+	height: 30px;
+	padding-top: 10px;
+	padding-left: 5px;
+}
+r4h {
+	color: #663366;
+	font-size: 1.2em;
+	line-height: .9;
+}
+.reg4-mcol-cont-L {
+	width: 220px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.reg4-mcol-cont-L-spacer {
+	float: left;
+	width: 220px;
+	height: 50px;
+}
+.reg4-mcol-cont-L-box {
+	float: left;
+	width: 220px;
+	padding-bottom: 25px;
+}
+.reg4-mcol-cont-L-arrow {
+	float: left;
+	width: 26px;
+	height: 27px;
+	padding-top: 4px;
+}
+.reg4-mcol-cont-L-text {
+	position: relative;
+	width: 185px;
+	height: 22px;
+	padding-left: 32px;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.reg4-mcol-cont-R-row {
+	float: left;
+	width: 584px;
+}
+.reg4-mcol-cont-R-cont {
+	width: 500px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.reg4-mcol-cont-R-col1 {
+	float: left;
+	width: 225px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.reg4-mcol-cont-R-col2 {
+	float: left;
+	width: 100px;
+}
+.reg4-mcol-cont-R-col3 {
+	float: left;
+	width: 100px;
+	padding-left: 20px;
+}
+.reg4-mcol-cont-R-col1-text {
+	float: left;
+	width: 220px;
+	height: 35px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+	line-height: 1;
+	font-size: 100%;
+	padding-bottom: 10px;
+}
+.reg4-mcol-cont-R-col1-text2 {
+	float: left;
+	width: 225px;
+	height: 45px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+	line-height: 1;
+	font-size: 100%;
+	padding-bottom: 10px;
+}
+.reg4-mcol-cont-R-col1-spacer {
+	float: left;
+	width: 225px;
+	height: 35px;
+	padding-bottom: 10px;
+}
+.reg4-mcol-cont-R-col23-textbox {
+	float: left;
+	width: 100px;
+	height: 35px;
+	padding-bottom: 10px;
+}
+.reg4-mcol-cont-R-col23-textbox2 {
+	float: left;
+	width: 100px;
+	height: 45px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+	line-height: 1;
+	font-size: 100%;
+	padding-bottom: 10px;
+}
+.reg4-mcol-cont-R-col23-spacer {
+	float: left;
+	width: 100px;
+	height: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+	line-height: 1;
+	font-size: 100%;
+	text-align: center;
+}
+.reg4-checkbox {
+	height: 25px;
+	width: 30px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.reg4-mcol-cont-R-col2SP {
+	position: relative;
+	width: 100px;
+	left: 307px;
+	top: 0px;
+	float: left;
+}
+.reg4-mcol-cont-R-col3SP {
+	width: 100px;
+	left: 257px;
+	top: 0px;
+	position: relative;
+	z-index: 0;
+	float: left;
+}
+.reg4-mcol-cont-R-col2SP-text {
+	position: relative;
+	width: 70px;
+	left: 275px;
+	top: 0px;
+	float: left;
+	font-size: 70%;
+}
+.reg4-mcol-cont-R-col3SP-text {
+	width: 70px;
+	left: 225px;
+	top: 0px;
+	position: relative;
+	float: left;
+	font-size: 70%;
+}
+.reg4-mcol-cont-R-contSP {
+	width: 500px;
+	height: 20px;
+	padding-top: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.reg4-mcol-cont-R-col1SP {
+	float: left;
+	width: 160px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.reg4-cS-container {
+	height: 20px;
+	width: 130px;
+}
+.reg4-cS-icon {
+	float: left;
+	height: 12px;
+	width: 12px;
+	padding-top: 4px;
+        padding-right: 15px;
+}
+.reg4-cS-text {
+	float: left;
+	height: 15px;
+	width: 113px;
+	padding-left: 5px;
+}
+.reg4-mcol-cont-R-colSP {
+	float: right;
+	width: 210px;
+}
+.reg4-mcol-cont-R-colSP-icon {
+	float: left;
+	width: 14px;
+	height: 14px;
+        padding-right: 10px;
+}
+.reg4-mcol-cont-R-colSP-text {
+	float: left;
+	height: 14px;
+	font-family: Comfortaa, Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	color: #333333;
+	font-weight: normal;
+	padding-left: 5px;
+}
+
+/*from John Ray*/
+
+#avatar_crop{max-height: 480px;
+max-width: 640px;}
+
+#save_alerts{
+    font-size: 28px;
+    color:  #6d4976;
+    font-weight: bold;
+}
+
+.set_alert{
+    font-size: 38px;
+    color:  #6d4976;
+    font-weight: bold;
+    font-family: 'ComfortaaRegular', Arial, sans-serif;
+    width: 300px;
+}

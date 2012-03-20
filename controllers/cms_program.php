@@ -1,0 +1,635 @@
+<?php
+//require_once('C:/xampp/htdocs/mumcentre/forum/smf_2_api.php');
+require_once('/var/www/mumcentre_sg/forum/smf_2_api.php');    
+
+class cms_program extends CI_Controller {
+
+    function __construct() {
+        parent::__construct();
+        $this->load->library('media');
+        $this->load->helper(array('form', 'url'));
+        $this->load->library('rb');
+        $this->program_image_path = $this->config->item('program_image_gen_path');
+    }
+    
+    private function _check_logged(){
+        if($this->session->userdata('cms_logged_in') != TRUE){
+            redirect('cms/login', 'refresh');
+        }
+    }
+    
+    function index() {
+        $this->_check_logged();
+        $this->load->library('bucket');
+        $this->bucket->set_layout_id('mumcentre/cms_layout');
+        $this->bucket->set_content_id('cms/program');
+        $this->bucket->add_css('cms');
+        $this->bucket->set_data('title', "Mumcentre CMS");
+        $this->bucket->render_layout();
+    }
+
+
+    function add_program() {
+        $this->_check_logged();
+        $this->load->library('bucket');
+        $this->bucket->set_layout_id('mumcentre/cms_layout');
+        $this->bucket->set_content_id('cms/add_program');
+        $this->bucket->add_css('cms');
+        $this->bucket->set_data('title', "Mumcentre CMS");
+        $this->bucket->render_layout();
+    }
+
+     function uploadify() {
+        $file = $this->input->post('filearray');
+        $json = json_decode($file);
+        $data['json'] = $json;
+        $id = $json->{'file_name'};
+        $id = str_replace($json->{'file_ext'}, "", $id);
+        $file_extension = str_replace(".", "", $json->{'file_ext'});
+
+        switch ($json->{'file_ext'}) {
+            case ".mp3":
+            case ".wma":
+                break;
+            case ".3gp":
+            case ".avi":
+            case ".flv":
+            case ".mov":
+            case ".mpeg":
+            case ".mp4":
+            case ".wmv":
+                break;
+            case ".jpg":
+            case ".jpeg":
+            case ".png":
+            case ".gif":
+                $this->media->smart_resize_image($json->{'file_path'}, 300, 250, false,
+                        $this->program_image_path . $id . ".jpg", false, false);
+                $data['media'] = "media/thumb/" . $id . ".jpg";
+                $data['media_type'] = "image";
+
+                break;
+        }
+
+        echo $id . ".jpg";
+    }
+
+   function create_program() {
+       
+        $program = R::dispense("provider_program");
+        $alert = R::dispense("alert");
+        
+        $title_check = reset(R::find('provider_program', ' seo_url = ? ', array(url_title($this->input->post('seo_link')))));
+        
+        if($title_check){
+            $response['code'] = -1;
+            $response['message'] = "Program title already exists.";
+        } else {
+
+        $program->title = $this->input->post('title');
+        $program->image_filepath = $this->input->post('avatar');
+        $program->summary = $this->input->post('summary');
+        $program->body = $this->input->post('program');
+        $program->seo_url = url_title($this->input->post('seo_link'));
+        $program->seo_summary = $this->input->post('se_summary');
+        $program->seo_keywords = $this->input->post('se_keywords');
+        $program->age_group_id = $this->input->post('age_group');
+        $program->provider_id = $this->input->post('provider');
+        $program->gmap = $this->input->post('gmap');
+        $program->publish_date = $this->input->post('publish_date');
+        $program->sending_date = $this->input->post('sending_date');
+        $program->expiry_date = $this->input->post('expiry_date');
+        $program->created_by_id = 0; 
+        $program->created_date = date("Y-m-d H:i:s");
+        if($this->input->post('publish_date') <= date("Y-m-d")) {
+            $program->status = 1;
+        } else {
+            $program->status = 0;
+        }          
+        $program_id = R::store($program);
+
+        $alert->content_type = 'Program';
+        $alert->content_id = $program_id;
+        $alert->title = $this->input->post('title');
+        $alert->summary = $this->input->post('summary');
+        $alert->send_date = $this->input->post('sending_date');
+        $alert->age_group_id = $this->input->post('age_group');
+        $alert->url = $this->input->post('seo_link');        
+        $alert->status = 0;
+        $alert->created_by_id = 0;
+        $alert->created_date = date("Y-m-d H:i:s");
+
+        $program_id = R::store($alert);
+        
+        
+        $age_group=explode("|", $this->input->post('age_group'));
+        $age_group_count = count($age_group);
+                
+		for ($i = 0; $i < $age_group_count; $i++) {
+                    
+                       // save selected age_group to article_age_group
+			$sql="INSERT INTO program_age_group (program_id, age_group_id) VALUES (";
+                        $sql.=$program_id;
+			$sql.=",$age_group[$i])";
+        	R::exec($sql);
+          }
+        
+        
+
+        $response['code'] = 0;
+        $response['message'] = "Program successfully created.";
+        }
+        echo $response['code'] . ":" . $response['message'] ;  
+    }
+
+    function programAll_list(){
+        echo '{"programAll_list": [{'.$this->_programAll().'}]}';
+    }
+
+    private function _programAll() {
+        
+        $sql="SELECT
+          a.id
+        , a.title AS program_title
+        , a.summary AS program_summary
+        , a.body AS program_body
+        , a.image_filepath AS program_image
+        , a.status AS program_status
+        , a.seo_url AS seo_link
+        , a.created_date
+        , a.seo_summary AS se_summary
+        , a.seo_summary AS se_keywords
+        , age.name AS age_group_name
+        , p.name AS provider_name
+        , cr.name AS country
+        , cr.url 
+        , p.id AS provider_id
+        FROM provider_program AS a
+        INNER JOIN age_group AS age
+        ON a.age_group_id = age.id
+        INNER JOIN provider_profile AS p
+        ON p.id = a.provider_id
+        INNER JOIN provider_country as pro
+        ON p.id = pro.provider_id
+        INNER JOIN country as cr
+        ON pro.country_id = cr.id
+    
+        ORDER BY a.created_date DESC";
+        
+        $programAll= R::getAll($sql);
+
+         foreach ($programAll as &$a) {
+          if($a['program_status'] == 0) {
+              $a['program_status'] = 'unpublished';
+          } else {
+              $a['program_status'] = 'published';
+          } 
+       
+        }
+        
+        
+        return '"programAll":' . json_encode($programAll);
+      
+    }
+
+    private function _age_groups() {
+        
+        $sql="SELECT
+          a.id AS age_group_id
+        , a.name AS age_group_name
+        FROM age_group AS a
+        ORDER BY a.id";
+        
+        $age_groups = R::getAll($sql);
+
+        return '"age_groups":' . json_encode($age_groups);
+
+    }
+
+    function age_group_list(){
+        echo '{"age_group_list": [{'.$this->_age_groups().'}]}';
+    }
+
+    function auth(){
+        $email_address = $this->input->post('email');
+        $password = $this->input->post('password');
+
+        $sql="SELECT
+          u.id 
+        , u.first_name
+        , u.avatar_filepath
+        FROM user AS u
+        WHERE email_address='".$email_address."'
+        AND u.password = '".md5($password)."'";
+
+
+        $account = R::getAll($sql);
+    }
+
+    private function _providers() {
+        $sql="SELECT
+          p.id
+        , p.name AS provider_name
+        FROM provider_profile AS p
+        ORDER BY p.id";
+        
+        $providers = R::getAll($sql);
+
+        //    foreach ($highlights as &$highlight) {
+        //      $highlight['program_summary'] = $this->_trimHighlights($highlight['program_summary']);
+        //    }
+
+        return '"providers":' . json_encode($providers);
+        //echo $this->_json_response('featured_articles', $articles);
+    }
+
+    function provider_list(){
+        echo '{"provider_list": [{'.$this->_providers().'}]}';
+    }
+    
+    
+    function unpublish($id){
+        
+        $program = R::load('provider_program',$id);
+      
+        $program->status = 0;
+
+        $id = R::store($program);
+        
+      
+    }
+    
+    
+    function force_publish($id){
+        
+        $program = R::load('provider_program',$id);
+      
+        $program->status = 1;
+
+        $id = R::store($program);
+        
+      
+    }
+    
+        function get_program_link(){
+        $id = $this->input->post('program_id');
+        
+        $program = R::getRow("SELECT a.title, a.id, a.provider_id
+            FROM provider_program as a
+            WHERE a.id = ".$id
+          );
+        
+ 
+        $base = base_url();
+        $program['link'] = 'ps_providers/programs/'.$program['provider_id'].'/'.$program['id'];
+       
+
+          echo $program['link'];
+//        echo $base;
+        
+    }
+    
+    
+    
+    private function _programs($program_id) {
+    $sql="SELECT a.id AS program_id
+        , a.title AS program_title
+        , a.summary AS program_summary
+        , a.image_filepath AS program_image
+        , a.seo_url AS seo_link
+        , a.provider_id
+        , cr.id AS country_id
+        FROM provider_program AS a
+        INNER JOIN provider_profile as pr
+        ON a.provider_id = pr.id
+        INNER JOIN provider_country as p
+        ON p.provider_id = pr.id
+        INNER JOIN country as cr
+        ON cr.id = p.country_id
+        WHERE a.id = ".$program_id;
+
+        $program = R::getAll($sql);
+
+    
+        return '"programs":' . json_encode($program);
+    }
+      
+    function programs_data($program_id){
+        echo '{"programs_data": [{'.$this->_programs($program_id).'}]}';
+    }
+
+  
+  
+   function create_hotbox() {
+        $hotbox = R::dispense("hotbox");              
+        $hotbox->title = $this->input->post('title');
+        $hotbox->url = $this->input->post('seo_url');
+        $hotbox->image_filepath = $this->input->post('avatar');
+        $hotbox->summary = $this->input->post('summary');
+        $hotbox->country_id = $this->input->post('country_id');
+        $hotbox->created_by_id = 0;
+        $hotbox->created_date = date("Y-m-d H:i:s");
+           
+        $id = R::store($hotbox);
+        
+       
+  
+        $response['code'] = 0;
+        $response['message'] = "Hotbox successfully created.";
+       
+        echo $response['code'] . ":" . $response['message'] ;  
+    }
+    
+    
+     private function _types() {
+        $sql="SELECT
+          a.id AS type_id
+        , a.name AS type_name
+        FROM program_type as a
+        ORDER BY a.name";
+        
+        $types = R::getAll($sql);
+
+     
+
+        return '"types":' . json_encode($types);
+     
+    }
+
+    function type_list(){
+        echo '{"type_list": [{'.$this->_types().'}]}';
+    }
+    
+    
+    
+    private function _countries() {
+        $sql="SELECT
+          id AS country_id
+        , code AS country_code
+        , name AS country_name
+        FROM country 
+		WHERE status = 1
+        ORDER BY country_id";
+        
+        $countries = R::getAll($sql);
+
+
+        return '"countries":' . json_encode($countries);
+    }
+
+    function country_list(){
+        echo '{"country_list": [{'.$this->_countries().'}]}';
+	}
+        
+        
+      
+        
+        
+        
+        function program_list($country_id, $age_group_id, $type, $status,$date){
+        echo '{"program_list": [{'.$this->_program($country_id, $age_group_id, $type, $status,$date).'}]}';
+    }
+  
+    
+       private function _program($country_id, $age_group_id, $type, $status, $date) {
+        
+        if ($country_id == 0){
+            
+        $sql="SELECT
+          a.id
+        , a.title AS program_title
+        , a.summary AS program_summary
+        , a.body AS program_body
+        , a.image_filepath AS program_image
+        , a.status AS program_status
+        , a.seo_url AS seo_link
+        , a.created_date
+        , a.seo_summary AS se_summary
+        , a.seo_summary AS se_keywords
+        , age.name AS age_group_name
+        , p.name AS provider_name
+        , cr.name AS country
+        , cr.url 
+        , p.id AS provider_id
+        FROM provider_program AS a
+        INNER JOIN age_group AS age
+        ON a.age_group_id = age.id
+        INNER JOIN provider_profile AS p
+        ON p.id = a.provider_id
+        INNER JOIN provider_country as pro
+        ON p.id = pro.provider_id
+        INNER JOIN country as cr
+        ON pro.country_id = cr.id
+        ORDER BY a.created_date DESC";
+        
+        $program = R::getAll($sql);
+
+        foreach ($program as &$a) {
+          if($a['program_status'] == 0) {
+              $a['program_status'] = 'unpublished';
+          } else {
+              $a['program_status'] = 'published';
+          } 
+       
+        }
+              
+
+        return '"program":' . json_encode($program);
+      
+        }else{
+            
+        $sql="SELECT
+          a.id
+        , a.title AS program_title
+        , a.summary AS program_summary
+        , a.body AS program_body
+        , a.image_filepath AS program_image
+        , a.status AS program_status
+        , a.seo_url AS seo_link
+        , a.created_date
+        , a.seo_summary AS se_summary
+        , a.seo_summary AS se_keywords
+        , age.name AS age_group_name
+        , p.name AS provider_name
+        , cr.name AS country
+        , cr.url 
+        , p.id AS provider_id
+        FROM provider_program AS a
+        INNER JOIN age_group AS age
+        ON a.age_group_id = age.id
+        INNER JOIN provider_profile AS p
+        ON p.id = a.provider_id
+        INNER JOIN provider_country as pro
+        ON p.id = pro.provider_id
+        INNER JOIN country as cr
+        ON pro.country_id = cr.id
+        WHERE pro.country_id = $country_id 
+        ORDER BY a.created_date";
+        
+        $program = R::getAll($sql);
+
+        foreach ($program as &$a) {
+          if($a['program_status'] == 0) {
+              $a['program_status'] = 'unpublished';
+          } else {
+              $a['program_status'] = 'published';
+          } 
+       
+        }
+              
+
+        return '"program":' . json_encode($program);
+        
+                
+        } 
+        
+        
+       
+        
+        
+       if($date != 0){
+            $extra = "AND a.created_date = '". $date . "'";
+        } else {
+            $extra = "";
+        }
+        
+        
+         if($type != 0){
+              $typ = "AND a.type = '". $type . "'";
+        } else {
+            $typ = "";
+        }
+        
+        
+        if($status != 0){
+              $stats = "AND a.status = '". $status . "'";
+        } else {
+            $stats = "";
+        }
+        
+        
+        
+        $sql="SELECT
+          a.id
+        , a.title AS program_title
+        , a.summary AS program_summary
+        , a.body AS program_body
+        , a.image_filepath AS program_image
+        , a.status AS program_status
+        , a.seo_url AS seo_link
+        , a.seo_summary AS se_summary
+        , a.seo_summary AS se_keywords
+        , age.name AS age_group_name
+        , p.name AS provider_name
+        , c.name AS country
+        , c.url 
+        , p.id AS provider_id
+        FROM provider_program AS a
+        INNER JOIN program_age_group AS egg
+        ON a.id = egg.article_id
+        INNER JOIN age_group AS age
+        ON egg.age_group_id = age.id
+        INNER JOIN provider_profile AS p
+        ON p.id = a.provider_id
+        INNER JOIN provider_country as pc
+        ON p.id = pc.provider_id
+        INNER JOIN country as c
+        ON pc.country_id = c.id
+        WHERE c.country_id = '" . $country_id . "' AND
+        egg.age_group_id = '" . $age_group_id . "' AND   
+        a.status = '" . $status . "'".$extra . $typ;
+        
+        $program = R::getAll($sql);
+
+        foreach ($program as &$a) {
+          if($a['program_status'] == 0) {
+              $a['program_status'] = 'unpublished';
+          } else {
+              $a['program_status'] = 'published';
+          } 
+       
+        }
+        
+         
+
+        return '"program":' . json_encode($program);
+      
+    }
+        
+     
+        
+     function force_delete($id){
+        
+        $program = R::load('provider_program',$id);
+   
+        
+        $id = R::trash($program);
+        
+        $response['code'] = 0;
+        $response['message'] = "Status Successfully Updated.";
+
+        echo $response['code'] . ":" . $response['message'] ;  
+    }  
+    
+    
+    private function _search_program($keyword) {
+        $keyword = $this->input->get("keyword");
+        $program = R::getAll("SELECT
+          a.id
+        , a.title AS program_title
+        , a.summary AS program_summary
+        , a.body AS program_body
+        , a.image_filepath AS program_image
+        , a.status AS program_status
+        , a.seo_url AS seo_link
+        , a.seo_summary AS se_summary
+        , a.seo_summary AS se_keywords
+        , age.name AS age_group_name
+        , p.name AS provider_name
+        , cr.name AS country
+        , cr.url 
+        , p.id AS provider_id
+        FROM provider_program AS a
+        INNER JOIN age_group AS age
+        ON a.age_group_id = age.id
+        INNER JOIN provider_profile AS p
+        ON p.id = a.provider_id
+        INNER JOIN provider_country as pro
+        ON p.id = pro.provider_id
+        INNER JOIN country as cr
+        ON pro.country_id = cr.id
+
+
+        WHERE a.title LIKE '%" . $keyword . "%' 
+        ORDER BY a.created_date DESC
+        ");
+
+        
+        foreach ($program as &$a) {
+          if($a['program_status'] == 0) {
+              $a['program_status'] = 'unpublished';
+          } else {
+              $a['program_status'] = 'published';
+          } 
+       
+        }
+        
+         
+        
+   
+        return '"program":' . json_encode($program);
+    
+        
+        
+    }    
+    
+    
+      function search_program() {
+        $keyword = $this->input->get("keyword");
+        echo '{"program_list": [{' . $this->_search_program($keyword) . '}]}';
+    }
+    
+    
+       
+}
+?>

@@ -1,0 +1,140 @@
+/* font-face */
+@font-face {
+    font-family: 'ComfortaaThin';
+    src: url('font/Comfortaa_Thin-webfont.eot');
+    src: url('font/Comfortaa_Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Comfortaa_Thin-webfont.woff') format('woff'),
+         url('font/Comfortaa_Thin-webfont.ttf') format('truetype'),
+         url('font/Comfortaa_Thin-webfont.svg#ComfortaaThin') format('svg');
+    font-weight: normal;
+    font-style: normal}
+@font-face {
+    font-family: 'ComfortaaRegular';
+    src: url('font/Comfortaa_Regular-webfont.eot');
+    src: url('font/Comfortaa_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Comfortaa_Regular-webfont.woff') format('woff'),
+         url('font/Comfortaa_Regular-webfont.ttf') format('truetype'),
+         url('font/Comfortaa_Regular-webfont.svg#ComfortaaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal}
+@font-face {
+    font-family: 'ComfortaaBold';
+    src: url('font/Comfortaa_Bold-webfont.eot');
+    src: url('font/Comfortaa_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Comfortaa_Bold-webfont.woff') format('woff'),
+         url('font/Comfortaa_Bold-webfont.ttf') format('truetype'),
+         url('font/Comfortaa_Bold-webfont.svg#ComfortaaBold') format('svg');
+    font-weight: normal;
+    font-style: normal}
+body {font-family: Arial, Helvetica, sans-serif}
+.custFontR {font-family: 'ComfortaaRegular', Arial, sans-serif;}
+.custFontB {font-family: 'ComfortaaBold', Arial, sans-serif;}
+
+/* Section Content Area */
+#section-head {color: #258eca; border-top: 1px solid #cbcbcb}
+#section-head h2 {display: inline; font-size: 40px; line-height: 44px; letter-spacing: 0; width: 60%}
+#section-head .sponsor-by {display: block; float: right; font-size: 16px; font-weight: bold; margin-top: 25px; text-transform:uppercase}
+
+.section-action,
+.section-subaction {background: url(../img/system/bg-section-action.jpg) repeat-x #e3f1fa; border-top: 2px solid #258eca; clear: both; margin: 0; padding:0}
+.section-action li,
+.section-subaction li { list-style:none; display: inline-block; _display:inline; line-height: 160%; padding: 7px 20px;}
+.section-action li a {color: #333; font-size: 18px; text-shadow: 1px 1px 1px #fff}
+.section-action li a:hover {text-decoration:underline}
+.section-action li.selected {background: url(../img/system/bg-section-action-sel.jpg) repeat-x #6ebfed; border-bottom: 3px solid #ccc; margin-bottom: -10px}
+.section-action li.selected a {color: #fff; text-shadow: 0px -1px 0px #333}
+
+.section-subaction {background: #258eca; border-bottom: 2px solid #60296c; height: 18px; margin-top: 3px; padding: 6px; text-align:right}
+.section-subaction li {border-right: 1px solid #fff; padding: 0 4px}
+.section-subaction li:last-child {border-right: none}
+.section-subaction li a {color: #e3f1fa; margin:0}
+.section-subaction li a:hover {text-decoration: underline}
+.section-subaction li.selected a{background: #e3f1fa; color: #258eca; padding: 2px 10px; -webkit-border-radius: 5px; -mozborder-radius: 5px; border-radius: 5px}
+.section-subaction li.selected a:hover {background: #fff; text-decoration:none}
+#section-body {margin: 15px 0 0; overflow:hidden}
+#section-body > div {margin-bottom: 20px}
+#section-body > div:last-child {margin-bottom: 0px}
+
+/* Global -------------- */
+body {color: #333; line-height: 120%; margin: 0; padding:0}
+a {font-size: 12px; color: #60296C; text-decoration:none}
+a:hover {text-decoration: underline}
+a img {border: none}
+p {margin: 0; margin-bottom: 16px}
+ul, ol, dl {padding: 0; margin: 0; list-style-type: none}
+h1, h2, h3, h4, h4, h6 {font-weight: normal; margin: 0}
+
+.wrapper {margin: 0 auto; width: 980px}	
+.fright {float: right}
+.fleft {float: left}
+
+hr {background: #ccc; border: none; height: 1px}
+hr.blue	{background: #258eca; height: 2px; margin: 15px 0}
+
+.violet {color: #60296c}
+.lblue {color: #258eca}
+
+/* Ads Styles -------------- */
+/* Header Long Banner Ad */
+.header-banner {padding-top: 10px}
+
+.ads {font-size: 11px; overflow:hidden}
+.ads h4,
+#content-side .ads h4 {font-size: 12px; font-weight: bold; margin-bottom: 5px; text-transform: uppercase}
+.ads p,
+.ads a {font-size: 11px; overflow: hidden}
+.ads a {text-decoration: underline}
+.ads p {margin:0}
+/* Mini Text Ads */
+.ads-text {padding: 4px !important; width: 290px}
+	.mini-three .ads-text {margin-right: 40px}
+	.mini-two .ads-text {margin: 0 15px}
+	.mini-one .ads-text {float: none}
+.ads .last {margin-right: 0}
+	.mini-one .ads-text.last {margin-bottom: 0}
+.ads-text p {margin-bottom:5px}
+	.mini-three > p {text-align:right}
+.ads-text h4 {text-transform:capitalize}
+.ads-text .img-wrapper {border:none; width: 140px; margin-right: 15px}
+.ad-promo {overflow: hidden}
+.ad-promo p {font-style: italic}
+/* Featured Box */
+.ads.features {width: 280px; margin-left: 380px}
+.feat-box-more-link {position: absolute; right: 10px; top: 12px;}
+.feat-box img {margin-right: 15px}
+/* Sponsors Box */
+.ads.sponsors {width: 360px}
+.sponsor-box {width: 150px; margin-right: 15px}
+.sponsor-box img {clear: right; width: 150px; height: 160px; padding: 5px 0}
+
+/* --------------  */
+
+/* Boxes */
+.box {background: #e3f1fa; border: 1px solid #9cc5da; padding: 10px; width: auto; margin-bottom: 15px; overflow: hidden; position:relative}
+.box.gray {background: #f0f0f0; border: 1px solid #d6d5d5}
+.box.white {background: #fff; border: 1px solid #c2c2c2;}
+.width {width: 150px;}
+.mini {width: 290px;}
+
+/* Main Area Container -------------- */
+#container {padding-top: 37px}
+#content-main {width: 660px; margin-right: 20px}
+
+/* Top -------------- */
+.btn-rnd {padding: 4px 14px; color: #fff !important; font-weight: bold; text-transform:uppercase;
+	background-color: #3e0c46 !important;
+   	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5a1266), to(#3e0c46)) !important;
+	background-image: -webkit-linear-gradient(top, #5a1266, #3e0c46) !important;
+	background-image:    -moz-linear-gradient(top, #5a1266, #3e0c46) !important;
+	background-image:     -ms-linear-gradient(top, #5a1266, #3e0c46) !important;
+	background-image:      -o-linear-gradient(top, #5a1266, #3e0c46) !important;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	text-shadow: -1px -1px 0 rgba(0,0,0,.5)}
+
+/* Form Search, Newsletter -------------- */
+
+.forum h4 {font-size: 22px !important; border-bottom: 1px solid #258eca; padding-bottom: 6px; text-transform:capitalize !important}
+.forum ul {margin-left: 20px}
+.forum li {list-style:disc}

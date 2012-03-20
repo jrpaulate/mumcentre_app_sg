@@ -1,0 +1,29 @@
+<?php $entry = $data['entrydata'];?>
+<div class="img-wrapper" style="width:282px;height:328px;">
+  <img src="pow/entry_getphoto/<?php echo $entry['tokenid']?>/320" alt="Photo Name" width="282"/>
+</div><!-- .img-wrapper -->
+<div class="info-wrapper">
+  <div class="pow-badge pow-vote" id="pow-vote">
+    <p><?php echo $entry['name'];?>
+    </p>
+  </div>
+  <div class="pow-desc lblue">
+    <p>
+      <?php echo $entry['caption'];
+      ?>
+    </p>
+  </div>
+</div><!-- .info-wrapper -->
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#pow-vote')    
+    .css('cursor','pointer')
+    .bind('click', 
+      function(e){
+        // redirect to vote page
+        location.href = 'pow/vote/<?php echo $entry['tokenid']?>';
+        return false;
+      }
+  );
+});    
+</script>

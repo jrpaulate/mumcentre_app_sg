@@ -1,0 +1,1204 @@
+
+ <table border="0" cellspacing="0" cellpadding="0" align="center" width="980">
+ <td class="leftc" valign="top"><!--featured of 
+the day-->
+ <table border="0" cellspacing="0" 
+cellpadding="0" width="100%" height="180">
+               <tr> <td width="204" rowspan="4" 
+style="padding-top:0px; padding-left:0px;">
+                                            <!--<div 
+            }                                id="featured_img"><img 
+            }                                src="images/featured.gif" 
+            }                                width="203" height="179" 
+            }                                border="0" /></div>
+        </style>
+
+
+
+                                <div id="featured_img2" class="hideElems"><img src="images/featured2.gif" width="203" height="179" border="0" /></div>
+                                <div id="featured_img3" class="hideElems"><img src="images/featured.gif" width="203" height="179" border="0" /></div>
+                                <div id="featured_img4" class="hideElems"><img src="images/featured2.gif" width="203" height="179" border="0" /></div>-->
+                                <?= $hotboximg1 ?>
+                                <?= $hotboximg2 ?>
+                                <?= $hotboximg3 ?>
+                                <?= $hotboximg4 ?>
+                            </td>
+                            <td width="234" rowspan="4" valign="top">
+                           		<?= $hotboxcontent1 ?>
+                                <?= $hotboxcontent2 ?>
+                                <?= $hotboxcontent3 ?>
+                                <?= $hotboxcontent4 ?>
+                                <!--<div id="featured_art">
+                                    <p class="feature_art"> <span class="featured_winner">April Photo Blog Winners</span><br />
+                                        <span class="body_art">If you are considering a 40 week pregnancy, 1st trimester ranges from conception to 13th week. This is the most important period, since it is during this time, all organ systems begin to form and some also become functional.</span><br /><br />
+                                        <a class="blue" href="#">READ MORE</a></p>
+                                </div>
+                                <div id="featured_art2"  class="hideElems">
+                                    <p class="feature_art"> <span class="featured_winner">Learning with Hearts</span><br />
+                                        <span class="body_art">If you are considering a 40 week pregnancy, 1st trimester ranges from conception to 13th week. This is the most important period, since it is during this time, all organ systems begin to form and some also become functional.</span><br /><br />
+                                        <a class="blue" href="#">READ MORE</a></p>
+                                </div>
+                                <div id="featured_art3"  class="hideElems">
+                                    <p class="feature_art"> <span class="featured_winner">Getting your Toddler to sleep on Her Own Bed</span><br />
+                                        <span class="body_art">If you are considering a 40 week pregnancy, 1st trimester ranges from conception to 13th week. This is the most important period, since it is during this time, all organ systems begin to form and some also become functional.</span><br />
+                                        <a class="blue" href="#">READ MORE</a></p>
+                                </div>
+                                <div id="featured_art4"  class="hideElems">
+                                    <p class="feature_art"> <span class="featured_winner">Deal of the Day</span><br />
+                                        <span class="body_art">If you are considering a 40 week pregnancy, 1st trimester ranges from conception to 13th week. This is the most important period, since it is during this time, all organ systems begin to form and some also become functional.</span><br /><br />
+                                        <a class="blue" href="#">READ MORE</a></p>
+                                </div>-->
+                            </td>
+                            <td width="220" class="right-amp" id="right-amp1" style="border-bottom:4px solid #FFF;">
+                                <div class="tae" onclick="clickfadeOne('featured_img','featured_art','right-amp1','link_link1')">
+                                    <li class="li-featured" id="link1"  style="padding-top: 11px;"><a class="blue" href="javascript:;;" id="link_link1"><?= $hotboxtitle1; ?></a></li>
+                                </div></td>
+                        </tr>
+                        <tr>
+                            <td id="right-amp2" class="right-amp" style="border-bottom:4px solid #FFF;">
+                                <div class="tae" onclick="clickfadeTwo('featured_img2','featured_art2','right-amp2','link_link2')">
+                                    <li  class="li-featured" id="link2"  style="padding-top: 11px;"><a class="blue" href="javascript:;;" id="link_link2"><?= $hotboxtitle2; ?></a></li></div></td>
+                        </tr>
+                        <tr>
+                            <td id="right-amp3" class="right-amp" style="border-bottom:4px solid #FFF;">
+                                <div class="tae" onclick="clickfadeThree('featured_img3','featured_art3','right-amp3','link_link3')">
+                                    <li class="li-featured" id="link3" style="padding-top: 11px;"><a class="blue" href="javascript:;;" id="link_link3"><?= $hotboxtitle3; ?></a></li></div></td>
+                        </tr>
+                        <tr>
+                            <td id="right-amp4" class="right-amp" height="45">
+                                <div class="tae" onclick="clickfadeFour('featured_img4','featured_art4','right-amp4','link_link4')">
+                                    <li class="li-featured" id="link4" style="padding-top:11px;"><a class="blue" href="javascript:;;" id="link_link4"><?= $hotboxtitle4; ?></a></li></div></td>
+                        </tr>
+                    </table> 
+                </div>
+            </div>
+            <!--end of featured of the day-->
+            <div class="spacer2"></div>
+            <!--mumcentre highlights-->
+            <div class="highlights">
+                <div class="hl_tabs">
+                    <table border="0" width="656" cellspacing="0" cellpadding="0" class="hl_tabs">
+                        <tr>
+                            <td colspan="4" class="hl_title"><strong>Mumcentre Highlights</strong></td>
+                        </tr>
+                        <tr class="tabs">
+                            <td align="center"><strong><a id="mostpop_latest" href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image72','','assets/img/system/latest.jpg',1)"><img src="assets/img/system/latest.png" name="Image72" width="165" height="29" border="0" id="Image72" /></a></strong></td>
+                            <td align="center"><strong><a id="mostpop_week" href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image73','','assets/img/system/this-week.jpg',1)"><img src="assets/img/system/this-week.png" name="Image73" width="165" height="29" border="0" id="Image73" /></a></strong></td>
+                            <td align="center"><strong><a id="mostpop_month" href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image74','','assets/img/system/this-month.jpg',1)"><img src="assets/img/system/this-month.png" name="Image74" width="165" height="29" border="0" id="Image74" /></a></strong></td>
+                            <td align="center"><strong><a id="mostpop_all" href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image75','','assets/img/system/all-time.jpg',1)"><img src="assets/img/system/all-time.png" name="Image75" width="164" height="29" border="0" id="Image75" /></a></strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" height="195">
+                                <div style="margin-left:15px;">
+                                    <ul id="article-listing" class="ul-highlights"></ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--end of mumcentre highlights-->
+            <div style="height:10px;"></div>
+            <!--events & programs-->
+            <div>
+                <table border="0" cellspacing="0" width="100%" align="center">
+                    <tr>
+                        <td style="border-bottom:2px solid #2889ba;" colspan="4"><div class="sub_titles">Events &amp; Programs</div></td>
+                    </tr>
+                    <form>
+                        <tr class="date_range">
+                            <td width="172" height="40"><strong>Set Date Range</strong></td>
+                            <td width="209"><strong>From:</strong>&nbsp;
+                                <input type="text" name="from" id="from" style="width:120px;" readonly="readonly" onclick="javascript:displayDatePicker('from')" />
+                                <a href="javascript:displayDatePicker('from')"><img src="images/calendar-thumb.gif" width="21" height="21" border="0"  /></a>
+                            </td>
+                            <td width="197"><strong>To:</strong>&nbsp;
+                                <input type="text" name="to" id="to" style="width:120px;"  readonly="readonly"  onclick="javascript:displayDatePicker('to')"/>
+                                &nbsp;<a href="javascript:displayDatePicker('to')"><img src="images/calendar-thumb.gif" width="21" height="21" border="0"  /></a></td>
+                            <td width="74"><input id="event_prog_time" type="button" name="set" class="go_btn" value="" /></td>
+                        </tr>
+                    </form>
+                    <tr>
+                        <td height="200" colspan="4" valign="top" class="prod_services"><table border="0" cellpadding="0" align="center" width="100%">
+                                <tr>
+                                    <td colspan="2" style="padding-left: 14px; padding-bottom: 3px; padding-top: 3px "><span class="global_style"><strong>Upcoming:</strong></span>&nbsp;&nbsp;
+                                        <input type="radio" name="upcomings" id="radio_all" />
+                                        <label for="all">All</label>
+                                        <input type="radio" name="upcomings" id="radio_events" />
+                                        <label for="events">Events</label>
+                                        <input type="radio" name="upcomings" id="radio_programs" />
+                                        <label for="programs">Programs</label></td>
+                                </tr>
+                                <tr>
+                                    <td width="30%" height="148" align="center">
+                                        <!--                                            <div id="basic_container"></div>-->
+                                        <input type="hidden" id="cal"/>
+                                        <div id="calendar"></div>
+                                        <!--<div id="embeddedCalendar" style="margin-left: auto; margin-right: auto"></div>-->
+                                    </td>
+                                    <td width="62%" style="padding-right:32px;" valign="top">
+                                        <ul id="events-listing" class="ul-events"></ul>
+                                </tr>
+                            </table></td>
+                    </tr>
+                </table>
+            </div>
+            <!--end of products & services-->
+            <div style="height:10px;"></div>
+            <!--products & services-->
+            <div>
+                <table border="0" cellspacing="0" width="100%" align="center">
+                    <tr>
+                        <td style="border-bottom:2px solid #2889ba;" colspan="4"><div class="sub_titles">Product &amp; Service Updates:</div>
+                            <div style="float:right;"> <a id="review_latest" class="blue" href="#"><strong>Latest</strong></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a id="review_week" class="blue" href="#"><strong>Week</strong></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a class="blue" href="#"><strong>Month</strong></a> </div></td>
+                    </tr>
+                    <tr>
+                        <td width="658" valign="top">
+                            <div class="prod-pic">
+                                <ul id="review-listing" class="prods"></ul>
+                            </div>            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="10"></td>
+                    </tr>
+                </table>
+            </div>
+            <!--end of products & services--></td>
+        <td class="rightc" align="center" valign="top">
+            <div>
+                <form action="user/register" method="post">
+                    <table border="0" cellspacing="0" class="reg-form" height="183">
+                        <tr>
+                            <td colspan="2" align="center"><img src="images/reg-head-bar.gif" width="307" height="25" border="0" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center"><img src="images/reg-banner.gif" width="284" height="53" border="0" /></td>
+                        </tr>
+                        <tr>
+                            <td width="78" align="right"><strong class="global_style"><label for="myname">First Name :</label>&nbsp;</strong></td>
+                            <td width="230"><input type="text" name="temp_name" id="temp_name" style="width:200px;" /></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><strong class="global_style"><label for="myemail">Email :</label>&nbsp;</strong></td>
+                            <td><input type="text" name="temp_email" id="temp_email" style="width:200px;" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="right" height="40" style="padding-right:27px;">
+                                <input type="submit" name="reg_now" style="background:url(images/reg-btn.gif) no-repeat center; width:104px; height:27px; cursor:pointer; border:none;" value="" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="spacer2"></div>
+            <div id="ad_mrec1" style=" height:250px;"><script type='text/javascript'><!--//<![CDATA[</div>
+                    document.MAX_ct0 ='{clickurl}'; <div class="spacer2"> </div>
+            <div id="ad_mrec2" style="margin-top:19px;"><script type='text/javascript'><!--//<![CDATA[
+   var ox_u = 'http://50.19.248.24/openx/www/delivery/al.php?zoneid=154&cb={999}&ct0={clickurl}&layerstyle=geocities&align=right&padding=2&closetext=%5BClose%5D';
+   if (document.context) ox_u += '&context=' + escape(document.context);
+   document.write("<scr"+"ipt type='text/javascript' src='" + ox_u + "'></scr"+"ipt>");
+//]]>--></script></div>
+            <div class="quiz-form">
+                                <table border="0" align="center" width="90%" height="281">
+                                    <tr>
+                                        <td height="39" style="border-bottom:2px solid #3399cc;"><span class="globel_style_2"><strong>Moms Quiz</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td height="150"><p><strong><span class="global_style">This is the question?</span></strong><br /> and a blessing that must be cherished. Every women dreams to be a mother, right.</p>
+                                            <table border="0" class="answer_set">
+                                                <tr>
+                                                    <td><input type="radio"  name="answer" id="answer1" /></td>
+                                                    <td><label for="answer1">Answer One</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="radio"  name="answer" id="answer2" /></td>
+                                                    <td><label for="answer2">Answer Two</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="radio"  name="answer" id="answer3" /></td>
+                                                    <td><label for="answer3">Answer Three</label></td>
+                                                </tr>
+                                            </table></td>
+                                    </tr>
+                                    <tr>
+                                        <td height="32" style="border-bottom:2px solid #3399cc;"><span class="globel_style_2"><strong>Question 1 of 8</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right" height="50"><input type="button" name="next_q" class="next_q" value="" /></td>
+                                    </tr>
+
+                                </table>
+<!--                                <script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/5852070.js"></script>
+<noscript><a href="http://polldaddy.com/poll/5852070/">Who's your child's favorite?</a></noscript>-->
+                            </div>
+                        </td>
+                        <td width="188" id="ad_mumad1">
+                            <?php echo $mumad1; ?>
+                        </td>
+                        <td width="185" id="ad_mumad2">
+                            <?php echo $mumad2; ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div style="">
+                                <table border="0" cellspacing="0" cellpadding="0" width="90%">
+                                    <tr class="bordertr">
+                                        <td width="65%" height="40"><div class="sub_titles">Pic of the Week Winners</div></td>
+                                        <td width="35%" align="right"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" height="30"><strong><a id="pow_winner_current" class="blue" href="#">This Week</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a id="pow_winner_last" class="blue" href="#">Last Week</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a id="pow_winner_all" class="blue" href="#">All Winners</a></strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div>
+                                                <table border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                        <td width="252"><div id="latest-pow-winner"></div></td>
+                                                        <td valign="top">
+                                                            <div align="left" style="padding:0px 5px 8px 5px;"><strong>This lucky users will all win a P500 vouchers at the baby company.</strong></div>
+                                                            <div>
+                                                                <ul id="pow-winner-listing" class="PoW3-ul1"></ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td valign="top">
+                            <div style="height:9px;" ></div>
+                            <div id="ad_rec1"><?php echo $rec1; ?></div>
+                            <div style="height:10px;" ></div>
+                            <div id="ad_rec2"><?php echo $rec2; ?></div>
+                        </td>
+                        <td>
+                            <div style="height:9px;" ></div>
+                            <div id="ad_rec3"><?php echo $rec3; ?></div>
+                            <div style="height:10px;"  ></div>
+                            <div id="ad_rec4"><?php echo $rec4; ?></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" valign="top">
+                            <div style="margin-top:10px;">
+                                <table border="0" cellspacing="0" cellpadding="0" width="97%" align="center">
+                                    <tr class="bordertr">
+                                        <td width="63%" height="40"><span class="sub_titles">Join Pic of the week this week -</span></td>
+                                        <td width="37%" height="40" align="right"><strong><span class="global_style">(Submission deadline Friday Nov 11)</span></strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td height="12" colspan="2"></td>
+                                    </tr>
+                                    <tr class="upper-part">
+                                        <td style="	border-left:1px solid #0a4d6f;"><strong><span class="global_style">&nbsp;&nbsp;&nbsp;Recent Entries</span></strong></td>
+                                        <td style="border-right:1px solid #0a4d6f;" align="right" height="30">
+                                            <div style="margin-bottom:9px;">
+                                                <a href="pow"><img src="images/join-now.png" width="104" height="27" border="0" /></a>&nbsp;&nbsp;&nbsp;
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="80" colspan="2">
+                                            <div class="join_pic_week">
+                                                <ul id="pow-listing" class="pic-entries-ul"></ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td valign="top" colspan="2">
+                            <div style="margin-top:10px;">
+                                <table border="0" cellspacing="0" align="center" cellpadding="0" width="98%">
+                                    <tr>
+                                        <td style="border-bottom:2px solid #3399cc;" height="40">
+                                            <span class="globel_style_2">Mumcentre Members</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">
+                                            <ul id="member-listing" class="recent-mems"></ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--end of Bottom part 1-->
+        </td>
+    </tr>
+    <!--end of mid content-->
+    <!--Bottom part 2-->
+    <tr>
+        <td height="10" colspan="2"></td>
+    </tr>
+    <tr>
+        <td valign="top">
+            <div style="height:250px;">
+                <table border="0" cellspacing="0" width="100%" height="250" class="bg_wi_blue">
+                    <tr>
+                        <td style="padding:10px;" valign="top">
+                            <table border="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="border-bottom:2px solid #3399cc;"><div style="float:left;"><span class="globel_style_2">Most recent forum Threads</span></div>
+                                        <div style="float:right; margin-top:3px;font-family:comfortaa;"><strong><a class="blue" href="#">View all</a></strong></div></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top:10px;" valign="top">
+                                        <ul id="forum-listing" class="ul-threads"></ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="spacer2"></div>
+            <div>
+                <table border="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td style="border-bottom:2px solid #3399cc;" colspan="3"><div style="float:left;"><span class="globel_style_2">Forum Actions</span></div>
+                            <div style="float:right;">
+                                <form action="<?php echo base_url(); ?>forum/index.php?action=search2" method="post">
+                                    <table border="0" cellspacing="0">
+                                        <tr>
+                                            <td><strong>
+                                                    <label for="search_forum"><span class="global_style">Search Forum:</span></label>
+                                                </strong></td>
+                                            <td><input type="text" name="search" id="search_forum"  /></td>
+                                            <td><input type="submit" name="submit" class="go_btn" value="" /></td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </div></td>
+                    </tr>
+                    <tr>
+                        <td style="padding:10px;"><div>
+                                <table border="0" cellspacing="0" cellpadding="6" align="center" class="forum_actions" width="600">
+                                    <tr>
+                                        <td align="center"><img src="images/create-thread.png" width="30" height="30" border="0" /></td>
+                                        <td align="center"><img src="images/view-mem.png" width="34" height="33" border="0" /></td>
+                                        <td align="center"><img src="images/reg.png" width="32" height="36" border="0" /></td>
+<!--                                        <td align="center"><img src="images/cal.png" width="37" height="35" border="0" /></td>-->
+                                    </tr>
+                                    <tr>
+                                        <td align="center"><a id="create_thread" class="blue" href="#">Create Thread</a></td>
+                                        <td align="center"><a id="view_forum_members" class="blue" href="#">View Members</a></td>
+                                        <td align="center"><a class="blue" href="user/register">Register</a></td>
+<!--                                        <td align="center"><a class="blue" href="#">View Calendar</a></td>-->
+                                    </tr>
+                                </table>
+                            </div></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="spacer2"></div>
+            <div>
+                <table border="0" cellspacing="0" width="100%" class="bg_wi_blue">
+                    <tr>
+                        <td style="padding:15px;">
+                            <div>
+                                <table border="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td width="39%"  class="preg_essentials">
+                                            <span class="globel_style_2">Pregnancy Essentials</span>                   
+                                        </td>
+                                        <td width="61%"  class="preg_essentials">
+                                            <form>
+                                                <table border="0" cellspacing="0" cellpadding="3" align="right">
+                                                    <tr>
+                                                        <td>
+                                                            <strong><span class="global_style">My Due Date :</span></strong>
+                                                            <select name="week">
+                                                                <option>week</option>
+                                                            </select>
+                                                        </td>
+                                                        <td>
+                                                            <select name="month">
+                                                                <option>month</option>
+                                                            </select>
+                                                        </td>
+                                                        <td><input type="submit" name="show_progress" style="background:url(images/show-progress.png) center no-repeat; width:140px; height:22px; border:none;" value="" /></td>
+                                                    </tr>
+                                                </table>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" colspan="2">
+                                            <table border="0" cellspacing="0">
+                                                <tr>
+                                                    <td width="331">
+                                                        <p style="text-align:left; margin-right:13px; font-size:11px; line-height:17px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac faucibus turpis. Nam blandit, magna ac porta sodales, libero odio dignissim arcu, id tempus justo enim quis est. Curabitur risus felis, sagittis id placerat ullamcorper, imperdiet quis sem. Fusce ante ipsum, iaculis a sodales pellentesque, interdum sit amet lectus. Praesent imperdiet imperdiet lacus, bibendum vehicula nisl bibendum ut. Pellentesque sit amet sem enim. Nullam a dolor arcu, viverra pretium velit. Fusce ut sem justo. Donec in malesuada sapien. Duis sed purus id odio ultrices pharetra. Nullam a dolor arcu.</p>
+                                                        <p>
+                                                            <strong><a class="blue" href="#">First Trimester</a></strong>&nbsp;&nbsp;|&nbsp;&nbsp;
+                                                            <strong><a class="blue" href="#">Second Trimester</a></strong>&nbsp;&nbsp;|&nbsp;&nbsp;
+                                                            <strong><a class="blue" href="#">Third Trimester</a></strong></p>
+                                                    </td>
+                                                    <td width="291">
+                                                        <img src="images/vid-sample.gif" width="277" height="227" border="0" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+        <td align="center" valign="top">
+            <div id="ad_mrec4" ><?php echo $mrec4; ?></div>
+            <div class="spacer2"></div>
+            <div id="ad_mrec5" ><?php echo $mrec5; ?></div>
+            <div class="spacer3"></div>
+            <div id="ad_mrec6" ><?php echo $mrec6; ?></div>
+        </td>
+    </tr>
+    <!--end of Bottom part 2-->
+</table>
+<input type="hidden" id="logged" value="<?php echo $this->session->userdata('user_id'); ?>"/>
+<div id="login_reminder" style="display: none">
+    <span>You need to be logged in to use this feature</span>
+    <br/><br/><span>No login? <a href="user/register">Register</a> now!</span>
+</div>
+<div id="forum_modal" style="display: none">
+    <table width="100%" cellpadding="5">
+        <tr>
+            <td width="100">Board : </td>
+            <td><select id="thread_board" name="thread_board"></select></td>
+        </tr>
+        <tr>
+            <td>Topic : </td>
+            <td><input id="thread_topic" name="thread_topic" style="width:100%;border:1px solid #abadb3;line-height:18px;" /></td>
+        </tr>
+        <tr>
+            <td>Message : </td>
+            <td><textarea id="thread_msg" name="thread_msg" style="width:100%;resize:none;margin:0px;padding:0px;border:1px solid #abadb3;" rows="3"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2"><a href="javascript:void(0);" onclick="createThread()" class="btn-rnd fright view-link"><small>POST</small></a></td>
+        </tr>
+    </table>
+</div>
+<input type="hidden" id="base_url" value="<?php echo base_url(); ?>"/>
+<?= render_partial('global/default_footer'); ?>
+<link href="css/date.css" rel="stylesheet" rev="stylesheet" />
+<link href="css/calendarview.css" rel="stylesheet" rev="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/epoch_styles.css" />
+<script language="javascript" src="js/date.js"></script>
+<script type="text/javascript" src="js/epoch_classes.js"></script>
+<script type="text/javascript" language="javascript" src="js/ICanHaz.js"></script>
+<script type="text/html" id="article_listing_tpl">
+    {{#articles}}
+    {{#article}}
+    <li class="li-highlights">
+        <div class="hl-thumb"><a class="blue" href="{{age_group_name_link}}/{{article_link}}"><img src="http://mc.xhiber-dynamic.com/uploaded/article/image/{{article_image}}" width="82" height="82" border="0" /></a></div>
+                              <div class="hl-desc"><span class="hl_art_title"><a class="blue" href="{{age_group_name_link}}/{{article_link}}">{{article_title}}</a></span><br />{{{article_summary}}}<br /><a class="blue" href="{{age_group_name_link}}/{{article_link}}">READ MORE</a></div>
+        </li>
+        {{/article}}
+        {{/articles}}
+    </script>
+    <script type="text/html" id="pow_listing_tpl">
+    {{#entries}}
+    {{#entry}}
+    <a href="pow/entry/{{token_id}}"><img src="pow/entry_getphoto/{{token_id}}" width="80" height="67" border="0"/></a>&nbsp;&nbsp;&nbsp;
+    {{/entry}}
+    {{/entries}}
+</script>
+<script type="text/html" id="event_listing_tpl">
+    {{#events_programs}}
+    {{#event_program}}
+    <li class="li-events">
+        <div class="div-events"><strong><a class="blue" href="{{type}}/{{seo_url}}">{{display_date}}</a></strong> - {{title}} </div>
+    </li>
+    {{/event_program}}
+    {{^event_program}}
+    <li class="li-events">
+        <div class="div-events">No events or programs for this option.</div>
+    </li>
+    {{/event_program}}
+    {{/events_programs}}
+</script>
+<script type="text/html" id="member_listing_tpl">
+    {{#members}}
+    {{#member}}
+    <li>
+        <a href="#"><img src="http://mc.xhiber-dynamic.com/uploaded/user/avatar/{{avatar_filepath}}" width="52" height="67" border="0"/></a>
+    </li>
+    {{/member}}
+    {{/members}}    
+</script>
+<script type="text/html" id="review_listing_tpl">
+    {{#reviews}}
+    {{#review}}
+    <li class="prod-thumbs">
+        <div class="produkto"><img src="http://mc.xhiber-dynamic.com/uploaded/provider/review/image/{{review_image}}" width="102" height="72" border="0" /></div>
+        <div class="produkto2"><strong><a class="blue" href="reviews/{{seo_url}}">{{review_title}}</a></strong> <br />{{{review_summary}}}<a class="blue" href="#">read more</a></div>
+    </li>
+    {{/review}}
+    {{/reviews}}
+</script>
+<script type="text/html" id="pow_winner_listing_tpl">
+    <li class="PoW3-li">
+        <div class="pow-Rcont">
+            <div class="pow-img">
+                <a href="#">
+                    <img src="images/pic-winners.gif" width="52" height="67" border="0" />
+                </a>
+            </div> <!-- end pow img -->
+            <div class="pow-Rct">
+                <a href="#">Pregnant Moms</a>
+            </div> <!-- end pow Rctx -->
+        </div> <!-- end pow Rcont-->
+    </li>
+    <li class="PoW3-li">
+        <div class="pow-Rcont">
+            <div class="pow-img">
+                <a href="#">
+                    <img src="images/pic-winners.gif" width="52" height="67" border="0" />
+                </a>
+            </div> <!-- end pow img -->
+            <div class="pow-Rctx">
+                <a href="#">Newborns</a>
+            </div> <!-- end pow Rctx -->
+        </div> <!-- end pow Rcont-->
+    </li>
+    <li class="PoW3-li">
+        <div class="pow-Rcont">
+            <div class="pow-img">
+                <a href="#">
+                    <img src="images/pic-winners.gif" width="52" height="67" border="0" />
+                </a>
+            </div> <!-- end pow img -->
+            <div class="pow-Rctx">
+                <a href="#">Babies</a>
+            </div> <!-- end pow Rctx -->
+        </div> <!-- end pow Rcont-->
+    </li>
+    <li class="PoW3-li">
+        <div class="pow-Rcont">
+            <div class="pow-img">
+                <a href="#">
+                    <img src="images/pic-winners.gif" width="52" height="67" border="0" />
+                </a>
+            </div> <!-- end pow img -->
+            <div class="pow-Rctx">
+                <a href="#">Children</a>
+            </div> <!-- end pow Rctx -->
+        </div> <!-- end pow Rcont-->
+    </li>
+    <li class="PoW3-li">
+        <div class="pow-Rcont">
+            <div class="pow-img">
+                <a href="#">
+                    <img src="images/pic-winners.gif" width="52" height="67" border="0" />
+                </a>
+            </div> <!-- end pow img -->
+            <div class="pow-Rctx">
+                <a href="#">Parents</a>
+            </div> <!-- end pow Rctx -->
+        </div> <!-- end pow Rcont-->
+    </li>
+    <li class="PoW3-li">
+        <div class="pow-Rcont">
+            <div class="pow-img">
+                <a href="#">
+                    <img src="images/pic-winners.gif" width="52" height="67" border="0" />
+                </a>
+            </div> <!-- end pow img -->
+            <div class="pow-Rctx">
+                <a href="#">Corp Sponsor</a>
+            </div> <!-- end pow Rctx -->
+        </div> <!-- end pow Rcont-->
+    </li>
+</script>
+<script type="text/html" id="forum_listing_tpl">
+    {{#forum_list}}
+    {{#forum}}
+    <li class="li-threads">
+        <div class="most_recent">
+            <strong><span class="globel_style"><a class="blue" href="<?php echo base_url(); ?>forum/index.php?topic={{id_topic}}">{{subject}}</a></span></strong><br/>{{body}} <a href="<?php echo base_url(); ?>forum/index.php?topic={{id_topic}}">read more</a></div>
+    </li>
+    {{/forum}}
+    {{/forum_list}}
+</script>
+<script type="text/html" id="board_listing_tpl">
+    {{#board_list}}
+    {{#board}}
+    <option value="{{id_board}}">{{name}}</option>
+    {{/board}}
+    {{/board_list}}
+</script>
+<script type="text/html" id="latest_pow_winner_tpl">
+    {{#latest}}
+    {{#winner}}
+    <a href="pow/entry/{{token_id}}"><img src="images/winner-pic.gif" width="302" height="252" border="0" /></a>
+    {{/winner}}
+    {{/latest}}
+</script>
+<script>
+    $(document).ready(function(){
+        MM_preloadImages('assets/img/system/latest.jpg','assets/img/system/this-week.jpg','assets/img/system/this-month.jpg','assets/img/system/all-time.jpg')
+        startTimerFade();
+        //        basicCalendar();
+        var d = new Date();
+        var curr_year = d.getFullYear();
+        var year_range = '1800:'+ curr_year;
+        var user_id = $('#logged').val();
+        $('.feature_of_the_day').css('display','block');
+        if(user_id){
+            $('.reg-form').css('height', '181px');
+            $('.feature_of_the_day').css('height', '179px');
+        }
+        
+        $('#login_reminder').dialog({
+            autoOpen: false,
+            width: 350
+        });
+        
+        $('#forum_modal').dialog({
+            autoOpen: false,
+            width: 525,
+            height: 233
+        });
+        
+        $('#calendar').datepicker({
+            changeMonth: true,
+            changeYear: true,
+            dateFormat: 'yy-mm-dd',
+            yearRange: year_range,
+            altField: 'input#cal',
+            onSelect: function(dateText, inst) { 
+                var selected_date = $('#cal').val();
+                $.get("home/events_programs_date/"+selected_date, function(response) {
+                    var data = JSON.parse(response);
+                    var template = ich.event_listing_tpl(data);
+                    $('#events-listing').html('');
+                    $('#events-listing').append(template);
+                    return false;
+                });
+            }
+        });
+        $('#radio_all').attr('checked','checked');
+        $.get("home/mostpop_articles", function(response) {
+            var data = JSON.parse(response);
+            var template = ich.article_listing_tpl(data);
+            $('#article-listing').html('');
+            $('#article-listing').append(template);
+            return false;
+        });
+        $.get("home/latest_pow", function(response) {
+            var data = JSON.parse(response);
+            var template = ich.pow_listing_tpl(data);
+            $('#pow-listing').html('');
+            $('#pow-listing').append(template);
+            return false;
+        });
+        $.get("home/latest_upcoming_events_programs", function(response) {
+            var data = JSON.parse(response);
+            var template = ich.event_listing_tpl(data);
+            $('#events-listing').html('');
+            $('#events-listing').append(template);
+            return false;
+        });
+        $.get("home/members", function(response) {
+            var data = JSON.parse(response);
+            var template = ich.member_listing_tpl(data);
+            $('#member-listing').html('');
+            $('#member-listing').append(template);
+            return false;
+        });
+        $.get("home/latest_reviews", function(response) {
+            var data = JSON.parse(response);
+            var template = ich.review_listing_tpl(data);
+            $('#review-listing').html('');
+            $('#review-listing').append(template);
+            return false;
+        });
+        $.get("home/pow_winners_current", function(response) {
+            var data = JSON.parse(response);
+            var template = ich.pow_winner_listing_tpl(data);
+            $('#pow-winner-listing').html('');
+            $('#pow-winner-listing').append(template);
+            return false;
+        });
+        $.get("home/forum_list", function(response) {
+            var data = JSON.parse(response);
+            var template = ich.forum_listing_tpl(data);
+            $('#forum-listing').html('');
+            $('#forum-listing').append(template);
+            return false;
+        });
+        $.get("home/board_list", function(response) {
+            var data = JSON.parse(response);
+            var template = ich.board_listing_tpl(data);
+            $('#thread_board').html('');
+            $('#thread_board').append(template);
+            return false;
+        });
+//        $.get("home/latest_pow_winner", function(response) {
+//            var data = JSON.parse(response);
+//            var template = ich.latest_pow_winner_tpl(data);
+//            $('#latest-pow-winner').html('');
+//            $('#latest-pow-winner').append(template);
+//            return false;
+//        });
+        $('#mostpop_latest').click(function(e){
+            $.get("home/mostpop_articles", function(response) {
+                var data = JSON.parse(response);
+                var template = ich.article_listing_tpl(data);
+                $('#article-listing').html('');
+                $('#article-listing').append(template);
+                return false;
+            }); 
+            e.preventDefault(); 
+        });
+        $('#mostpop_week').click(function(e){
+            $.get("home/mostpop_week", function(response) {
+                var data = JSON.parse(response);
+                var template = ich.article_listing_tpl(data);
+                $('#article-listing').html('');
+                $('#article-listing').append(template);
+                return false;
+            });  
+            e.preventDefault(); 
+        });
+        $('#mostpop_month').click(function(e){
+            $.get("home/mostpop_month", function(response) {
+                var data = JSON.parse(response);
+                var template = ich.article_listing_tpl(data);
+                $('#article-listing').html('');
+                $('#article-listing').append(template);
+                return false;
+            });
+            e.preventDefault();
+        });
+        $('#mostpop_all').click(function(e){
+            $.get("home/mostpop_all", function(response) {
+                var data = JSON.parse(response);
+                var template = ich.article_listing_tpl(data);
+                $('#article-listing').html('');
+                $('#article-listing').append(template);
+                return false;
+            });  
+            e.preventDefault(); 
+        });
+        $('#event_prog_time').click(function(e){
+            var from = $('#from').val();
+            var to = $('#to').val();
+            if(to < from){
+                alert('End Date must be later than the Start Date')
+            } else {
+                $.get("home/events_programs_time/"+from+"/"+to, function(response) {
+                    var data = JSON.parse(response);
+                    var template = ich.event_listing_tpl(data);
+                    $('#events-listing').html('');
+                    $('#events-listing').append(template);
+                    return false;
+                });
+            }
+            e.preventDefault(); 
+        });
+        $('#radio_all').click(function(){
+            $.get("home/latest_upcoming_events_programs", function(response) {
+                var data = JSON.parse(response);
+                var template = ich.event_listing_tpl(data);
+                $('#events-listing').html('');
+                $('#events-listing').append(template);
+                return false;
+            });
+        });
+        $('#radio_events').click(function(){
+            $.get("home/upcoming_events", function(response) {
+                var data = JSON.parse(response);
+                var template = ich.event_listing_tpl(data);
+                $('#events-listing').html('');
+                $('#events-listing').append(template);
+                return false;
+            });
+        });
+        $('#radio_programs').click(function(){
+            $.get("home/upcoming_programs", function(response) {
+                var data = JSON.parse(response);
+                var template = ich.event_listing_tpl(data);
+                $('#events-listing').html('');
+                $('#events-listing').append(template);
+                return false;
+            });
+        });
+        $('#review_latest').click(function(e){
+            $.get("home/latest_reviews", function(response) {
+                var data = JSON.parse(response);
+                var template = ich.review_listing_tpl(data);
+                $('#review-listing').html('');
+                $('#review-listing').append(template);
+                return false;
+            });
+            e.preventDefault(); 
+        });
+        $('#review_week').click(function(e){
+            $.get("home/reviews_week", function(response) {
+                var data = JSON.parse(response);
+                var template = ich.review_listing_tpl(data);
+                $('#review-listing').html('');
+                $('#review-listing').append(template);
+                return false;
+            });
+            e.preventDefault(); 
+        });
+        $('#pow_winner_current').click(function(e){
+            $.get("home/pow_winners_current", function(response) {
+                var data = JSON.parse(response);
+                var template = ich.pow_winner_listing_tpl(data);
+                $('#pow-winner-listing').html('');
+                $('#pow-winner-listing').append(template);
+                return false;
+            });
+            e.preventDefault();
+        });
+        $('#pow_winner_last').click(function(e){
+            $.get("home/pow_winners_last", function(response) {
+                var data = JSON.parse(response);
+                var template = ich.pow_winner_listing_tpl(data);
+                $('#pow-winner-listing').html('');
+                $('#pow-winner-listing').append(template);
+                return false;
+            });
+            e.preventDefault();
+        });
+        $('#create_thread').click(function(e){
+            var logged = $('#logged').val();
+            if(logged){
+                $('#forum_modal').dialog('open');
+            }else{
+                $('#login_reminder').dialog('open');
+            }                
+            e.preventDefault();
+        })
+        $('#view_forum_members').click(function(e){
+            var logged = $('#logged').val();
+            if(logged){
+                window.location = 'forum/index.php?action=mlist';
+            }else{
+                $('#login_reminder').dialog('open');
+            }                
+            e.preventDefault();
+        })
+    });
+    function MM_swapImgRestore() { //v3.0
+        var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+    }
+    function MM_preloadImages() { //v3.0
+        var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+            var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+                if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+        }
+
+        function MM_findObj(n, d) { //v4.01
+            var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+                d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+            if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+            for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+            if(!x && d.getElementById) x=d.getElementById(n); return x;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+            if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+        }
+        var bas_cal;      
+        function basicCalendar() {
+            bas_cal = new Epoch('epoch_basic','flat',document.getElementById('basic_container'));
+        };
+        var duration = 3500;
+        function startTimerFade(){
+	document.getElementById("right-amp1").style.backgroundImage="url(assets/img/system/slide-hover.png)";
+	document.getElementById("right-amp1").style.backgroundPosition="right";
+	document.getElementById("right-amp1").style.backgroundRepeat="no-repeat";
+	document.getElementById("link_link1").style.color="#FFF";
+	
+	document.getElementById("right-amp2").style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById("right-amp3").style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById("right-amp4").style.backgroundImage="url(assets/img/system/slide.png)";
+	
+	document.getElementById("right-amp2").style.backgroundPosition="right";
+	document.getElementById("right-amp3").style.backgroundPosition="right";
+	document.getElementById("right-amp4").style.backgroundRepeat="no-repeat";
+	
+	document.getElementById("link_link2").style.color="#2889ba";
+	document.getElementById("link_link3").style.color="#2889ba";
+	document.getElementById("link_link4").style.color="#2889ba";
+	
+	$("#featured_img2").hide(),$("#featured_art2").hide();
+	$("#featured_img3").hide(),$("#featured_art3").hide();
+	
+	$("#featured_img4").hide(),$("#featured_art4").hide();
+	
+	document.getElementById("right-amp4").style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById("link_link4").style.color="#2889ba";
+	
+	$("#featured_img").fadeIn("slow"),$("#featured_art").fadeIn("slow");
+	setTimeout("fadeImage1('#featured_img','#featured_art','right-amp1','link_link1')",duration);
+}
+function fadeImage1(image,article,td,links){
+	document.getElementById(td).style.background="url(images/slide.png)";
+	document.getElementById(td).style.backgroundPosition="right";
+	document.getElementById(td).style.backgroundRepeat="no-repeat";
+	document.getElementById(links).style.color="#2889ba";
+	
+	document.getElementById("right-amp1").style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById("right-amp3").style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById("right-amp4").style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById("link_link1").style.color="#2889ba";
+	document.getElementById("link_link3").style.color="#2889ba";
+	document.getElementById("link_link4").style.color="#2889ba";
+	
+	$("#featured_img").hide(),$("#featured_art").hide();
+	$("#featured_img3").hide(),$("#featured_art3").hide();
+	$("#featured_img4").hide(),$("#featured_art4").hide();
+	
+	$(image).hide(),$(article).hide();
+	
+	document.getElementById("right-amp2").style.backgroundImage="url(assets/img/system/slide-hover.png)";
+	document.getElementById("link_link2").style.color="#FFF";
+	
+	$("#featured_img2").fadeIn("slow"),$("#featured_art2").fadeIn("slow");
+	setTimeout("fadeImage2('#featured_img2','#featured_art2','right-amp2','link_link2')",duration);
+}
+function fadeImage2(image,article,td,links){
+	document.getElementById(td).style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById(td).style.backgroundPosition="right";
+	document.getElementById(td).style.backgroundRepeat="no-repeat";
+	document.getElementById(links).style.color="#2889ba";
+	
+	document.getElementById("right-amp1").style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById("right-amp2").style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById("right-amp4").style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById("link_link1").style.color="#2889ba";
+	document.getElementById("link_link2").style.color="#2889ba";
+	document.getElementById("link_link4").style.color="#2889ba";
+	$("#featured_img").hide(),$("#featured_art").hide();
+	$("#featured_img2").hide(),$("#featured_art2").hide();
+	$("#featured_img4").hide(),$("#featured_art4").hide();
+	
+	$(image).hide(),$(article).hide();
+	
+	document.getElementById("right-amp3").style.backgroundImage="url(assets/img/system/slide-hover.png)";
+	document.getElementById("link_link3").style.color="#FFF";
+	
+	$("#featured_img3").fadeIn("slow"),$("#featured_art3").fadeIn("slow");
+	setTimeout("fadeImage3('#featured_img3','#featured_art3','right-amp3','link_link3')",duration);
+}
+function fadeImage3(image,article,td,links){
+	document.getElementById(td).style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById(td).style.backgroundPosition="right";
+	document.getElementById(td).style.backgroundRepeat="no-repeat";
+	document.getElementById(links).style.color="#2889ba";
+	
+	document.getElementById("right-amp1").style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById("right-amp2").style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById("right-amp3").style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById("link_link1").style.color="#2889ba";
+	document.getElementById("link_link2").style.color="#2889ba";
+	document.getElementById("link_link3").style.color="#2889ba";
+	$("#featured_img").hide(),$("#featured_art").hide();
+	$("#featured_img2").hide(),$("#featured_art2").hide();
+	$("#featured_img3").hide(),$("#featured_art3").hide();
+	
+	$(image).hide(),$(article).hide();
+	
+	document.getElementById("right-amp4").style.backgroundImage="url(assets/img/system/slide-hover.png)";
+	document.getElementById("link_link4").style.color="#FFF";
+	
+	$("#featured_img4").fadeIn("slow"),$("#featured_art4").fadeIn("slow");
+	setTimeout("startTimerFade()",duration);
+}
+
+
+
+function clickfadeOne(image,article,td,links){
+	document.getElementById(td).style.backgroundImage="url(assets/img/system/slide-hover.png)";
+	document.getElementById(td).style.backgroundPosition="right";
+	document.getElementById(td).style.backgroundRepeat="no-repeat";
+	document.getElementById(links).style.color="#FFF";
+	
+	document.getElementById("right-amp2").style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById("right-amp3").style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById("right-amp4").style.backgroundImage="url(assets/img/system/slide.png)";
+	
+	document.getElementById("right-amp2").style.backgroundPosition="right";
+	document.getElementById("right-amp3").style.backgroundPosition="right";
+	document.getElementById("right-amp4").style.backgroundRepeat="no-repeat";
+	
+	document.getElementById("link_link2").style.color="#2889ba";
+	document.getElementById("link_link3").style.color="#2889ba";
+	document.getElementById("link_link4").style.color="#2889ba";
+	
+	$("#featured_img2").hide(),$("#featured_art2").hide();
+	$("#featured_img3").hide(),$("#featured_art3").hide();
+	$("#featured_img4").hide(),$("#featured_art4").hide();
+	
+	$("#"+image).fadeIn("slow"),$("#"+article).fadeIn("slow");
+	
+	setTimeout("fadeImage1(image,article,td,links)",duration);
+}
+
+function clickfadeTwo(image,article,td,links){
+	document.getElementById(td).style.backgroundImage="url(assets/img/system/slide-hover.png)";
+	document.getElementById(td).style.backgroundPosition="right";
+	document.getElementById(td).style.backgroundRepeat="no-repeat";
+	document.getElementById(links).style.color="#FFF";
+	
+	document.getElementById("right-amp1").style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById("right-amp3").style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById("right-amp4").style.backgroundImage="url(assets/img/system/slide.png)";
+	
+	document.getElementById("link_link1").style.color="#2889ba";
+	document.getElementById("link_link3").style.color="#2889ba";
+	document.getElementById("link_link4").style.color="#2889ba";
+	
+	$("#featured_img").hide(),$("#featured_art").hide();
+	$("#featured_img3").hide(),$("#featured_art3").hide();
+	$("#featured_img4").hide(),$("#featured_art4").hide();
+	
+	$("#"+image).fadeIn("slow"),$("#"+article).fadeIn("slow");
+	
+	setTimeout("fadeImage2(image,article,td,links)",duration);
+}
+
+function clickfadeThree(image,article,td,links){
+	document.getElementById(td).style.backgroundImage="url(assets/img/system/slide-hover.png)";
+	document.getElementById(td).style.backgroundPosition="right";
+	document.getElementById(td).style.backgroundRepeat="no-repeat";
+	document.getElementById(links).style.color="#FFF";
+	
+	document.getElementById("right-amp1").style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById("right-amp2").style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById("right-amp4").style.backgroundImage="url(assets/img/system/slide.png)";
+		
+	document.getElementById("link_link1").style.color="#2889ba";
+	document.getElementById("link_link2").style.color="#2889ba";
+	document.getElementById("link_link4").style.color="#2889ba";
+	
+	$("#featured_img").hide(),$("#featured_art").hide();
+	$("#featured_img2").hide(),$("#featured_art2").hide();
+	$("#featured_img4").hide(),$("#featured_art4").hide();
+	
+	$("#"+image).fadeIn("slow"),$("#"+article).fadeIn("slow");
+	
+	setTimeout("fadeImage3(image,article,td,links)",duration);
+}
+
+function clickfadeFour(image,article,td,links){
+	document.getElementById(td).style.backgroundImage="url(assets/img/system/slide-hover.png)";
+	document.getElementById(td).style.backgroundPosition="right";
+	document.getElementById(td).style.backgroundRepeat="no-repeat";
+	document.getElementById(links).style.color="#FFF";
+	
+	document.getElementById("right-amp1").style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById("right-amp2").style.backgroundImage="url(assets/img/system/slide.png)";
+	document.getElementById("right-amp3").style.backgroundImage="url(assets/img/system/slide.png)";
+	
+	//document.getElementById("right-amp1").style.backgroundPosition="right";
+//	document.getElementById("right-amp3").style.backgroundPosition="right";
+//	document.getElementById("right-amp4").style.backgroundRepeat="no-repeat";
+	
+	document.getElementById("link_link1").style.color="#2889ba";
+	document.getElementById("link_link2").style.color="#2889ba";
+	document.getElementById("link_link3").style.color="#2889ba";
+	
+	$("#featured_img").hide(),$("#featured_art").hide();
+	$("#featured_img2").hide(),$("#featured_art2").hide();
+	$("#featured_img3").hide(),$("#featured_art3").hide();
+	
+	$("#"+image).fadeIn("slow"),$("#"+article).fadeIn("slow");
+	
+	setTimeout("fadeImage3(image,article,td,links)",duration);
+}
+
+
+        function hoverfeatured(id,link_e){
+            document.getElementById(id).style.background="#2598ce";
+            document.getElementById(id).style.padding="12px";
+            document.getElementById(id).style.width="165px";
+            document.getElementById(id).style.color="#FFF";
+            document.getElementById(link_e).style.color="#FFF";
+        }
+
+        function hoverfeaturedout(id,link_e){
+            document.getElementById(id).style.background="#d6e6ef";
+            document.getElementById(id).style.padding="12px";
+            document.getElementById(id).style.width="165px";
+            document.getElementById(id).style.color="#FFF";
+            document.getElementById(link_e).style.color="#1878a8";
+        }
+        function createThread(){
+            var topic = $('#thread_topic').val();
+            var subject = $('#thread_msg').val();
+            var board_id = $('#thread_board').val();
+//            var base_url = $('#base_url').val();
+            //            alert('topic: '+topic+'<br/>subject: '+subject+'<br/>board id: '+board_id)
+
+            $.post("mm/createThreadMM", {subject: topic, content : subject, agegroupid : board_id},
+            function(data) {
+                if(data){
+                    $('#thread_topic').val('');
+                    $('#thread_msg').val('');
+                    alert("Thread created.");
+                    $('#forum_modal').dialog('close');
+//                    window.location = base_url+'forum/index.php?topic='+data;
+                }
+                else
+                {
+                    alert('Error creating thread');
+                }
+            });
+        }
+  //      var html_data = $('#ad_mrec1').text();
+  //      $('#ad_mrec1').text('');
+  //      $('#ad_mrec1').html(html_data);
+ //       var html_data = $('#ad_mrec2').text();
+ //       $('#ad_mrec2').text('');
+ //       $('#ad_mrec2').html(html_data);
+        var html_data = $('#ad_mrec3').text();
+        $('#ad_mrec3').text('');
+        $('#ad_mrec3').html(html_data);
+        var html_data = $('#ad_mrec4').text();
+        $('#ad_mrec4').text('');
+        $('#ad_mrec4').html(html_data);
+        var html_data = $('#ad_mrec5').text();
+        $('#ad_mrec5').text('');
+        $('#ad_mrec5').html(html_data);
+        var html_data = $('#ad_mrec6').text();
+        $('#ad_mrec6').text('');
+        $('#ad_mrec6').html(html_data);
+        var html_data = $('#ad_mumad1').text();
+        $('#ad_mumad1').text('');
+        $('#ad_mumad1').html(html_data);
+        var html_data = $('#ad_mumad2').text();
+        $('#ad_mumad2').text('');
+        $('#ad_mumad2').html(html_data);
+        var html_data = $('#ad_rec1').text();
+        $('#ad_rec1').text('');
+        $('#ad_rec1').html(html_data);
+        var html_data = $('#ad_rec2').text();
+        $('#ad_rec2').text('');
+        $('#ad_rec2').html(html_data);
+        var html_data = $('#ad_rec3').text();
+        $('#ad_rec3').text('');
+        $('#ad_rec3').html(html_data);
+        var html_data = $('#ad_rec4').text();
+        $('#ad_rec4').text('');
+        $('#ad_rec4').html(html_data);
+</script>

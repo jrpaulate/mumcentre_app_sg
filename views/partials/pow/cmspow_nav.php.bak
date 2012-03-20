@@ -1,0 +1,15 @@
+<?php if (@issetNE($data['error'])) : ?>
+	<div class="cms-pow-errors">
+		<strong>ERROR:</strong>
+  <?php foreach ($data['error'] as $err) : ?>
+  	<span class="cms-pow-error-msg"><?php echo $err?></span>
+	<?php endforeach; ?>
+	</div>
+<?php endif;?>
+<ul class="ulsubnav">
+  <li><a href="cms_pow/options">POW Options</a></li>
+  <li><a href="cms_pow/active_contest">Active Contest</a></li>
+  <li><a href="cms_pow/contest_list">Contests</a></li>
+  <!-- <li><a href="cms_pow/contest_create">POW Active Contest</a></li> -->
+  <li><a href="cms_pow/categories">Categories</a></li>        
+</ul>

@@ -1,0 +1,304 @@
+/* Article */
+
+/* from style.css -remove if you're using it */
+#container {
+  width: 980px;
+  margin: 0 auto;
+margin-top: 40px;}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; 
+  padding: 0;
+  line-height: 1em;
+  font-size: 1em;
+}
+.fright {float: right}
+.fleft {float: left}
+
+
+#article-body h1 {font-size: 22px; font-weight: bold; margin-bottom: 20px;}
+#article-body p {font-size: 14px; line-height: 150%}
+.article-thumb {width: 200px; height: 250px; margin-right: 10px; margin-bottom: 10px; float: left}
+#article-content {overflow:hidden}
+
+/* Breadcrumb */
+.breadcrumb {
+  padding: 14px /*7px 14px*/;
+  margin: 0 /*5px 0*/;
+  background-color: #f5f5f5;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f5f5));
+  background-image: -moz-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: -ms-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f5f5f5));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: -o-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: linear-gradient(top, #ffffff, #f5f5f5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f5f5f5', GradientType=0);
+ /* border: 1px solid #ddd; */
+  /* -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;*/
+  -webkit-box-shadow: inset 0 1px 0 #ffffff;
+  -moz-box-shadow: inset 0 1px 0 #ffffff;
+  box-shadow: inset 0 1px 0 #ffffff;
+}
+
+.breadcrumb2 {
+  padding: 14px /*7px 14px*/;
+  margin: 0 /*5px 0*/;
+/*  background-color: #f5f5f5;*/
+/*  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f5f5));
+  background-image: -moz-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: -ms-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f5f5f5));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: -o-linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: linear-gradient(top, #ffffff, #f5f5f5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f5f5f5', GradientType=0);*/
+ /* border: 1px solid #ddd; */
+  /* -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;*/
+/*  -webkit-box-shadow: inset 0 1px 0 #ffffff;
+  -moz-box-shadow: inset 0 1px 0 #ffffff;
+  box-shadow: inset 0 1px 0 #ffffff;*/
+}
+
+.breadcrumb li {
+  display: inline;
+  text-shadow: 0 1px 0 #ffffff;
+}
+.breadcrumb .divider {
+  padding: 0 5px;
+  color: #bfbfbf;
+}
+.breadcrumb,
+.breadcrumb a {
+  font-size: 23px
+}
+
+.breadcrumb2 li {
+  display: inline;
+/*  text-shadow: 0 1px 0 #ffffff;*/
+}
+.breadcrumb2 .divider {
+  padding: 0 5px;
+  color: #bfbfbf;
+}
+.breadcrumb2,
+.breadcrumb2 a {
+  font-size: 23px
+}
+.breadcrumb .active {
+  /* color: #404040;*/
+}
+
+/* Pagination */
+.pagination {
+  height: 36px;
+  margin: 18px 0;
+}
+.pagination ul {
+  float: left;
+  margin: 0;
+  border: 1px solid #ddd;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.pagination li {
+  display: inline;
+}
+.pagination a {
+  float: left;
+  padding: 0 14px;
+  line-height: 34px;
+  border-right: 1px solid;
+  border-right-color: #ddd;
+  border-right-color: rgba(0, 0, 0, 0.15);
+  *border-right-color: #ddd;
+  /* IE6-7 */
+
+  text-decoration: none;
+}
+.pagination a:hover, .pagination .active a {
+  background-color: #E3F1FA;
+}
+.pagination .disabled a, .pagination .disabled a:hover {
+  background-color: transparent;
+  color: #bfbfbf;
+}
+.pagination .next a {
+  border: 0;
+}
+/* Tabs , Pills */
+/*.tabs, .pills {
+  margin: 0 0 18px;
+  padding: 0;
+  list-style: none;
+  zoom: 1;
+}
+.tabs:before,
+.pills:before,
+.tabs:after,
+.pills:after {
+  display: table;
+  content: "";
+  zoom: 1;
+}
+.tabs:after, .pills:after {
+  clear: both;
+}
+.tabs > li, .pills > li {
+  float: left;
+
+}
+.tabs > li > a, .pills > li > a {
+  display: block;
+}
+.tabs {
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 0 0 1px;
+}
+.tabs > li {
+  position: relative;
+  margin-bottom: 0 -1px;
+}
+.tabs > li > a {
+  padding: 0 3px;
+  margin-right: 3px;
+  line-height: 34px;
+  border: 1px solid transparent;
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0;
+   background-color: #eee;
+  border-color: #eee #eee #ddd;
+}
+.tabs > li > a:hover {
+  text-decoration: none;
+  background-color: #e8e8e8;
+  border-color: #eee #eee #ddd;
+}
+.tabs .active > a, .tabs .active > a:hover {
+  color: #fff;
+  background-color: #60296C;
+  border: 1px solid #60296C;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+.tabs .menu-dropdown, .tabs .dropdown-menu {
+  top: 35px;
+  border-width: 1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px 6px;
+  border-radius: 0 6px 6px 6px;
+}
+.tabs a.menu:after, .tabs .dropdown-toggle:after {
+  border-top-color: #999;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+.tabs li.open.menu .menu, .tabs .open.dropdown .dropdown-toggle {
+  border-color: #999;
+}
+.tabs li.open a.menu:after, .tabs .dropdown.open .dropdown-toggle:after {
+  border-top-color: #555;
+}*/
+.pills a {
+  margin: 5px 3px 5px 0;
+  padding: 0 15px;
+  line-height: 30px;
+  text-shadow: 0 1px 1px #ffffff;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.pills a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  background-color: #00438a;
+}
+.pills .active a {
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  background-color: #0069d6;
+}
+.pills-vertical > li {
+  float: none;
+}
+.tab-content > .tab-pane,
+.pill-content > .pill-pane,
+.tab-content > div,
+.pill-content > div {
+  display: none;
+}
+.tab-content > .active, .pill-content > .active {
+  display: block;
+}
+
+/* Article Sequence */
+.article-sequence p {width: 35%}
+.article-sequence span {display: block; padding: 2px 4px; line-height: 120%}
+.article-sequence .label {color: #fff; font-weight: bold}
+.article-sequence .prev .label {background: #258ECA}
+.article-sequence .next .label {background: #666}
+.article-sequence .prev .link {border: 1px solid #258ECA}
+.article-sequence .next .link {border: 1px solid #666}
+
+/* Floated Asides */
+.aside-left, .aside-right {width: 172px; margin: 0 10px 10px 0; float: left}
+.aside-right {float: right; padding-left: 20px; padding-top: 28px;}
+.aside-left ul.aside-list {margin-bottom: 20px}
+.aside-list li {border-bottom: 2px dotted #333; padding: 5px}
+.aside-list li:hover {background: #eee}
+.aside-list li:last-child{border-bottom: 0;}
+.aside-list .list-header {background: #60296C; padding: 5px; color: #fff; font-size: 14px; font-weight: bold}
+.aside-list .list-header:hover {background: #60296C;}
+.aside-right .tab-content {border: 1px solid #60296C; margin-top: -19px; padding: 4px}
+
+/* Sponsor Box -- just an overwrite */
+#article-body .sponsor-box h4 {font-size: 14px; font-weight: bold}
+#article-body .sponsor-box p,
+#article-body .sponsor-box a {font-size: 11px; line-height: 120%}
+#article-body .sponsor-box p {margin-bottom: 0}
+
+/* Article Featured */
+.article-featured .label {color: #666; font-size: 13px !important; font-weight:bold; border-bottom: 3px solid #258ECA; padding-bottom: 5px; margin-bottom: 5px}
+.article-featured .label span {color:#60296C}
+.article-featured .legend {
+	display:block; float: left; width: 17px; height: 17px; margin-right: 5px;
+	background: url(../img/system/ERC-Icon.png) no-repeat;
+	color: #fff; font-size: 11px; line-height: 18px; text-align: center}
+.article-featured li a {display: block; overflow: hidden}
+
+.share-container {
+    background: none repeat scroll 0 0 #F4F4F4;
+    border-top: 2px solid #258ECA;
+    color: #666666;
+    /* margin-top: 10px;*/
+    overflow: hidden;}
+.share-container li {float: right;
+    height: 24px;
+    padding: 5px;
+    vertical-align: top;}
+.share-container li.list-header {background: none repeat scroll 0 0 #258ECA;
+	color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+	margin-left: 5px;
+    padding: 10px 6px 0;}
+.share-count-container {margin: 20px 0; overflow: visible}	
+.share-count-container li {float: left; margin-right: 10px}
+
+/*added by john ray*/
+.sher {padding-left: 457px; padding-top: 10px;}
+.article-sequence {padding-top: 126px;}
+

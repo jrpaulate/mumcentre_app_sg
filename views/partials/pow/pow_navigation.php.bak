@@ -1,0 +1,23 @@
+<?php if (@issetNE($data['error'])) : ?>
+	<div class="cms-pow-errors">
+		<strong>ERROR:</strong>
+  <?php foreach ($data['error'] as $err) : ?>
+  	<span class="cms-pow-error-msg"><?php echo $err?></span>
+	<?php endforeach; ?>
+	</div>
+<?php endif;?>
+
+<ul class="section-action">
+	<li <?php echo ($data['activenav']=='vote') ? ' class="selected"' :'' ?>>
+		<a href="pow/vote" title="Vote Now">Vote Now</a>
+	</li>
+	<li <?php echo ($data['activenav']=='join') ? ' class="selected"' :'' ?>>
+		<a href="pow/join" title="Enter the Contest">Enter the Contest</a>
+	</li>
+	<li <?php echo ($data['activenav']=='winners') ? ' class="selected"' :'' ?>>
+		<a href="pow/winners" title="Past Entries/Winners">Past Entries/Winners</a>
+	</li>
+	<li <?php echo ($data['activenav']=='about') ? ' class="selected"' :'' ?>>
+		<a href="pow/about" title="About POW">About POW</a>
+	</li>
+</ul><!-- .section-action -->

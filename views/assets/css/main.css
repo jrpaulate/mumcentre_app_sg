@@ -1,0 +1,160 @@
+/* MumCentre CSS - Main Style 
+   Author: Jonathan Manas @athanph
+   ------------------------------- */
+   
+/*   HTML5 display definitions
+========================================================================== */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/* Base 
+========================================================================== */
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body, button, input, select, textarea { font-family: Arial, Helvetica, sans-serif; color: #4a4a4a; }
+p {margin-bottom: 16px}
+
+/* Links */
+a { color: #60296C }
+a:visited { color: #60296C; }
+a:hover { color: #60296C; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+/* Typography */
+b, strong { font-weight: bold; }
+small { font-size: 85%; }
+
+/* Lists */
+ul, ol { margin: 0 0; padding: 0 0 0 0px; list-style: none; }
+dl {overflow: hidden}
+dt, dd {display: block; height: 20px; padding: 10px 0;}
+dt { width: 100px; margin-right: 10px; clear: both}
+dd { margin: 0; vertical-align: middle}
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+/* Images */
+img,
+a img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/* Tables */
+table { border-collapse: collapse; border-spacing: 0; }
+/* removed by jun
+td { vertical-align: top; padding: 6px 4px }
+*/
+
+/* Forms */
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+table button, table input { *overflow: auto; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+/* Structure 
+========================================================================== */
+.wrapper {margin: 0 auto; width: 980px}
+
+/* Header */
+#header {}
+.branding .logo {float: left; width: 250px; margin: 10px 0}
+ul.flags {float: right}
+.flags li {float: left; margin-right: 5px}
+/* Header Long Banner Ad */
+.header-banner {}
+
+/* Custom */
+.fright {float: right}
+.fleft {float: left}
+.fnone {float: none !important}
+.aLeft {text-align: left}
+.aRight {text-align: right}
+.aCenter {text-align: center}
+.block {display: block}
+.inline {display: inline !important}
+
+/* Thumbnail Image Sizes 
+========================================================================== */
+.thumb { background: #fff;
+	border: 1px solid #c2c2c2;
+	padding: 2px;
+	margin: 0 10px 5px 0 }
+.thumb img { width: 100%; height: 100% }
+.t80x80 { width: 80px; height: 80px }
+.t100x70 { width: 100px; height: 70px }
+.t50x65 { width: 50px; height: 65px }
+.t180x165 {width: 180px; height: 165px}
+
+
+/* Buttons */
+.btn-rnd {
+	padding: 6px 14px !important;
+	margin-bottom: 8px;
+	color: #fff !important;
+	text-transform:uppercase;
+	background-color: #3e0c46 !important;
+   	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5a1266), to(#3e0c46)) !important;
+	background-image: -webkit-linear-gradient(top, #5a1266, #3e0c46) !important;
+	background-image:    -moz-linear-gradient(top, #5a1266, #3e0c46) !important;
+	background-image:     -ms-linear-gradient(top, #5a1266, #3e0c46) !important;
+	background-image:      -o-linear-gradient(top, #5a1266, #3e0c46) !important;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-shadow: -1px -1px 0 rgba(0,0,0,.5);
+	white-space: nowrap;
+	text-decoration: none}
+.btn-rnd:hover {
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,.5);
+	-o-box-shadow: 0 0 5px rgba(0,0,0,5);
+	box-shadow: 0 0 5px rgba(0,0,0,.5)}	
+.btn-rnd.btn-gray {
+	background-color: #cbcbcb !important;
+   	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cbcbcb), to(#a7a7a7)) !important;
+	background-image: -webkit-linear-gradient(top, #cbcbcb, #a7a7a7) !important;
+	background-image:    -moz-linear-gradient(top, #cbcbcb, #a7a7a7) !important;
+	background-image:     -ms-linear-gradient(top, #cbcbcb, #a7a7a7) !important;
+	background-image:      -o-linear-gradient(top, #cbcbcb, #a7a7a7) !important;
+	-webkit-box-shadow: 0 3px 1px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 3px 1px rgba(0,0,0,.2);
+	-o-box-shadow: 0 3px 1px rgba(0,0,0,.2);
+	box-shadow: 0 3px 1px rgba(0,0,0,.2);
+	text-shadow: 0 -1px 1px rgba(144,144,144,1);
+	font-size: 14px !important;
+	font-weight: bold !important;
+	text-align: center;	}
+.btn-rnd.btn-gray:hover {
+	background-color: #a7a7a7 !important;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#a7a7a7), to(#a7a7a7)) !important;
+	background-image: -webkit-linear-gradient(top, #a7a7a7, #a7a7a7) !important;
+	background-image:    -moz-linear-gradient(top, #a7a7a7, #a7a7a7) !important;
+	background-image:     -ms-linear-gradient(top, #a7a7a7, #a7a7a7) !important;
+	background-image:      -o-linear-gradient(top, #a7a7a7, #a7a7a7) !important}
+input[type="submit"].btn-rnd,
+input[type="button"].btn-rnd,
+button.btn-rnd {border: 0; width: 100%; margin: 10px 0 0}
+
+/* Form - Event Date Search */
+.form-event-search input {width: 82%}
+
+/* Clearfix - Contain floats 
+========================================================================== */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; clear: both}
+
+.clearfix li {
+	margin-top:0px !important;
+}

@@ -1,0 +1,94 @@
+/* POW */
+/* Custom Font */
+.enter-form legend,
+.enter-form label {font-family: 'ComfortaaBold', Arial, sans-serif;}
+
+
+/* Entry Form -------------- */
+.enter-form {background: #eef7fb; border: 1px solid #ccc; padding: 15px}
+.enter-form fieldset {border: none; padding: 20px 0 40px}
+.enter-form legend {border-bottom: 2px solid #258eca; color: #258eca; display: block; margin-bottom: 20px; font-size: 22px; line-height: 130%; width: 100%}
+.enter-form label {color: #9f7ea7; clear: left; display: block; font-size: 18px !important; float: left; margin-right: 10px; text-align: right; text-transform:lowercase; width: 250px}
+.enter-form input,
+.enter-form select,
+.enter-form textarea {border: 1px solid #bec6c9; color: #9f7ea7; float: left; height: 14px; width: 216px; padding: 4px; margin-bottom: 10px;}
+.enter-form textarea {height: 80px}
+.enter-form input[type=file],
+.enter-form select {height: 26px; padding: 2px}
+.enter-form .terms {clear: both; width: 500px; margin: 0 auto}
+	.enter-form .terms > p {margin:0; color: #2e93cc; font-size: 18px} 
+	.enter-form .terms > div:last-child {margin: 0 auto; width: 50%}
+	.enter-form .terms-box {background: #fff; border: 1px solid #ccc; width: 480px; height: 186px; overflow-x: auto; padding: 10px; margin: 10px 0}
+	.enter-form .terms-box p,
+	.enter-form .terms label {color: #666; font: 12px Arial, Helvetica, sans-serif !important;}
+	.enter-form .terms label {clear: none; color:#9f7ea7; font-weight: bold !important; width: auto; text-transform: none}
+	.enter-form .terms input[type=checkbox] {margin: 0 10px 0 0 !important; width: auto}
+	.enter-form .btn-submit-entry {background: url(../img/system/btn-submit-entry.png) no-repeat; border: 0; width: 196px; height: 34px; text-indent: -9999px; margin:0 35%; cursor: pointer}
+
+.find-addbook,
+.gmail-login {float: left; padding: 10px 0; width: 360px; vertical-align:top}
+.find-addbook {border-right: 1px solid #82a6b0; margin-right: 10px; width: 250px}
+.fb-postwall {clear: both; text-align: center}
+
+/* Winner Page -------------- */
+#pow-body > div, 
+#pow-latest > div {margin-bottom: 10px}
+#pow-latest {position:relative; padding: 10px 20px; min-height: 450px}
+#pow-latest h3 {font-size: 40px; line-height: 42px; text-align:center}
+#pow-latest h3 span {color:#fc3; font-weight: bold}
+
+#pow-latest > .img-wrapper {background: #fff; border: 1px solid #333; padding: 6px; min-height: 200px; width: 284px; overflow: auto; text-align:center}
+#pow-latest > .img-wrapper img {max-width: 284px}
+.info-wrapper {position:absolute; right:25px; top: 15px; }	
+.pow-badge {background: url(../img/system/pow-winner.png) no-repeat; width: 383px; height: 134px}
+.pow-badge.pow-vote {background-position: -6px -210px; width: 377px; height:110px}
+.pow-desc {position: absolute; right:0; top: 150px; text-align: center; width: 300px}
+	.pow-badge p {color: #FFF; font-size: 25px; font-weight: bold; padding: 34px 95px 0 60px; text-align: right; text-shadow: 0 -1px 1px rgba(0,0,0,.5)}
+	.pow-desc p {font-size: 19px; font-style:italic; line-height: 120%}
+.pow-userinfo {background: url(../img/system/pow-winner.png) no-repeat -85px -141px; padding: 6px; position: relative; height: 51px; width: 286px}
+.pow-userinfo img {border: 1px solid #fff; width: 48px; height: 48px}
+.pow-userinfo p {position: absolute; top: 12px; left: 74px}
+.pow-userinfo p,
+.pow-userinfo a {font-size: 11px; line-height: 110%; margin-bottom: 0}
+.pow-userinfo a {text-decoration: underline}
+.pow-past {background: #fff; border: 1px solid #ccc; position: absolute; margin: -250px 0 0 320px; padding-bottom: 10px; width: 300px; overflow:hidden;}
+.pow-past p {background: #e3f1fa; border-bottom: 1px solid #ccc; font-size: 14px; font-weight: bold; padding: 4px}
+.pow-share {width: 300px; overflow: hidden}
+.pow-share li {float: left; margin-right: 5px}
+
+ul.all-winners {width: 600px; margin: 20px auto; overflow: hidden}
+.all-winners li {float: left; margin-bottom: 10px; text-align:center; width: 200px}
+.all-winners li p {background: #f2f2f2; padding: 6px}
+.all-winners li p,
+.all-winners li a {font-size: 16px; font-weight: bold}
+.all-winners li img {width: 150px; height: 150px}
+.btn-pow-join {display: block; font-weight: normal; margin:0 auto; text-align:center; text-transform: lowercase; width: 350px}
+
+.entries-past-head {background: #edeff4; border-top: 4px solid #258eca; border-bottom: 4px solid #258eca; padding: 6px 10px; overflow:hidden}
+.entries-past-head h4 {font-size: 21px; line-height: 32px; width: 180px}
+ul.entries-count {margin-right: 10px}
+.entries-count li {float: left; margin-left: 5px; text-align:right}
+.entries-count a {display: block; border-right: 1px solid #258eca; font-weight: bold; padding-right: 5px}
+.entries-count span {color: #666; font-size: 10px; display:block; padding-right: 6px}
+.entries-search input {border: 1px solid #ccc; font-size: 11px; padding: 2px; width: 70px}
+form.entries-search * {float: left; margin-left: 5px; vertical-align:middle}
+.entries-past-body {background: #fff; border: 1px solid #ccc; padding: 10px 0;position:relative}
+
+/* Entries List */
+ul.entries-list {margin: 0 auto; overflow:hidden}
+	.pow-past ul.entries-list {width: 260px}
+	.entries-past-body ul.entries-list {width: 585px}
+.entries-list li {float: left; width: 65px; margin: 7px; text-align:center; width: 50px; height: 70px; vertical-align:top}
+.entries-list li img {background: #fff; border: 1px solid #ccc; width: 100%; max-width: 50px; height: auto; max-height: 60px}
+.entries-list li a {font-size: 9px; line-height: 100%}
+.entries-list li span {display: block}
+.entries-list li:hover span {text-decoration: underline}
+.entries-list-pagination {position:absolute; top: 50%; width: 100%}
+.entries-list-pagination a {background: url(../img/system/arrow.png) no-repeat 0 0; width: 15px; height: 20px; text-indent: -9999px; position:absolute}
+.entries-list-pagination a.prev_entry {left: 5px}
+.entries-list-pagination a.prev_entry:hover {background-position: 0 -20px}
+.entries-list-pagination a.next_entry {background-position: -15px 0; right: 5px}
+.entries-list-pagination a.next_entry:hover {background-position: -15px -20px}
+.entries-list-counter {margin: 10px 50px 0; text-align:right; font-size: 10px}
+
+#pow-fbcomment-box { margin-top: 20px;}

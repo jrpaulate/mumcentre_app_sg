@@ -1,0 +1,256 @@
+a.Lblue {
+	color: #3399cc;
+}
+a.DLblue {
+	color: #094f95;
+}
+a.gray {
+	color: #333333;
+}
+h1.class-smaller {
+	font-size: .75em;
+	line-height: 1.5em;
+}
+/*********** Header 3com ************/
+#Header-cont {
+	float: left;
+	height: 50px;
+	width: 660px;
+	padding-top: 20px;
+}
+#Header-cont #headtxt-cont {
+	float: left;
+	width: 660px;
+	height: 48px;
+}
+#Header-cont #headtxt-cont #headerText {
+	float: left;
+	position: relative;
+	left: 0px;
+	bottom: 3px;
+	padding-left: 2px;
+	font-family: Comfortaa, Arial, Helvetica, sans-serif;
+	font-size: 4em;
+	color: #3399cc;
+	line-height: .9;
+	font-weight: 100;
+}
+#Header-cont #headtxt-cont #headerMid {
+	float: left;
+	position: relative;
+	top: 12px;
+	left: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.8em;
+	color: #3399cc;
+	line-height: 1;
+	height: 19px;
+}
+#Header-cont #headtxt-cont #headerMid .ArrowBox {
+	float: left;
+	height: 15px;
+	top: 15px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+#Header-cont #headtxt-cont #headerMid .textBox {
+	float: left;
+	height: 15px;
+	top: 15px;
+	padding-top: 2px;
+	padding-left: 10px;
+}
+#Header-cont #HbleBr {
+	background-color: #3399cc;
+	float: left;
+	height: 2px;
+	width: 660px;
+}
+/*************** Body PSP-D  ***********/
+#PSPP-body-cont {
+	float: left;
+	width: 660px;
+	padding-bottom: 10px;
+}
+/*** header ***/
+.PSPP-Hul {
+	max-width: 660px;
+	height: 20px;
+}
+.PSPP-Hli {
+	float: left;
+	font-size: 1.4em;
+	line-height: .9em;
+	padding-top: 6px;
+	padding-left: 14px; /** Change value if removing or adding elements for the list  **/
+	height: 20px;
+}
+.PSPP-Header {
+	float: left;
+	width: 660px;
+	height: 28px;
+}
+.PSPP-Header .PSPP-head-cont {
+	float: left;
+	width: 660px;
+	height: 26px;
+}
+.PSPP-Header .PSPP-bar {
+	background-color: #3399cc;
+	float: left;
+	height: 2px;
+	width: 660px;
+}
+.PSPP-botbar {
+	background-color: #3399cc;
+	float: left;
+	height: 2px;
+	width: 660px;
+	margin-top: 10px;
+}
+/*** Links ***/
+.PSPP-Hlinks-cont {
+	float: left;
+	width: 660px;
+	padding-top: 10px;
+}
+.PSPP-Hlinks-cont .PSPP-Hlinks-Body {
+	float: left;
+	width: 660px;
+}
+.PSPP-Hlinks {
+	width: 660px;
+	text-align: center;
+	color: #60296C;
+	font-size: 1.3em;
+	line-height: 1.5em;
+	font-weight: bold;
+}
+/*** Search bar ***/
+.PSPP-Searchbar-cont {
+	padding-top: 20px;
+	margin: auto;
+	width: 149px;
+	height: 28px;
+}
+/*** body ***/
+#PSPP-Bcontainer {
+	float: left;
+	width: 660px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.PSPP-Bul {
+	float: left;
+	width: 660px;
+}
+#PSPP-Bcontainer ul li:nth-child(even) {
+	float: left;
+	width: 628px;
+	height: 143px;
+	border: 1px solid #CCC;
+	margin-bottom: 3px;
+	padding: 15px;
+}
+#PSPP-Bcontainer ul li:nth-child(odd) {
+	background-color: #e3f1fa;
+	float: left;
+	width: 628px;
+	height: 143px;
+	border: 1px solid #CCC;
+	margin-bottom: 3px;
+	padding: 15px;
+}
+.PSPP-B-Head {
+/*	float: left;*/
+	padding-left: 116px;
+	width: 525px;
+	font-size: 1.3em;
+	padding-bottom: 5px;
+	font-weight: bold;
+	color: #333;
+}
+.PSPP-B-img {
+	float: left;
+	padding-top: 3px;
+	width: 100px;
+	height: 70px;
+}
+.PSPP-B-text-cont {
+	float: left;
+	padding-top: 10px;
+	padding-left: 15px;
+	font-size: 1.1em;
+	width: 500px;
+	height: 110px;
+}
+.PSPP-B-Address {
+	float: left;
+	width: 500px;
+	height: 41px;
+}
+.PSPP-B-ContNum {
+	float: left;
+	width: 500px;
+	height: 20px;
+}
+.PSPP-B-webS {
+	float: left;
+	width: 500px;
+	height: 20px;
+}
+.PSPP-B-email {
+	float: left;
+	width: 500px;
+	height: 20px;
+}
+.PSPP-B-link {
+	float: left;
+	width: 500px;
+	height: 20px;
+}
+.PSPP-B-iconcont {
+	position: relative;
+	float: right;
+	top: -45px;
+	right: -5px;
+	width: 88px;
+}
+.PSPP-B-icontL {
+	float: left;
+	width: 41px;
+	height: 41px;
+}
+.PSPP-B-icontR {
+	float: right;
+	width: 41px;
+	height: 41px;
+}
+/*** Pigination **/
+#PSPP-pagination {
+	float: right;
+	height: 17px;
+	padding-top: 10px;
+}
+.pig-container {
+	float: left;
+	width: 17px;
+	height: 17px;
+	padding-right: 3px;
+}
+.pig-box {
+	float: left;
+	width: 17px;
+	height: 17px;
+	color: #FFF;
+	background-color: #cccccc;
+	text-align: center;
+}
+#pig-more {
+	float: left;
+	width: 66px;
+	height: 17px;
+	color: #FFF;
+	background-color: #cccccc;
+	text-align: center;
+}

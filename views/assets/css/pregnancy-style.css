@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#333333;
+}
+
+.preg-hdr {
+	font-size:40px;
+	color:#258eca;
+}
+
+.preg-subhdr {
+	font-size:24px;
+	color:#258eca;	
+}
+
+.preg-hdr-a {
+	font-size:20px;
+	color:#258eca;
+}
+
+.preg-hdr-b {
+	font-size:20px;
+	color:#60296c;
+}
+
+.preg-subhdr-a {
+	font-size:15px;
+	color:#585858;
+	font-weight:bold;
+}
+
+.preg-subhdr-b {
+	font-size:13px;
+	color:#333333;
+	font-weight:bold;
+}
+
+.preg-article-txt {
+	font-size:14px;	
+}
+
+.preg-article-count {
+	font-size:14px;
+	font-weight:bold;
+	color:#f35f5f;
+}
+
+.preg-hl-txt {
+	font-size:12px;
+	color:#333333;
+}
+
+.pow-hdr {
+	font-size:20px;
+	font-weight:bold;
+	color:#60296c;
+}
+
+.pow-hdr-a {
+	font-size:20px;
+	font-weight:bold;
+	color:#ee2d24;
+}
+
+.pow-txt {
+	font-size:11px;
+	color:#333333;
+}
+
+.recact-txt {
+	font-size:11px;
+	color:#808080;
+}
+
+.deal-txt {
+	font-size:9px;
+	color:#333;
+}
+
+.deal-separator {
+	font-size:5px;
+	color:#333;
+	letter-spacing:5px;
+	padding-left:130px;
+}
+
+.separator-txt {
+	font-size:12px;
+	color:#60296c;
+}
+
+a.preg-event:link { font-size:16px; color:#555555; text-decoration:none; }
+a.preg-event:active { font-size:16px; color:#555555; text-decoration:none; }
+a.preg-event:visited { font-size:16px; color:#555555; text-decoration:none; }
+a.preg-event:hover { font-size:16px; color:#555555; text-decoration:underline; }
+
+a.preg-event-a:link { font-size:14px; font-weight:bold; color:#258eca; text-decoration:none; }
+a.preg-event-a:active { font-size:14px; font-weight:bold; color:#258eca; text-decoration:none; }
+a.preg-event-a:visited { font-size:14px; font-weight:bold; color:#258eca; text-decoration:none; }
+a.preg-event-a:hover { font-size:14px; font-weight:bold; color:#258eca; text-decoration:underline; }
+
+a.preg-event-b:link { font-size:14px; color:#60296c; text-decoration:underline; }
+a.preg-event-b:active { font-size:14px; color:#60296c; text-decoration:underline; }
+a.preg-event-b:visited { font-size:14px; color:#60296c; text-decoration:underline; }
+a.preg-event-b:hover { font-size:14px; color:#60296c; text-decoration:none; }
+
+a.preg-event-c:link { font-size:10px; color:#ffffff; text-decoration:none; }
+a.preg-event-c:active { font-size:10px; color:#ffffff; text-decoration:none; }
+a.preg-event-c:visited { font-size:10px; color:#ffffff; text-decoration:none; }
+a.preg-event-c:hover { font-size:10px; color:#60296c; text-decoration:none; }
+
+a.preg-event-d:link { font-size:12px; color:#60296c; text-decoration:underline; }
+a.preg-event-d:active { font-size:12px; color:#60296c; text-decoration:underline; }
+a.preg-event-d:visited { font-size:12px; color:#60296c; text-decoration:underline; }
+a.preg-event-d:hover { font-size:12px; color:#60296c; text-decoration:none; }
+
+a.preg-event-e:link { font-size:12px; color:#258eca; text-decoration:none; }
+a.preg-event-e:active { font-size:12px; color:#258eca; text-decoration:none; }
+a.preg-event-e:visited { font-size:12px; color:#258eca; text-decoration:none; }
+a.preg-event-e:hover { font-size:12px; color:#258eca; text-decoration:underline; }
+
+a.preg-event-f:link { font-size:12px; font-weight:bold; color:#201e20; text-decoration:none; }
+a.preg-event-f:active { font-size:12px; font-weight:bold; color:#201e20; text-decoration:none; }
+a.preg-event-f:visited { font-size:12px; font-weight:bold; color:#201e20; text-decoration:none; }
+a.preg-event-f:hover { font-size:12px; font-weight:bold; color:#201e20; text-decoration:underline; }
+
+a.preg-event-g:link { font-size:15px; font-weight:bold; color:#201e20; text-decoration:none; }
+a.preg-event-g:active { font-size:15px; font-weight:bold; color:#201e20; text-decoration:none; }
+a.preg-event-g:visited { font-size:15px; font-weight:bold; color:#201e20; text-decoration:none; }
+a.preg-event-g:hover { font-size:15px; font-weight:bold; color:#201e20; text-decoration:underline; }
+
+a.preg-event-h:link { font-size:12px; color:#60296c; text-decoration:none; }
+a.preg-event-h:active { font-size:12px; color:#60296c; text-decoration:none; }
+a.preg-event-h:visited { font-size:12px; color:#60296c; text-decoration:none; }
+a.preg-event-h:hover { font-size:12px; color:#60296c; text-decoration:underline; }
+
+a.preg-event-i:link { font-size:11px; color:#000000; text-decoration:none; }
+a.preg-event-i:active { font-size:11px; color:#000000; text-decoration:none; }
+a.preg-event-i:visited { font-size:11px; color:#000000; text-decoration:none; }
+a.preg-event-i:hover { font-size:11px; color:#000000; text-decoration:underline; }
+
+a.pow-event:link { font-size:11px; color:#60296c; text-decoration:underline; }
+a.pow-event:active { font-size:11px; color:#60296c; text-decoration:underline; }
+a.pow-event:visited { font-size:11px; color:#60296c; text-decoration:underline; }
+a.pow-event:hover { font-size:11px; color:#60296c; text-decoration:none; }
+
+a.preg-highlight:link { font-size:16px; color:#555555; text-decoration:underline; }
+a.preg-highlight:active { font-size:16px; color:#555555; text-decoration:underline; }
+a.preg-highlight:visited { font-size:16px; color:#555555; text-decoration:underline; }
+a.preg-highlight:hover { font-size:16px; color:#555555; text-decoration:none; }
+
+a.preg-highlight-a:link { font-size:12px; font-weight:bold; color:#258eca; text-decoration:underline; }
+a.preg-highlight-a:active { font-size:12px; font-weight:bold; color:#258eca; text-decoration:underline; }
+a.preg-highlight-a:visited { font-size:12px; font-weight:bold; color:#258eca; text-decoration:underline; }
+a.preg-highlight-a:hover { font-size:12px; font-weight:bold; color:#258eca; text-decoration:none; }
+
+ul
+{
+list-style-type: none;
+padding: 0px;
+margin: 0px;
+}
+
+li.highlight-list
+{
+background-image: url(../img/list-img.gif);
+background-repeat: no-repeat;
+background-position: 20px 7px;
+padding-left: 30px;
+}
+
+li.essential-list
+{
+background-image: url(../img/list-a-img.gif);
+background-repeat: no-repeat;
+background-position: 0px 9px;
+padding-left: 8px;
+}
+
+a.recact-event:link { font-size:11px; font-weight:bold; color:#37538d; text-decoration:none; }
+a.recact-event:active { font-size:11px; font-weight:bold; color:#37538d; text-decoration:none; }
+a.recact-event:visited { font-size:11px; font-weight:bold; color:#37538d; text-decoration:none; }
+a.recact-event:hover { font-size:11px; font-weight:bold; color:#37538d; text-decoration:underline; }
+
+a.recact-event-a:link { font-size:10px; color:#808080; text-decoration:none; }
+a.recact-event-a:active { font-size:10px; color:#808080; text-decoration:none; }
+a.recact-event-a:visited { font-size:10px; color:#808080; text-decoration:none; }
+a.recact-event-a:hover { font-size:10px; color:#808080; text-decoration:none; }
+
+a.deal-event:link { font-size:18px; font-weight:bold; color:#1e568f; text-decoration:none; }
+a.deal-event:active { font-size:18px; font-weight:bold; color:#1e568f; text-decoration:none; }
+a.deal-event:visited { font-size:18px; font-weight:bold; color:#1e568f; text-decoration:none; }
+a.deal-event:hover { font-size:18px; font-weight:bold; color:#1e568f; text-decoration:underline; }

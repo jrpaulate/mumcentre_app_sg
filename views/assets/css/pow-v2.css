@@ -1,0 +1,366 @@
+.datatable thead th{
+  border:1px solid #000;
+  background-color: #0099CC;
+  padding: 5px;
+  color:#FFF;
+  font-weight: bold
+}
+
+.cms-pow-errors {
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #F00;
+  padding: 5px;
+  width: auto;
+  color: #F00;
+  font-size: 10px;
+  background-color:#FFFF7c;
+}
+.cms-pow-error-msg {
+  display: block;
+  color: #F00;
+  margin: 5px 0;
+}
+.cms-pow-error-msg a {
+  color: #00F;
+}
+.powv2-errors {
+  margin: 10px 2px;
+  border: 1px solid #F00;
+  padding: 5px;
+  width: auto;
+  height: auto;
+  color: #F00;
+  font-size: 12px;
+}
+.powV2-Entry {
+    font-size: 16px; /*added by john ray*/ 
+  margin: 0 0 10px 0;
+}
+.powV2-Entry .powImageWrapper, .powV2-Entry .powInfo {
+  float: left;
+  width: 280px;
+  margin: 0 5px;
+  padding: 0 5px;
+  overflow: hidden;
+}
+.powV2-Entry .powImageWrapper {
+  border: 1px solid #999;
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+}
+.powV2-Entry .powImageWrapper img {
+  border: 1px solid #CCC;
+  width: 270px;
+  padding: 5px;
+}
+.powV2-Entry .powInfo h2 {
+  font-size: 30px;
+  color: #258ECA !important;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px 0 10px 0;
+}
+.powV2-Entry .powInfo .powCaption {
+  margin: 5px 0;
+  font-size: 15px;
+  color: #333;
+}
+.powV2-Entry .powText {
+  padding: 30px 10px;
+  clear: both;
+}
+.powV2-Entry .powText h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.powV2-Entry .powText a {
+  color: #333;
+  text-decoration: underline;
+  font-family: monospace;
+  font-size: 12px;
+}
+.clear {
+  clear: both;
+}
+#pow-share-facebook {
+  text-align: center;
+}
+
+
+#powV2-vote {
+  border:3px solid #999;
+  color:#FFF;
+  background-color: #258ECA; 
+  font-size: 20px;
+  padding: 10px 20px;
+  text-align:center;
+  margin: 10px;
+}
+
+#powV2-vote:hover {
+  border:3px solid #CCC;
+  background-color: #82A6B0;
+  cursor:pointer;
+}
+
+#powv2-upload-div {
+  display: inline-block;
+}
+
+#powv2-upload-div #powv2-imageholder {
+  border:2px solid #ccc;
+  min-width: 100px;
+  min-height: 100px;
+  background-color:#FFF;
+  overflow:hidden;  
+}
+
+.pow-content form textarea,
+.pow-content form input[type=text] {
+  width:300px;
+  border:1px solid #CCC;
+}
+
+.pow-content form textarea,
+.pow-content form input[type=text],
+.pow-content form select
+ {
+  border:1px solid #CCC;
+  background-color:#FFE;
+  color:#666;
+}
+
+
+.pow-content form textarea:focus,
+.pow-content form input[type=text]:focus,
+.pow-content form select:focus
+ {
+  border:1px solid #333;
+  background-color:#FFF;
+  color:#000
+}
+
+.pow-content form textarea {
+  height: 100px;
+}
+
+
+.pow-content form .date_ff {
+  width: 100px !important;
+}
+
+.pow-content dd {
+  margin-bottom: 15px;
+}
+
+
+.powcms-imglist {
+  font-family:Verdana;
+}
+
+.powcms-imglist .imgbox:hover {
+  border:1px solid #333;
+}
+.powcms-imglist .imgbox {
+   border:1px solid #fff;
+  display:inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  width: 250px;
+  background-color:#DDDD99;
+}
+
+.powcms-imglist .imgbox img {
+  border:1px solid #999;
+  width: 175px;
+  display:block;
+  padding: 4px;
+  background-color:#FFF;
+  margin:0 auto;
+  margin-bottom:10px;
+}
+
+.powcms-imglist .imgbox table {
+  border:1px solid #CCC;  
+  background-color:#FFF;  
+}
+.powcms-imglist .imgbox span {
+  color:#666;
+  display: block;
+  padding:5px 0;
+}
+.powcms-imglist .imgbox table td {
+  font-family:Verdana;
+  padding:4px;
+  font-size:9px;
+}
+
+.powcms-imglist .imgbox h4 {
+  padding:0;
+  margin:0;
+}
+.powcms-imglist .imgbox h4 a {
+  color:#000;
+  font-size:14px;
+}
+.powcms-imglist .imgbox a {
+  font-size:10px;
+  text-decoration:none;
+}
+
+.powcms-imglist .imgbox table td a {
+  display:inline-block;
+  margin: 2px;  
+}
+
+.powcms-imglist .imgbox table td.imginfo-label {
+  font-weight:bold;
+  background-color: #EEE;  
+}
+
+#publish-winners select {
+  min-width: 400px;
+}
+
+#publish-winners select option {
+  padding: 3px 5px;
+}
+
+#publish-winners dt {
+  width: 150px;
+}
+.powcms-imglist .imgbox.loading {
+  border:2px solid #CCC;
+  opacity:0.5; 
+  background: #EEE url('/img/loading.gif') no-repeat;
+}
+.powcms-table table {
+  width:100% !important;  
+}  
+
+.powcms-table .tbl-imgbox img {
+  height: 50px;
+  margin: 0 auto;
+}
+.powcms-table .tbl-imgbox {
+  border:1px solid #999;
+  background-color:#FFF;
+  display:inline-block;
+  padding:2px;
+}
+
+.sortable td a {
+  color: #000;
+  border-bottom:1px solid #666;
+  padding-bottom: 2px;
+  text-decoration:none;
+}
+.sortable td a:hover {
+  color: #000;
+  border-bottom:none;
+  text-decoration:none;
+}
+
+.powcms-table a.tblcmd {
+  background-color:#AAA;
+  text-decoration:none;
+  color:#FFF;
+  padding:5px;
+  font-weight:bold;
+  display:inline-block;
+  margin: 2px;
+  text-align:center;
+}
+.powcms-table a.tblcmd:hover {
+  text-decoration:underline;
+  background-color:#888;
+}
+
+.powcms-submenu {
+  text-align:right;
+}
+
+.powcms-submenu ul {
+  margin:0;padding:0;
+  list-style:none;
+}
+
+.powcms-submenu ul li {
+  display:inline-block;
+  margin: 2px 5px;  
+}
+
+.powcms-submenu ul li a {
+  text-decoration:none;
+  font-family:Verdana;
+  display:inline-block;
+  background-color:#3399CC;
+  padding: 5px 15px; 
+  color:#FFF;
+  font-weight:bold;
+}
+
+.powcms-submenu ul li a:hover {
+  background-color:#66CCFF;
+}
+
+.powcms-submenu ul li select {
+  font-family:Verdana;
+  font-size:11px;
+  padding:3px 5px;
+  border:1px solid #CCC;
+}
+
+.pow-winner {
+  background-color:#F99;
+  color:#FFF;
+  display:inline-block;
+  padding:5px;
+  margin: 0 15px;
+  font-weight:bold;
+  font-family: Verdana;
+}  
+
+
+.rotatephoto a {
+  display:block !important;
+}
+.rotatephoto img {
+  position:relative;
+  top:0;left:0;
+}
+.btnrotate {
+  background-color:#AAA;
+  text-decoration:none;
+  color:#FFF;
+  padding:5px;
+  font-weight:bold;
+  display:inline-block;
+  margin: 5px;
+  text-align:center;
+}
+.btnrotate:hover {
+  text-decoration:underline;
+  background-color:#888;
+}
+
+
+.import-contact {
+  display:none;
+  
+}
+
+.sortable td strong {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/*added by john ray*/
+
+#cat_desc{
+     padding-left: 262px;
+    width: 224px;
+    
+}

@@ -1,0 +1,1064 @@
+body {
+  padding: 0;
+  color: #000;
+  margin-top: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  background-color: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .7em;
+  line-height: 1.4;
+/*  font-style: normal;*/
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+             padding: 0;
+             margin: 0;
+}
+ul {
+  list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; 
+  padding: 0;
+  line-height: 1em;
+  font-size: 1em;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+        border: none;
+}
+a:link {
+  color: #60296C;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 105%;
+}
+a:visited {
+  color: #60296C;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+  color: #60296C;
+}
+a.blue {
+  color: #258ECA;
+}
+a.gray {
+  color: #666;
+}
+/*********** floating ***********/
+#floating {
+  position:fixed;
+  width:100%;
+  top: 0px;
+  height: 37px;
+  background-image: url(../img/system/floating-bg.png);
+  background-repeat: repeat-x;
+  z-index: 2147483647;
+}
+
+#floatmenu {
+  width: 980px;
+  margin: 0 auto;
+  padding: 5px 0px;
+  float: none;
+}
+
+.fm_item_log {
+  float: left;
+  padding-right:9px;
+  
+}
+
+.fm_item_right{
+  float: right;
+  padding-right:0px;
+}
+
+
+
+
+#su_newsletter_email {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: solid 1px #aaa;
+  height: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95em;
+  color: #999;
+  width: 180px;
+  padding-left: 5px;
+}
+
+/*********** body ***********/
+#container {
+  width: 980px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+/*********** header area ***********/
+#header {
+  width: 980px;
+  height: 125px;
+  margin-bottom: 5px;
+}
+#mumlogo {
+  float: left;
+  width: 250px;
+  height: 125px;
+}
+
+#country {
+  float: right;
+  width: 110px;
+  height: 30px;
+  padding: 2px 0px; 
+}
+
+.country-link {
+  padding: 0px;
+  margin: 0px;
+}
+
+#featban {
+  float: right;
+  width: 728px;
+  right: 0px;
+}
+
+#featban  iframe {
+  width: 728px;
+}
+/*********** links area ***********/
+#links {
+  height: 54px;
+  width: 980px;
+  background-image: url(../img/system/link-bg.png);
+  background-repeat: repeat-x;
+  padding-bottom: 10px;
+}
+#link_home {
+  float: left;
+  height: 54px;
+  width: 85px;
+}
+#link_preg {
+  float: left;
+  height: 54;
+  width: 120;
+}
+#link_baby {
+  float: left;
+  height: 54;
+  width: 74;
+}
+#link_Todd {
+  float: left;
+  height: 54;
+  width: 99;
+}
+#link_pre-s {
+  float: left;
+  height: 54;
+  width: 137;
+}
+#link_parent {
+  float: left;
+  height: 54;
+  width: 98;
+}
+#link_adver {
+  float: left;
+  height: 54;
+  width: 111;
+}
+#link_forums {
+  float: left;
+  height: 54;
+  width: 83;
+}
+#lnksearch-cont {
+  float: left;
+  width: 153;
+  height: 54;
+  margin-left: 12px;
+  margin-top: 11px;
+}
+#lnksearch-box {
+  width: 149;
+  height: 28;
+  font-size: 1em;
+}
+.lnksearch-searchbox {
+  float: left;
+  width: 149;
+  height: 28;
+  background: url(../img/system/lk-search.png) no-repeat;
+}
+.lnksearch-textinput {
+  width: 110px;
+  height: 28px;
+  background: none;
+  border: none;
+  color: #999;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 105%;
+  margin-top: 0px;
+  margin-left: 8px;
+  padding-right: 39px;
+}
+/*********** hotbox area ***********/
+#hotboxarea {
+  width: 980px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+#hotbox {
+  float: left;
+  width: 660px;
+  height: 250px;
+  left: 0px;
+}
+#featmrec {
+  float: left;
+  height: 250px;
+  width: 300px;
+}
+/*********** slider area ***********/
+#slider {
+ float: left;
+ width: 978px;
+ height: 58px;
+ margin: 0 auto;
+ margin-bottom: 10px;
+ border: solid 1px #CCC;
+}
+#slider #slider-container {
+	float: left;
+	width: 958px;
+	height: 58px;
+	z-index: 50;
+	overflow: hidden;
+}
+#slider #sli-partners {
+	float: left;
+	width: 20px;
+	height: 58px;
+	z-index: 150;
+}
+/*********** column combi *******/
+#body2com {
+  float: left;
+  width: 660px;
+  padding-right: 20px;
+}
+/*********** column 1 ***********/
+#sidebar1 {
+  float: left;
+  width: 180px;
+  padding-bottom: 20px;
+}
+#sponsad {
+  float: left;
+  width: 180px;
+  height: 21;
+}
+#c1topbar {
+  float: left;
+  width: 180px;
+  height: 9px;
+  padding-bottom: 3px;
+  background-image: url(/images/grayC1Top.png);
+  background-repeat: repeat-x;
+}
+.ad180 {
+  float: left;
+  width: 180px;
+  padding-bottom: 10px;
+}
+/*********** column 2 ***********/
+#content {
+  float: left;
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 460px;
+  display: block;
+}
+/*********** column 3 ***********/
+#sidebar2 {
+  float: right;
+  width: 300px;
+  padding-bottom: 20px;
+  display: inherit;
+}
+#c3spacer {
+  float: left;
+  width: 300px;
+  height: 20px;
+}
+.cont-250 {
+  float: left;
+  width: 300px;
+  padding-bottom: 10px;
+}
+/***** Pic Of the Week *****/
+/*alternate list added 09-15-11*/
+.PoW3-ul {
+  float: left;
+  width: 260px;
+  padding-left: 15px;
+}
+.PoW3-li {
+  float: left;
+  width: 86px;
+  height: 80px;
+}
+/* ends */
+#PoW {
+  float: left;
+  height: 248px;
+  width: 298px;
+  border: 1px solid #99cccc;
+  background-color: #E3F1FA;
+}
+#pow-cont {
+  float: left;
+  width: 270px;
+  height: 230px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+#pow-head {
+  float: left;
+  width: 270px;
+  padding-bottom: 5px;
+  font-size: 1.3em;
+  line-height: .9;
+  text-align: center;
+  font-weight: bold;
+  color: #60296c;
+}
+red {
+  color: #ff0000;
+}
+#pow-text {
+  float: left;
+  width: 270px;
+  font-size: 95%;
+  text-align: center;
+  padding-bottom: 10px;
+  line-height: 1.1;
+}
+lnkbig {
+  font-size: 1.1em;
+}
+#pow-body {
+  float: left;
+  width: 270px;
+}
+#pow-body .pow-row {
+  height: 90px;
+  width: 260px;
+  padding-left: 15px;
+}
+#pow-body .pow-row .pow-Rcont {
+  float: left;
+  position: relative;
+  width: 70px;
+  height: 80px;
+  padding-right: 16px;
+}
+#pow-body .pow-row .pow-Rcont .pow-img {
+  float: left;
+  width: 50px;
+  height: 65px;
+  border: 1px solid #cccccc;
+}
+#pow-body .pow-row .pow-Rcont .pow-Rctx {
+  float: left;
+  height: 20px;
+  width: 80px;
+  font-size: 90%;
+  line-height: .9;
+  padding-top: 3px;
+}
+/***** PhotoBlog *****/
+#photoblog {
+  float: left;
+  height: 98px;
+  width: 298px;
+  background-color: #f0f0f0;
+  border: 1px solid #CCC;
+}
+#photoB-cont {
+  float: left;
+  height: 90px;
+  width: 290px;
+  padding: 4px;
+}
+#photoB-head {
+  color: #60296c;
+  font-size: 135%;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+#photoB-body {
+  float: left;
+  width: 280px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.photoB-Bcont {
+  float: left;
+  width: 70px;
+  height: 50pz;
+}
+/***** MumTools *****/
+#mumtools {
+  float: left;
+  width: 300px;
+}
+#mumtools #mt-header {
+  float: left;
+  height: 25px;
+  width: 300px;
+  padding-bottom: 5px;
+}
+#mumtools #mt-header .mt-bar {
+  float: left;
+  background-color: #60296c;
+  background-repeat: repeat-x;
+  height: 1px;
+  width: 80px;
+  margin-top: 12px;
+}
+#mumtools #mt-header #mt-Htext {
+  float: left;
+  background-color: #FFF;
+  font-size: 190%;
+  color: #60296c;
+  width: 130px;
+  text-align: center;
+  line-height: 1px;
+  height: 15px;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+#mumtools #mt-body {
+  float: left;
+  width: 300px;
+  padding-bottom: 5px;
+}
+#mumtools #mt-body .mt-col {
+  float: left;
+  width: 148px;
+}
+#mumtools #mt-body .mt-cor {
+  float: right;
+  width: 148px;
+}
+#mumtools #mt-body .mt-Ccont {
+  float: left;
+  border: 1px solid #999;
+  width: 146px;
+  height: 38px;
+}
+#mumtools #mt-body .mtspacer {
+  float: left;
+  width: 146px;
+  height: 5px;
+}
+#mumtools #mt-body .mt-Ccont-cont {
+  float: left;
+  height: 28px;
+  width: 136px;
+  padding: 5px;
+}
+#mumtools #mt-body .mt-Ccont .mt-Ccont-cont .mt-icon {
+  float: left;
+  width: 28px;
+  height: 28px;
+}
+#mumtools #mt-body .mt-Ccont .mt-Ccont-cont .mt-cont-text {
+  float: left;
+  width: 103px;
+  padding-left: 5px;
+  line-height: 1.2;
+  font-size: 90%;
+}
+#mumtools #mt-body .mt-Ccont .mt-Ccont-cont .mt-cont-textSP {
+  float: left;
+  width: 103px;
+  padding-top: 8px;
+  padding-left: 5px;
+  line-height: 1.2;
+  font-size: 95%;
+}
+#mumtools #mt-botbar {
+  float: left;
+  background-color: #60296c;
+  height: 3px;
+  width: 300px;
+}
+/*********** pre footer ***********/
+#prefoot {
+  width: 980px;
+  margin: 0 auto;
+  bottom: 0px;
+}
+#preftop {
+  float: left;
+  width: 980px;
+  height: 18px;
+  vertical-align: bottom;
+}
+#preft {
+  float: left;
+  height: 8px;
+  width: 980px;
+  background-image: url(/images/grayC1Top.png);
+  background-repeat: repeat-x;
+}
+#prefads {
+  float: left;
+  height: 100px;
+  width: 980px;
+  padding-bottom: 8px;
+}
+#prefb {
+  float: left;
+  height: 8px;
+  width: 980px;
+  background-image: url(/images/grayC1Top.png);
+  background-repeat: repeat-x;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#backtop {
+  float:right;
+  width: 99px;
+  height: 20px;
+}
+#ftlnkr {
+  float:right;
+  height: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 95%;
+  font-style: normal;
+  color: #60296c;
+  padding-bottom: 7px;
+}
+/* ----- Ads in Prefooter <-------*/
+.bminiAd {
+  float: left;
+  height: 100px;
+  width: 300px;
+}
+#bminiAd-SP {
+  float: left;
+  height: 100px;
+  width: 300px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+/*********** footer ***********/
+#footer {
+  position: relative;/* this gives IE6 hasLayout to properly clear */
+  clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+  background-color: #E3F1FA;
+  height: 318px;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: #3399cc;
+  width:100%;
+}
+#footbox {
+  width: 940px;
+  height: 300px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-top: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 95%;
+  font-style: normal;
+}
+/* ----- links/ content <-------*/
+/* ~~ Column 1 ~~ */
+#cftb-1 {
+  float: left;
+  width: 240px;
+}
+#botsearch {
+  float: left;
+  height: 28px;
+  width: 186px;
+  padding-bottom: 25px;
+}
+#botsearch-cont {
+  float: left;
+  height: 28px;
+  width: 186px;
+}
+.botsearch-searchbox {
+  float: left;
+  width: 186px;
+  height: 28px;
+  background-image: url(../img/system/bt-search.png);
+  background-repeat: no-repeat;
+}
+.botsearch-textinput {
+  width: 157px;
+  height: 28px;
+  background: none;
+  border: none;
+  color: #999;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 110%;
+  margin-top: 0px;
+  margin-left: 8px;
+  padding-right: 29px;
+}
+#cftb-1-c1 {
+  float: left;
+  width: 120px;
+  height: 125px;
+}
+#cftb-1-c2 {
+  float: left;
+  width: 120px;
+  height: 125px;
+}
+/* ~~ Column 2 ~~ */
+#cftb-2 {
+  float: left;
+  width: 330px;
+}
+#gotQNH {
+  width: 330px;
+  float: left;
+  padding-bottom: 5px;
+}
+#contactsUN {
+  width: 330px;
+  float: left;
+  padding-bottom: 5px;
+}
+#contactsUN-but {
+  width: 170px;
+  height: 19px;
+  float: left;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+#cftb-2-c1 {
+  float: left;
+  width: 170px;
+  height: 125px;
+}
+#cftb-2-c2 {
+  float: left;
+  width: 160px;
+  height: 125px;
+}
+/* ~~ Column 3 ~~ */
+#cftb-3 {
+  float: left;
+  width: 370px;
+}
+#bot-FB-app {
+  float: left;
+  width: 370px;
+  padding-top: 10px;
+}
+#bot-google-app {
+  float: left;
+  width: 370px;
+  padding-top: 10px;
+}
+#bot-IconCont {
+  float: left;
+  width: 370px;
+  padding-top: 10px;
+}
+#bot-FBIcon {
+  float: left;
+  width: 120px;
+}
+#bot-TwitIcon {
+  float: left;
+  width: 120px;
+}
+#bot-RSSIcon {
+  float: left;
+  width: 120px;
+}
+#bot-SelectCountry {
+  float: left;
+  width: 370px;
+  padding-top: 20px;
+}
+/* ~~ Copyright ~~ */
+#copyright {
+  float: left;
+  width: 940px;
+  padding-top: 35px;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+  padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+  list-style: none; /* this creates the space between the navigation on the content below */
+  border-top-style: none;
+  border-top-color: #666;
+}
+ul.nav li {
+  border-bottom-color: #666;
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+                             display: list-item;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+                             text-decoration: none;
+                             background-color: #999;
+                             padding-top: 5px;
+                             padding-right: 5px;
+                             padding-bottom: 5px;
+                             padding-left: 15px;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+                                                  background: #ADB96E;
+                                                  color: #FFF;
+}
+
+/* ~~ Miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+          float: right;
+          margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+          float: left;
+          margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the .container) if the .footer is removed or taken out of the .container */
+              clear:both;
+              height:0;
+              font-size: 1px;
+              line-height: 0px;
+}
+
+/*********** Links *************/
+a.ml-hbutton {
+	background: url(../img/system/ML-home.png) no-repeat 0 0;
+	width: 85px;
+	height: 54px;
+	display: block;
+	text-indent: -9999px;
+}
+a.ml-hbutton:hover { 
+	background-position: 0 -54px; 
+}
+a.ml-hbutton:active { 
+	background-position: 0 -54px; 
+}
+a.ml-prbutton {
+	background: url(../img/system/ML-preg.png) no-repeat 0 0;
+	width: 120px;
+	height: 54px;
+	display: block;
+	text-indent: -9999px;
+}
+a.ml-prbutton:hover { 
+	background-position: 0 -54px; 
+}
+a.ml-prbutton:active { 
+	background-position: 0 -54px; 
+}
+a.ml-bbutton {
+	background: url(../img/system/ML-baby.png) no-repeat 0 0;
+	width: 74px;
+	height: 54px;
+	display: block;
+	text-indent: -9999px;
+}
+a.ml-bbutton:hover { 
+	background-position: 0 -54px; 
+}
+a.ml-bbutton:active { 
+	background-position: 0 -54px; 
+}
+a.ml-tbutton {
+	background: url(../img/system/ML-todd.png) no-repeat 0 0;
+	width: 99px;
+	height: 54px;
+	display: block;
+	text-indent: -9999px;
+}
+a.ml-tbutton:hover { 
+	background-position: 0 -54px; 
+}
+a.ml-tbutton:active { 
+	background-position: 0 -54px; 
+}
+a.ml-psbutton {
+	background: url(../img/system/ML-pres.png) no-repeat 0 0;
+	width: 137px;
+	height: 54px;
+	display: block;
+	text-indent: -9999px;
+}
+a.ml-psbutton:hover { 
+	background-position: 0 -54px; 
+}
+a.ml-psbutton:active { 
+	background-position: 0 -54px; 
+}
+a.ml-pabutton {
+	background: url(../img/system/ML-parents.png) no-repeat 0 0;
+	width: 98px;
+	height: 54px;
+	display: block;
+	text-indent: -9999px;
+}
+a.ml-pabutton:hover { 
+	background-position: 0 -54px; 
+}
+a.ml-pabutton:active { 
+	background-position: 0 -54px; 
+}
+a.ml-fbutton {
+	background: url(../img/system/ML-forums.png) no-repeat 0 0;
+	width: 83px;
+	height: 54px;
+	display: block;
+	text-indent: -9999px;
+}
+a.ml-fbutton:hover { 
+	background-position: 0 -54px; 
+}
+a.ml-fbutton:active { 
+	background-position: 0 -54px; 
+}
+a.ml-anbutton {
+	background: url(../img/system/ML-adver.png) no-repeat 0 0;
+	width: 111px;
+	height: 54px;
+	display: block;
+	text-indent: -9999px;
+}
+a.ml-anbutton:hover { 
+	background-position: 0 -54px; 
+}
+a.ml-anbutton:active { 
+	background-position: 0 -54px; 
+}
+
+/******* Deal of the Day *********/
+#DotD-container {
+	float: left;
+	width: 298px;
+	height: 248px;
+	border: solid 1px #CCC;
+}
+#DotD-container #DotD-Head-cont {
+	width: 273px;
+	height: 25px;
+	margin: 0 auto 0 auto;
+}
+#DotD-container #DotD-Head-cont #DotD-head-Header {
+	float: left;
+	height: 24px;
+	font-weight: bold;
+	font-size: 1.2em;
+	position: relative;
+	bottom: -5px;
+	color: #333;
+}
+#DotD-container #DotD-Head-cont #DotD-head-link {
+	float: right;
+	height: 24px;
+	position: relative;
+	bottom: -7px;
+}
+#DotD-container #DotD-Head-cont #DotD-head-bar {
+	float: left;
+	width: 273px;
+	border-bottom: solid 1px #CCC;
+}
+#DotD-container #DotD-body-cont {
+	position: relative;
+	width: 275px;
+	margin: 0 auto 0 auto;
+}
+#DotD-container #DotD-body-cont ul {
+	width: 275px;
+}
+#DotD-container #DotD-body-cont ul li {
+	width: 275px;
+	height: 100px;
+	padding-top: 2px;
+}
+#DotD-container #DotD-body-cont ul li .DotD-body-img {
+	float: left;
+	height: 100px;
+	width: 120px;
+	padding-right: 10px;
+}
+#DotD-container #DotD-body-cont ul li .DotD-body-head {
+	float: left;
+}
+#DotD-container #DotD-body-cont ul li .DotD-body-head a {
+	float: left;
+	color: #1f568f;
+	font-weight: bold;
+	font-size: 1.5em;
+	width: 145px;
+}
+#DotD-container #DotD-body-cont ul li .DotD-body-bar {
+	float: left;
+	width: 145px;
+	height: 1px;
+	background-image: url(../img/system/DotD-botbar.png);
+	background-repeat: repeat-x;
+}
+#DotD-container #DotD-body-cont ul li .DotD-body-text {
+	float: left;
+	padding-top: 5px;
+	width: 145px;
+	height: 70px;
+}
+
+
+/* font-face */
+@font-face {
+    font-family: 'ComfortaaThin';
+    src: url('font/Comfortaa_Thin-webfont.eot');
+    src: url('font/Comfortaa_Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Comfortaa_Thin-webfont.woff') format('woff'),
+         url('font/Comfortaa_Thin-webfont.ttf') format('truetype'),
+         url('font/Comfortaa_Thin-webfont.svg#ComfortaaThin') format('svg');
+    font-weight: normal;
+    font-style: normal}
+@font-face {
+    font-family: 'ComfortaaRegular';
+    src: url('font/Comfortaa_Regular-webfont.eot');
+    src: url('font/Comfortaa_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Comfortaa_Regular-webfont.woff') format('woff'),
+         url('font/Comfortaa_Regular-webfont.ttf') format('truetype'),
+         url('font/Comfortaa_Regular-webfont.svg#ComfortaaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal}
+@font-face {
+    font-family: 'ComfortaaBold';
+    src: url('font/Comfortaa_Bold-webfont.eot');
+    src: url('font/Comfortaa_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Comfortaa_Bold-webfont.woff') format('woff'),
+         url('font/Comfortaa_Bold-webfont.ttf') format('truetype'),
+         url('font/Comfortaa_Bold-webfont.svg#ComfortaaBold') format('svg');
+    font-weight: normal;
+    font-style: normal}
+.custFontR {font-family: 'ComfortaaRegular', Arial, sans-serif;}
+.custFontB {font-family: 'ComfortaaBold', Arial, sans-serif;}
+
+
+/*custom added by jan rei*/
+#addthis_share {
+    float: right;
+}
+#welcome_text {
+    padding-top: 5px;
+    padding-left: 3px;
+    padding-right: 20px;
+    font-size: 1em;
+    color: #60296C;
+}
+
+#out{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.fm_item_log {
+  float: left;
+  padding-right: 7px;
+}
+/*html { height: 100% }
+  body { height: 100%; margin: 0; padding: 0 }*/
+  #map_canvas { height: 100% }
+  
+  #RCAA-pagination{
+      float:right;
+  }
+  
+/*Pagination*/  
+
+a.first_link, a.previous_link, a.next_link, a.last_link, a.page_link{
+ padding: 2px 4px 2px 4px;
+ margin: 2px 0px 2px 4px;
+ color: black;
+/* border: 1px solid #565E5C;
+ color: white;
+ background-color: #47514F;*/
+}
+a.active_page{
+ padding: 2px 4px 2px 4px;
+ margin: 2px 0px 2px 4px;
+ font-weight: bold;
+ color: white;
+ background-color: #39c;
+}
+a.page_navigation{padding: 10px 0px 10px 0px;}
+
+/*Ads section*/
+#ad_mrec2 iframe {
+	width:300px;
+}
+
+#ad_mrec1, #ad_mrec2, #ad_mrec3, #ad_mrec4, #ad_mrec5, #ad_mrec6 {
+	width:300px;
+}
+
+#ad_mrec1 iframe, #ad_mrec2 iframe, #ad_mrec3 iframe, #ad_mrec4 iframe, #ad_mrec5 iframe, #ad_mrec6 iframe {
+        width:300px;
+	height:250px;
+}
+
+
+#ad_mumad1 iframe {
+	width:180px;
+	height:290px;
+}
+
+#ad_mumad2 iframe {
+	width:180px;
+	height:290px;
+}
+
+#ad_rec1, #ad_rec2, #ad_rec3, #ad_rec4 {
+	width:180px;
+}
+
+#ad_rec1 iframe, #ad_rec2 iframe, #ad_rec3 iframe, #ad_rec4 iframe {
+        width:180px;
+	height:150px;
+}
+
+

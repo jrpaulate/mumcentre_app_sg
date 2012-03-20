@@ -1,0 +1,91 @@
+.button-back { float: left; }
+.button-next, .finish { float: right; }
+.button-back, .button-next, .finish {
+    display: inline-block;
+    padding: 5px 10px 6px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer;
+    background-color: #60296C;
+}
+/*.button-back:hover, .button-next:hover, .finish:hover { border-color: #DFDCD6; color: #B07; }*/
+
+.step {
+    border: 1px solid #CCC; 
+    clear: left;
+    width: 860px;
+    background-color: #E3F1FA;
+    padding: 30px 59px 20px 59px;
+    -khtml-border-radius: 3px; -moz-border-radius: 3px; -opera-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+}
+/*.step label { color: #444; display: block; font: bold 10px verdana; margin: 10px 0 3px 7px; }*/
+.step legend { color: #4080BF; font: bold 14px verdana; padding: 0 2px 3px 2px; }
+/*.step input, .step textarea, .step select { border: 1px solid #AAA; font: 10px verdana; margin-left: 7px; }*/
+
+.error-image { background: url('../img/system/error.png') no-repeat right top; }
+
+.stepy-titles { list-style: none; margin: 0; padding: 0; width: 100%; }
+.stepy-titles li { color: #DDD; cursor: pointer; font: bold 18px verdana; float: left; padding: 10px; }
+.stepy-titles li span { font: 11px verdana; display: block; }
+.stepy-titles .current-step { color: #369; cursor: auto; }
+
+
+div.avatar_upload_wrapper {
+    width: 860px;
+    float: left;
+}
+
+#frm_member_reg .button-back {
+    color: #fff;
+}
+
+#frm_member_reg .button-next {
+    color: #fff;
+}
+
+#frm_member_reg .finish {
+    color: #fff;
+    border: none;
+}
+
+div.content_header {
+    width: 860px;
+    margin: 10px auto;
+}
+
+.step label.error {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-left: 21px;
+    background: url('../img/system/alert.png') no-repeat;
+    color: #DE5130; display: block;
+    height: 16px;
+    line-height: 16px;
+    font-size: 0.8125em;
+}
+
+.tnc.ss_item {
+    position: relative
+}
+
+/*.tnc.ss_item label.error {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-left: 21px;
+    background: url('../img/alert.png') no-repeat;
+    color: #DE5130; display: block;
+    height: 16px;
+    line-height: 16px;
+    font-size: 0.8125em;
+}*/

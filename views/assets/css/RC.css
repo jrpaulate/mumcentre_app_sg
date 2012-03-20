@@ -1,0 +1,430 @@
+a.dgray {
+	color: #666;
+	font-size: 160%;
+}
+a.Lblue {
+	color: #3399cc;
+}
+ptxt {
+	color: #60296c;
+}
+a.DLblue {
+	color: #094f95;
+}
+hh2 {
+	font-family: Comfortaa, Arial, Helvetica, sans-serif;
+	font-size: 2.2em;
+	color: #3399cc;
+	line-height: .8;
+}
+/*********** Header 2com ************/
+#Header-cont {
+	float: left;
+	height: 50px;
+	width: 660px;
+	padding-bottom: 10px;
+	padding-top: 20px;
+}
+#Header-cont #HgryBr {
+	background-color: #CCC;
+	float: left;
+	height: 1px;
+	width: 660px;
+	margin-bottom: 5px;
+}
+#Header-cont #headtxt-cont {
+	float: left;
+	width: 660px;
+	height: 48px;
+}
+#Header-cont #headtxt-cont #headerText {
+	float: left;
+	position: relative;
+	left: 0px;
+	bottom: 3px;
+	padding-left: 2px;
+	font-family: Comfortaa, Arial, Helvetica, sans-serif;
+	font-size: 4em;
+	color: #3399cc;
+	line-height: .9;
+	font-weight: 100;
+}
+#Header-cont #headtxt-cont #headerMid {
+	float: left;
+	position: relative;
+	top: 12px;
+	left: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 200%;
+	color: #3399cc;
+	line-height: .9;
+	height: 19px;
+}
+#Header-cont #headtxt-cont #headerMid .ArrowBox {
+	float: left;
+	height: 15px;
+	top: 15px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+#Header-cont #headtxt-cont #headerMid .textBox {
+	float: left;
+	height: 15px;
+	top: 15px;
+	padding-top: 2px;
+	padding-left: 10px;
+}
+#Header-cont #headtxt-cont #headtext {
+ float: right;
+ position: relative;
+ top: 15px;
+ line-height: .9;
+ font-size: 110%;
+ color: #999;
+ padding-top: 10px;
+}
+#Header-cont #headtxt-cont #headtext .socialshare {
+	float: left;
+	padding-top: 3px;
+}
+#Header-cont #headtxt-cont #headtext .socialbox {
+	float: left;
+	padding-left: 3px;
+}
+#Header-cont #HbleBr {
+	background-color: #3399cc;
+	float: left;
+	height: 2px;
+	width: 660px;
+}
+/*************** Body ***********/
+#RC-body-cont {
+	float: left;
+	width: 660px;
+	padding-bottom: 10px;
+}
+#RC-body-header {
+	float: left;
+	width: 660px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 200%;
+	color: #3399cc;
+	line-height: .9;
+}
+#RC-body {
+	float: left;
+	width: 660px;
+}
+#RC-body .RC-text-cont {
+	top: 0px;
+	font-size: 1.5em;
+	line-height: 1.6em;
+}
+#RC-body #RC-img-cont {
+	float: left;
+	top: 0px;
+	width: 212px;
+	height: 235px;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+#RC-body #RC-boxR-cont {
+	float: right;
+	width: 180px;
+	padding-top: 5px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+#RC-body #RC-boxLbot-cont {
+	float: left;
+	width: 180px;
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+}
+#RC-body #RC-boxL-cont {
+	float: left;
+	top: 0px;
+	width: 180px;
+	padding-bottom: 20px;
+}
+#RC-body #RC-boxAD-cont {
+	float: left;
+	bottom: 0px;
+	width: 180px;
+	height: 290px;
+}
+/********* Events, revies, cources ***********/
+#ERV-container {
+	float: left;
+	width: 180px;
+}
+#ERV-container #ERV-Header {
+	float: left;
+	width: 180px;
+}
+#ERV-container #ERV-Header #ERV-Text{
+	float: left;
+	width: 180px;
+	font-size: .8em;
+	text-align: center;
+	color: #666;
+	font-weight: bold;
+}
+#ERV-container #ERV-Header #ERV-bar{
+	float: left;
+	width: 180px;
+	height: 3px;
+	background-color: #3399cc;
+	margin-bottom: 5px;
+}
+#ERV-container #ERV-Body {
+	float: left;
+	width: 180px;
+}
+#ERV-container #ERV-Body .ERV-Row  {
+	float: left;
+	width: 180px;
+	border-bottom-width: 2px;
+	border-bottom-style: dotted;
+	border-bottom-color: #333;
+	padding-top: 5px;
+}
+#ERV-container #ERV-Body .ERV-Row .ERV-IT-cont {
+	float: left;
+	width: 168px;
+	padding-bottom: 5px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+#ERV-container #ERV-Body .ERV-Row .ERV-IT-cont .ERV-icon {
+	float: left;
+	height: 17px;
+	width: 17px;
+	background-image: url(../img/system/ERC-Icon.png);
+}
+#ERV-container #ERV-Body .ERV-Row .ERV-IT-cont .ERV-icon-text {
+	float: left;
+	height: 14px;
+	width: 14px;
+	padding-left: 2px;
+	padding-top: 3px;
+	text-align: center;
+	font-size: 12px;
+	color: #FFF;
+	line-height: 1;
+}
+#ERV-container #ERV-Body .ERV-Row .ERV-text-cont {
+	float: left;
+	width: 145px;
+	font-size: .8em;
+	line-height: 1;
+	padding-left: 5px;
+	color: #094f95;
+}
+/********* People Who Read this ***********/
+#PRRT-container {
+	float: left;
+	width: 180px;
+}
+#PRRT-container #PRRT-Header {
+	float: left;
+	width: 180px;
+}
+#PRRT-container #PRRT-Header #PRRT-Text{
+	float: left;
+	width: 160px;
+	font-size: .8em;
+	color: #000;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 1.2;
+	padding-bottom: 5px;
+}
+#PRRT-container #PRRT-Header #PRRT-bar{
+	float: left;
+	width: 180px;
+	height: 3px;
+	background-color: #3399cc;
+	margin-bottom: 5px;
+}
+#PRRT-container #PRRT-Body {
+	float: left;
+	width: 180px;
+}
+#PRRT-container #PRRT-Body .PRRT-Row  {
+	float: left;
+	width: 180px;
+	border-bottom-width: 2px;
+	border-bottom-style: dotted;
+	border-bottom-color: #333;
+	padding-top: 5px;
+}
+#PRRT-container #PRRT-Body .PRRT-Row .PRRT-IT-cont {
+	float: left;
+	width: 168px;
+	padding-bottom: 5px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+#PRRT-container #PRRT-Body .PRRT-Row .PRRT-text-cont {
+	float: left;
+	width: 145px;
+	font-size: .7em;
+	line-height: 1;
+	padding-left: 5px;
+	color: #094f95;
+	font-weight: bold;
+}
+/********* Article Footer ***********/
+#AF-cont {
+	float: right;
+	bottom: 0px;
+	width: 460px;
+	padding-bottom: 5px;
+	padding-top: 10px;
+}
+#AF-cont #AF-cont-body {
+ float: left;
+ width: 460px;
+ height: 67px;
+ padding-bottom: 5px; 
+}
+#AF-cont #AF-cont-body #AFSocial-buts{
+ float: left;
+ width: 300px;
+ height: 67px;
+ padding-bottom: 5px; 
+}
+#AF-cont #AF-cont-body #AFSocial-buts .AFSB-cont{
+ float: left;
+ height: 62px;
+ padding-right: 5px; 
+}
+
+#AF-cont #AF-cont-body .AFpignation{
+	float: right;
+	width: 80px;
+	padding-bottom: 5px;
+	text-align: right;
+	font-size: .8em;
+	line-height: .8em;
+}
+#AF-cont .AF-article-cont {
+	float: left;
+	width: 460px;
+	height: 18px;
+	padding-top: 9px;
+	font-family: Comfortaa, Arial, Helvetica, sans-serif
+}
+#AF-cont .AF-article-cont #AFblue-box {
+	float: left;
+	width: 107px;
+	height: 18px;
+	background-color: #3399cc;
+	text-align: center;
+	color: #FFF;
+	font-size: .7em;
+	line-height: 1.5em;
+}
+#AF-cont .AF-article-cont #AFblue-textarea {
+	float: left;
+	width: 351px;
+	height: 16px;
+	border: 1px solid #3399cc;
+	font-size: .7em;
+	color: #666;
+	line-height: 1.5em;
+}
+#AF-cont .AF-article-cont #AFgray-box {
+	float: left;
+	width: 107px;
+	height: 18px;
+	background-color: #666;
+	text-align: center;
+	color: #FFF;
+	font-size: .7em;
+	line-height: 1.5em;
+}
+#AF-cont .AF-article-cont #AFgray-textarea {
+	float: left;
+	width: 351px;
+	height: 16px;
+	border: 1px solid #666;
+	font-size: .7em;
+	color: #666;
+	line-height: 1.5em;
+}
+/***************** Social Comment *****************/
+.Social-comment-cont {
+	float: left;
+	width: 660px;
+	padding-bottom: 10px;
+}
+/***************** Sponsor ************************/
+#Sponsor-cont {
+	float: left;
+	width: 660px;
+	padding-bottom: 10px;
+}
+#Sponsor-cont .header-container {
+	float: left;
+	height: 26px;
+}
+#Sponsor-cont .header-container .header-text-container {
+	float: left;
+	width: 660px;
+	height: 24px;
+	vertical-align: top;	
+}
+#Sponsor-cont .header-container .header-line {
+	float: left;
+	height: 1px;
+	width: 660px;
+	padding-top: 1px;
+	background-color: #3399cc;
+}
+#Sponsor-cont .spon-row {
+	float: left;
+	width: 660px;
+	padding-top: 10px;
+}
+#Sponsor-cont .spon-row .spon-col {
+	float: left;
+	width: 180px;
+	height: 290px;
+}
+#Sponsor-cont .spon-row .spon-colSP {
+	float: left;
+	width: 180px;
+	height: 290px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+/************ Bottom Features ***********/
+#features-area {
+	float: left;
+	width: 980px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+#features-area .feature-cont {
+	float: left;
+	width: 280px;
+	height: 145px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#features-area .feature-contSP {
+	float: left;
+	width: 280px;
+	height: 145px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+		

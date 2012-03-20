@@ -1,0 +1,360 @@
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+
+.section_wrapper {
+    width: 980px;
+    font-family: Comfortaa, Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    color: #9F7EA7;
+    font-weight: normal;
+}
+
+.section_header {
+    margin: 20px 0 5px 0;
+    padding: 2px 0px;
+    border-bottom: 2px solid #258eca;
+}
+
+.section_header img {
+    float: left;
+}
+
+.section_header span {
+    display: block;
+    float: right;
+    height: 37px;
+    line-height: 37px;    
+}
+
+.section_body {
+    background-color: #E3F1FA;
+    width: 978px;
+    display: none;
+    border: 1px solid #CCC;    
+}
+
+div.content_header {
+    width: 940px;
+    margin: 10px auto;
+}
+
+.content_header.underlined {
+    border-bottom: 2px solid #60296C;
+    margin-top: 75px;
+}
+
+div.content_header span.header_text {
+    font-size: 130%;
+}
+
+div.content_header span.header_text_center {
+    font-size: 130%;
+    padding-left: 258px;
+}   
+
+div.content_header span {
+    font-size: 70%;
+    display: block;
+}
+
+div.registration_form {
+    width: 860px;
+    /*    height: 300px;*/
+    margin: 30px auto 5px auto;
+    /*    border: 1px solid #CCC;*/
+}
+
+div.form_item {
+    float: left;
+    margin: 0px;
+    padding: 18px 0px 2px 0px;
+    position: relative;
+}
+
+#form_step1 label.error {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ee2d24;
+    font-size: 0.8125em;
+    font-weight: bold;
+}
+
+#ureg_step2_errors h1 {    
+    font-size: 1.5em;
+    font-weight: bold;    
+}
+
+#ureg_step2_errors label.error {
+    color: #ee2d24;
+    font-size: 1em;
+    font-weight: bold;    
+}
+
+
+
+div.form_item span.label {
+    width: 125px;
+    height: 42px;
+    line-height: 42px;
+    text-align: right;
+    display: inline-block;
+    float: left;
+    padding-right: 5px;
+}
+
+div.form_item span.multi_line {
+    width: 125px;
+    height: 42px;
+    line-height: 21px;
+    text-align: right;
+    display: inline-block;
+    float: left;
+    padding-right: 5px;
+}
+
+div.form_item input {
+    font-size: .8em;
+    color: #999;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin: 2px 2px;
+}
+
+select.form_elem {
+    font-size: .8em;
+    color: #999;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin: 2px 2px;
+}
+
+div.form_item input#family_name {
+    margin: 2px 0px 2px 6px; 
+}
+
+.ui-xl {
+    width: 690px;
+}
+
+.ui-large {
+    width: 330px;
+}
+
+.ui-medium {
+    width: 268px;
+}
+
+.ui-cbo-medium {
+    width: 290px;
+}
+
+.full_grid {
+    width: 860px;
+}
+
+.half_grid {
+    width: 430px;
+}
+
+div.avatar_section {
+    width: 860px;
+    margin: 30px auto 5px auto;
+}
+
+div.avatar_section_items {
+    width: 175px;
+    padding: 10px;
+    float: right;
+}
+
+div.avatar_section_items p {
+    color: #000;
+    font-size: 0.625em;
+    text-align: center;
+}
+
+.registration_form input#do_step1 {
+    display: block;
+    width: 134px;
+    margin: 0px auto;
+}
+
+input.do_step {
+    border: none;
+}
+
+div.child_section h1 {
+    margin-top: 20px;
+    margin-left: 132px;    
+}
+
+.child_section_control {
+    margin: 20px 0px 20px 133px;
+}
+
+div.subscription_section {
+    width: 430px;
+    margin: 30px auto 5px auto;
+}
+
+div.subscription_section span {
+    display: inline-block;
+}
+
+div.ss_item span {
+    width: 405px;
+}
+
+div.subscription_section span.ss_header {
+    margin: 15px 0px;
+    border-bottom: 1px solid #9F7EA7;
+}
+
+input#do_step2 {
+    float: right;
+    width: 134px;
+    margin-bottom: 20px;
+}
+
+.ss_item h1 {
+    display: inline-block;
+    font-weight: normal;
+}
+
+.tnc.ss_item {
+    width: 330px;
+    margin: 0px auto;
+    padding: 20px 0px;
+}
+
+#ureg_step3 {
+    /*    height: 400px;*/
+}
+
+div.invitation_section {
+    width: 800px;
+    margin: 30px auto 30px auto;
+    position: relative;
+}
+
+span.is_item_header {
+    display: block;
+    width: 800px;
+    border-bottom: 2px solid #60296C;
+    margin-top: 25px;
+}
+
+.manual_section {
+    height: 200px;
+}
+
+.openinviter_section {
+    height: 200px;
+}
+
+input#do_step3 {
+    display: block;
+    width: 170px;
+    margin: 15px auto;
+}
+
+#ureg_step4 span.header_text {
+    font-family: Comfortaa, Tahoma, Geneva, sans-serif;
+    color: #ffcc33;    
+    font-size: 2em;
+    text-align: center;
+}
+
+#reg4-header {
+    font-family: Comfortaa, Tahoma, Geneva, sans-serif;
+    color: #ffcc33;
+    font-weight: normal;
+    width: 850px;
+    text-align: center;
+}
+
+.custom_button {
+    display: inline-block;
+    padding: 5px 10px 6px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer;
+}
+
+/* Sizes ---------- */
+.small.custom_button {
+    font-size: 11px;
+}
+.medium.custom_button {
+    font-size: 13px;
+}
+.large.custom_button {
+    font-size: 14px;
+    padding: 8px 14px 9px;
+}
+
+/* Colors ---------- */
+.blue.custom_button {
+    background-color: #2daebf;
+}
+.red.custom_button {
+    background-color: #e33100;
+}
+.magenta.custom_button {
+    background-color: #a9014b;
+}
+.orange.custom_button {
+    background-color: #ff5c00;
+}
+.yellow.custom_button {
+    background-color: #ffb515;
+}
+.mumcolor.custom_button {
+    background-color: #60296C;
+}
+
+/*added by jan rei*/
+
+.row-container {
+	width: 908px;
+	border: 1px solid #ccc;
+	overflow: hidden}
+.col-half {width: 50%}
+.fleft {float: left}
+.reg-cont p {font-size: 11px;
+            font-family: 'ComfortaaRegular', Arial, Helvetica, sans-serif;}
+textarea {border: 2px solid #ccc; width: 330px; padding: 8px; 
+	color: #999;
+	font-size: 18px;
+	font-family: Arial;}
+.label {
+text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+}
+.aright {
+text-align: right;
+}

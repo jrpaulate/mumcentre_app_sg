@@ -1,0 +1,350 @@
+/* MumCentre CSS - Menu Mega DropDown Style
+   Author: Jonathan Manas @athanph
+   ------------------------------- */
+
+/* Navigation - Dropdown Menu
+========================================================================== */
+.nav {
+	border: 1px solid #cdc1d5;
+	border-bottom: 5px solid #cdc1d5;
+	background-color: #fff !important;
+   	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ededed)) !important;
+	background-image: -webkit-linear-gradient(top, #fff, #ededed) !important;
+	background-image:    -moz-linear-gradient(top, #fff, #ededed) !important;
+	background-image:     -ms-linear-gradient(top, #fff, #ededed) !important;
+	background-image:      -o-linear-gradient(top, #fff, #ededed) !important;
+	position: relative;
+	margin: 10px 0}
+.nav ul { margin:0 ;padding:0 }	
+.nav li {float: left; border-left: 1px solid #cdc1d5; height: 50px;}
+.nav li:first-child {border-left: none}
+.nav li a {
+	font-size: 14px;
+	font-weight: bold;
+	color: #4a4a4a;
+	line-height: 50px;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	text-decoration: none; 
+	height: 100%;
+	padding: 0 12px;}
+.nav li a {display: block}
+.nav li:hover a,
+.nav li.selected a {color:#60296c;}
+.nav li.search-wrap {float: right; width:140px; height: 40px; padding: 10px 20px 0}
+
+/* Dropdown SubNav --------------------------- */
+.subnav {
+	z-index:10000000;
+	position: absolute;
+	left: -9999px;
+	top: 60px;
+	width: 950px;
+	border: 1px solid #ccc;
+	border-top: none;
+	padding: 5px 0 !important;
+	-webkit-border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	-o-border-radius: 0 0 10px 10px;
+	border-radius: 0 0 10px 10px;
+	-webkit-box-shadow: 0 5px 5px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 5px 5px rgba(0,0,0,.2);
+	-o-box-shadow: 0 5px 5px rgba(0,0,0,.2);
+	box-shadow: 0 5px 5px rgba(0,0,0,.2)}	
+/*
+commented out by jun to insert javascrtip handling
+.nav li:hover .subnav {left:15px; top: 60px}*/
+/* .subnav.sub-pregnancy {left: 15px} */
+.subnav > li {
+	background: #fff;
+	float: none !important;
+	height: auto;
+	-webkit-border-radius: 0 0 10px 10px !important;
+	-moz-border-radius: 0 0 10px 10px !important;
+	-o-border-radius: 0 0 10px 10px !important;
+	border-radius: 0 0 10px 10px !important;}
+	
+	/* SubNav SubLinks --------------------------- */
+	.subnav-links ul {width: 100% !important}
+	.subnav-links li {float: left !important}
+	.subnav-links li a {
+		font-size: 11px;
+		text-transform: none;		
+		line-height: 1em;
+		border-bottom: none;
+		padding: 10px 20px;
+		width: auto;
+		height: 100%;
+		text-align: center}
+	.subnav-links li:first-child a {width: 110px; padding: 10px 17px}
+	.subnav-links li,	
+	.subnav-links li:hover {height: auto}
+	
+	/* SubNav Content --------------------------- */
+	.subnav-content {padding: 10px}
+	.subnav-content li {
+		overflow: hidden;
+		height: auto;
+		font-size: 12px;
+		border-left: none;
+		margin-bottom: 10px}
+	.subnav-content h2 {margin: 5px 0 10px}	
+	.subnav-content h3 {margin: 0 0 5px}
+	.subnav-content a {		
+		padding:0 !important;		
+		color: #60296C !important}
+	.subnav-content a {
+		line-height: 120% !important;
+		font-size: 12px !important;
+		font-weight: normal !important;
+		text-transform: none !important;
+		text-decoration: underline !important}
+	.subnav-content .desc {overflow: hidden; margin: 0 0 10px}	
+	.subnav-content .desc a {margin-bottom: 5px}
+	.subnav-content .btn-rnd {
+		color: #FFFFFF !important;
+		font-size: 10px !important;
+		padding: 6px 12px !important;
+		text-decoration: none !important;}
+		
+	/* SubNav Content Tabs */
+	.tab-content > .tab-pane,
+	.tab-content > div {display: none;}
+	.tab-content > .active {display: block;}		
+		
+		/* Columns */
+		.col3 { width: 31% !important; margin-left: 10px; }
+		.col2 { width: 48.5%; margin-left: 10px; }
+		.col3:nth-of-type(1),
+		.col2:nth-of-type(1) {margin-left: 0; padding-right: 5px}
+		.col3:nth-of-type(2) {padding-right: 5px}
+		.borderR {border-right: 1px solid #999}
+		
+		/* added by jun */
+		.col3 h4 {font-size:13px;line-height:24px;font-weight:bold;margin-bottom:10px}
+		.tab-pane h2 {
+			margin:5px 0px 20px 0px;
+			font-size:large;
+		}
+		.col3 ul {
+			width:auto;
+		}
+		
+		.col2 ul {
+			width:auto;
+		}
+
+	/* Dropdown - Specific Categories ------------ */
+	.cat-pregnancy:hover > a,
+	.cat-baby:hover > a, 
+	.cat-toddler:hover > a,
+	.cat-preschool:hover > a,
+	.cat-parents:hover > a {color: #4a4a4a !important}
+	.dropnav:hover > a {height: 60px;}
+	.dropnav:hover .subnav-links a {background: transparent !important}
+	/* Pregnancy Tab ------------ */
+	.cat-pregnancy > a {border-bottom: 5px solid #fdbebc; /* margin-bottom: -10px; */}
+	.cat-pregnancy:hover > a {
+		border-bottom: 0;
+		background-color: #fff !important;
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#fdbebc)) !important;
+		background-image: -webkit-linear-gradient(top, #fff, #fdbebc) !important;
+		background-image:    -moz-linear-gradient(top, #fff, #fdbebc) !important;
+		background-image:     -ms-linear-gradient(top, #fff, #fdbebc) !important;
+		background-image:      -o-linear-gradient(top, #fff, #fdbebc) !important;}
+	.cat-pregnancy .subnav {background: #fdbebc;}
+	.cat-pregnancy .subnav-links {border-bottom: 1px solid #fdbebc}
+	.cat-pregnancy .subnav-links li {border-color: #fdbebc}
+	.cat-pregnancy .subnav-links li:hover a,
+	.cat-pregnancy .subnav-links .tabs .active {
+		background-color: #fff !important;
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffe7df), to(#fff)) !important;
+		background-image: -webkit-linear-gradient(top, #ffe7df, #fff) !important;
+		background-image:    -moz-linear-gradient(top, #ffe7df, #fff) !important;
+		background-image:     -ms-linear-gradient(top, #ffe7df, #fff) !important;
+		background-image:      -o-linear-gradient(top, #ffe7df, #fff) !important;}
+	/* Baby Tab ------------ */
+	.cat-baby > a {border-bottom: 5px solid #f392dd; /* margin-bottom: -10px; */}
+	.cat-baby:hover > a {
+		border-bottom: 0;
+		background-color: #fff !important;
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f392dd)) !important;
+		background-image: -webkit-linear-gradient(top, #fff, #f392dd) !important;
+		background-image:    -moz-linear-gradient(top, #fff, #f392dd) !important;
+		background-image:     -ms-linear-gradient(top, #fff, #f392dd) !important;
+		background-image:      -o-linear-gradient(top, #fff, #f392dd) !important;}
+	.cat-baby .subnav {background: #f392dd;}
+	.cat-baby .subnav-links {border-bottom: 1px solid #f392dd}
+	.cat-baby .subnav-links li {border-color: #f392dd}
+	.cat-baby .subnav-links li:hover a,
+	.cat-baby .subnav-links .tabs .active {
+		background-color: #fff !important;
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fbd4f2), to(#fff)) !important;
+		background-image: -webkit-linear-gradient(top, #fbd4f2, #fff) !important;
+		background-image:    -moz-linear-gradient(top, #fbd4f2, #fff) !important;
+		background-image:     -ms-linear-gradient(top, #fbd4f2, #fff) !important;
+		background-image:      -o-linear-gradient(top, #fbd4f2, #fff) !important;}
+	/* Toddler Tab ------------ */
+	.cat-toddler > a {border-bottom: 5px solid #7ea6f6; /* margin-bottom: -10px; */}
+	.cat-toddler:hover > a {
+		border-bottom: 0;
+		background-color: #fff !important;
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#7ea6f6)) !important;
+		background-image: -webkit-linear-gradient(top, #fff, #7ea6f6) !important;
+		background-image:    -moz-linear-gradient(top, #fff, #7ea6f6) !important;
+		background-image:     -ms-linear-gradient(top, #fff, #7ea6f6) !important;
+		background-image:      -o-linear-gradient(top, #fff, #7ea6f6) !important;}
+	.cat-toddler .subnav {background: #7ea6f6;}
+	.cat-toddler .subnav-links {border-bottom: 1px solid #7ea6f6}
+	.cat-toddler .subnav-links li {border-color: #7ea6f6}
+	.cat-toddler .subnav-links li:hover a,
+	.cat-toddler .subnav-links .tabs .active {
+		background-color: #fff !important;
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cbdcff), to(#fff)) !important;
+		background-image: -webkit-linear-gradient(top, #cbdcff, #fff) !important;
+		background-image:    -moz-linear-gradient(top, #cbdcff, #fff) !important;
+		background-image:     -ms-linear-gradient(top, #cbdcff, #fff) !important;
+		background-image:      -o-linear-gradient(top, #cbdcff, #fff) !important;}
+	/* Pre-schooler Tab ------------ */
+	.cat-preschool > a {border-bottom: 5px solid #99ff99; /* margin-bottom: -10px; */}
+	.cat-preschool:hover > a {
+		border-bottom: 0;
+		background-color: #fff !important;
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#99ff99)) !important;
+		background-image: -webkit-linear-gradient(top, #fff, #99ff99) !important;
+		background-image:    -moz-linear-gradient(top, #fff, #99ff99) !important;
+		background-image:     -ms-linear-gradient(top, #fff, #99ff99) !important;
+		background-image:      -o-linear-gradient(top, #fff, #99ff99) !important;}
+	.cat-preschool .subnav {background: #99ff99;}
+	.cat-preschool .subnav-links {border-bottom: 1px solid #99ff99}
+	.cat-preschool .subnav-links li {border-color: #99ff99}
+	.cat-preschool .subnav-links li:hover a,
+	.cat-preschool .subnav-links .tabs .active {
+		background-color: #fff !important;
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dafeda), to(#fff)) !important;
+		background-image: -webkit-linear-gradient(top, #dafeda, #fff) !important;
+		background-image:    -moz-linear-gradient(top, #dafeda, #fff) !important;
+		background-image:     -ms-linear-gradient(top, #dafeda, #fff) !important;
+		background-image:      -o-linear-gradient(top, #dafeda, #fff) !important;}
+	/* Parents Tab ------------ */
+	.cat-parents > a {border-bottom: 5px solid #ffd477; /* margin-bottom: -10px; */}
+	.cat-parents:hover > a {
+		border-bottom: 0;
+		background-color: #fff !important;
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ffd477)) !important;
+		background-image: -webkit-linear-gradient(top, #fff, #ffd477) !important;
+		background-image:    -moz-linear-gradient(top, #fff, #ffd477) !important;
+		background-image:     -ms-linear-gradient(top, #fff, #ffd477) !important;
+		background-image:      -o-linear-gradient(top, #fff, #ffd477) !important;}
+	.cat-parents .subnav {background: #ffd477;}
+	.cat-parents .subnav-links {border-bottom: 1px solid #ffd477}
+	.cat-parents .subnav-links li {border-color: #ffd477}
+	.cat-parents .subnav-links li:hover a,
+	.cat-parents .subnav-links .tabs .active {
+		background-color: #fff !important;
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#feeabf), to(#fff)) !important;
+		background-image: -webkit-linear-gradient(top, #feeabf, #fff) !important;
+		background-image:    -moz-linear-gradient(top, #feeabf, #fff) !important;
+		background-image:     -ms-linear-gradient(top, #feeabf, #fff) !important;
+		background-image:      -o-linear-gradient(top, #feeabf, #fff) !important;}		
+
+
+/* Form Search, Newsletter 
+========================================================================== */
+#top .subscribe form,
+.search_new form {background: url(../img/system/bg-search.png) no-repeat 0 -31px}
+#top .subscribe input,
+.search_new input {background: transparent; border: none; color: #999; font-size: 11px; width: 178px; padding: 6px}
+#top .subscribe input[type=submit] {width: 30px; padding: 4px 18px}
+
+.search_new {margin-right: 20px; width: 220px}
+.search_new form {background-position: 0 0; width: 186px; height: 28px}
+.search_new input {padding: 8px; width: 145px}
+.search_new input[type=submit] {position: absolute; text-indent: -9999px; width: 20px; cursor: pointer}
+.nav .search_new {float: right; width: 150px; margin-right:0}
+.nav .search_new form {background-position: 0 -60px; width: 149px; height: 28px}
+.nav .search_new input {width: 110px}
+.nav .search_new input:focus {outline: 0}
+.nav .search_new input[type=submit] {width:20px}
+
+/* Links */
+.subnav-content .view-link {display: inline; margin: 0 10px; line-height: 30px !important;}
+.subnav-content .view-link.btn-rnd {line-height: 100% !important;}
+/* POW Tab */
+ul.sub-pow-archive {padding-top: 43px}
+	ul.sub-pow-archive li {width: 110px;}
+	ul.sub-pow-archive li a {font-size: 11px !important}
+.sub-pow-entries {width: 230px; position: relative; margin-bottom: 0 !important;}
+	.sub-pow-entries li {width: 76px; margin-bottom: 24px}
+	.sub-pow-entries .view-link {
+		top: -34px;
+		left: 30%;
+		position: relative}
+.sub-pow-archive .thumb,
+.sub-pow-entries .thumb {margin: 0 auto 5px}
+/* Essentials Tab */
+.sub-essentials {background: url(../img/system/bg-essentials.jpg) no-repeat top right; position: relative}
+.sub-essentials .btn-rnd {font-size: 14px !important}
+span.stub-coming-soon {
+	display: block;
+	background: url(../img/system/stub-comingsoon.png) no-repeat;
+	position: absolute;
+	top: 5px;
+	right:-20px;
+	width: 77px;
+	height: 78px;}
+	
+.mm_nav_highlight_preg {
+	border-bottom: 0;
+	height:60px !important;
+	background-color: #fff !important;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#fdbebc)) !important;
+	background-image: -webkit-linear-gradient(top, #fff, #fdbebc) !important;
+	background-image:    -moz-linear-gradient(top, #fff, #fdbebc) !important;
+	background-image:     -ms-linear-gradient(top, #fff, #fdbebc) !important;
+	background-image:      -o-linear-gradient(top, #fff, #fdbebc) !important;
+}
+
+.mm_nav_highlight_baby {
+	height:60px !important;
+	border-bottom: 0;
+	background-color: #fff !important;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f392dd)) !important;
+	background-image: -webkit-linear-gradient(top, #fff, #f392dd) !important;
+	background-image:    -moz-linear-gradient(top, #fff, #f392dd) !important;
+	background-image:     -ms-linear-gradient(top, #fff, #f392dd) !important;
+	background-image:      -o-linear-gradient(top, #fff, #f392dd) !important;
+}
+
+.mm_nav_highlight_toddler {
+	height:60px !important;
+	border-bottom: 0;
+	background-color: #fff !important;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#7ea6f6)) !important;
+	background-image: -webkit-linear-gradient(top, #fff, #7ea6f6) !important;
+	background-image:    -moz-linear-gradient(top, #fff, #7ea6f6) !important;
+	background-image:     -ms-linear-gradient(top, #fff, #7ea6f6) !important;
+	background-image:      -o-linear-gradient(top, #fff, #7ea6f6) !important;
+}
+
+.mm_nav_highlight_preschool {
+	height:60px !important;
+	border-bottom: 0;
+	background-color: #fff !important;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#99ff99)) !important;
+	background-image: -webkit-linear-gradient(top, #fff, #99ff99) !important;
+	background-image:    -moz-linear-gradient(top, #fff, #99ff99) !important;
+	background-image:     -ms-linear-gradient(top, #fff, #99ff99) !important;
+	background-image:      -o-linear-gradient(top, #fff, #99ff99) !important;
+}
+
+.mm_nav_highlight_parents {
+	height:60px !important;
+	border-bottom: 0;
+	background-color: #fff !important;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ffd477)) !important;
+	background-image: -webkit-linear-gradient(top, #fff, #ffd477) !important;
+	background-image:    -moz-linear-gradient(top, #fff, #ffd477) !important;
+	background-image:     -ms-linear-gradient(top, #fff, #ffd477) !important;
+	background-image:      -o-linear-gradient(top, #fff, #ffd477) !important;
+}
